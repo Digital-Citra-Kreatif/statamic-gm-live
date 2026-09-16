@@ -123,8 +123,7 @@ description:
               -
                 type: text
                 text: 'Bersedia kunjungan site dan perjalanan dinas'
-locations:
-  - balikpapan
+locations: balikpapan
 seo:
   title: '@seo:title'
   description: '@seo:description'
@@ -133,6 +132,6 @@ tags:
   - d3
   - s1
   - 8-10-tahun-pengalaman
-updated_by: 28d34247-1c17-42bf-8548-5b36f18adcbd
-updated_at: 1786520259
+updated_by: ff05cb33-b03a-477b-b5db-0e39c5a46f0f
+updated_at: 1789464790
 ---

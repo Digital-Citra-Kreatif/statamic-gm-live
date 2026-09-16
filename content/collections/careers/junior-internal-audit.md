@@ -60,17 +60,16 @@ description:
               -
                 type: text
                 text: 'Mampu bekerja mandiri maupun dalam tim'
-locations:
-  - jakarta
+locations: jakarta
 seo:
   title: '@seo:title'
   description: '@seo:description'
-excerpt: 'Minimal D1–D4, lebih diutamakan Akuntansi/Keuangan, Pengalaman 1–3 tahun di bidang audit/internal audit menjadi nilai tambah'
+excerpt: 'Minimal D1–D4, lebih diutamakan Akuntansi/Keuangan, Pengalaman 1–3 tahun di bidang audit/internal audit menjadi nilai tambah.'
 tags:
   - d1
   - d4
   - 1-3-tahun-pengalaman
 employment_status: full_time
 updated_by: 28d34247-1c17-42bf-8548-5b36f18adcbd
-updated_at: 1786520667
+updated_at: 1788501267
 ---

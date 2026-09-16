@@ -62,9 +62,7 @@ tabs:
                   value: Other
               validate: required
           -
-            handle: message
+            handle: pesan_anda
             field:
-              display: Message
               type: textarea
-              validate: 'required|max:5000'
-              placeholder: 'Pesan Anda'
+              display: 'Pesan Anda'

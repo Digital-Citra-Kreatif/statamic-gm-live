@@ -26,9 +26,6 @@ emails:
     enabled: true
 address: 'Jl. Lkr. Luar Barat No.9, RT.14/RW.3, Rw. Buaya, Kecamatan Cengkareng, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11740'
 google_map_link: 'https://www.google.com/maps/place/PT.+Gaya+Makmur+Mobil+(FAW+Trucks+Indonesia)/@-6.1695975,106.7291991,19.96z/data=!4m6!3m5!1s0x2e69f785fb880fe7:0xfcd91397a84a0baa!8m2!3d-6.1696589!4d106.7290722!16s%2Fg%2F11bxdrrvwk!5m1!1e2?entry=ttu&g_ep=EgoyMDI2MDgxNi4wIKXMDSoASAFQAw%3D%3D'
-custom_code_head: '<meta name="test-head" content="ok">'
-custom_code_body: '<meta name="test-body" content="ok">'
-google_analytics_measurement_id: G-YW01EDIMJ
 header_desktop: true
 header_mobile: true
 show_scroll_top: true
