@@ -1,1 +1,28 @@
-{  }
+product_managers:
+  title: 'Product Managers'
+  roles:
+    - product_manager
+achievement_managers:
+  title: 'Achievement Managers'
+  roles:
+    - achievement_manager
+dealer_managers:
+  title: 'Dealer Managers'
+  roles:
+    - dealer_manager
+pages_popup_seo_managers:
+  title: 'Pages, Pop Up & SEO Managers'
+  roles:
+    - pages_popup_seo_manager
+posts_managers:
+  title: 'Posts Managers'
+  roles:
+    - posts_manager
+career_managers:
+  title: 'Career & Submission Managers'
+  roles:
+    - career_manager
+editors:
+  title: Editors
+  roles:
+    - editor

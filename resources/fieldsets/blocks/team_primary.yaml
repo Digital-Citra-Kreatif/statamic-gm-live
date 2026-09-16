@@ -8,7 +8,7 @@ fields:
     container: assets
     max_files: 1
     validate: required
-    instructions: Gambar.
+    instructions: 'Foto utama. Image maksimal 600x600px.'
 - handle: name
   field:
     type: text

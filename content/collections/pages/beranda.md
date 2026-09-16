@@ -36,11 +36,6 @@ sections:
         number: 24
         suffix: /Jam
         caption: 'Dukungan After Sales Service'
-      -
-        id: rlCmilAwkJWBd5ZE-GXdQ
-        number: 20
-        suffix: +
-        caption: Tes
     show: true
     type: text_counter_image
     enabled: true
@@ -176,6 +171,6 @@ sections:
     show: false
     type: heading_description
     enabled: true
-updated_by: ff05cb33-b03a-477b-b5db-0e39c5a46f0f
-updated_at: 1789463748
+updated_by: 28d34247-1c17-42bf-8548-5b36f18adcbd
+updated_at: 1789530143
 ---

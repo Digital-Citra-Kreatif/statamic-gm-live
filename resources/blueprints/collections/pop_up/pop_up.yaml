@@ -1,70 +1,83 @@
-title: Pop Up
+title: 'Pop Up'
 tabs:
   main:
     display: Main
     sections:
-    - fields:
-      - handle: title
-        field:
-          type: text
-          required: true
-          validate:
-          - required
-          instructions: Judul konten.
-      - handle: pop_up_image
-        field:
-          container: assets
-          max_files: 1
-          type: assets
-          display: Pop-up Image
-          instructions: Gambar pop-up.
-      - handle: url
-        field:
-          collections:
-          - pages
-          - posts
-          - products
-          - careers
-          type: link
-          display: URL
-          instructions: Tautan.
-      - handle: pop_up_location
-        field:
-          collections:
-          - pages
-          mode: select
-          type: entries
-          display: Pop Up Location
-          instructions: Halaman tampil pop-up.
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+              instructions: 'Judul konten.'
+          -
+            handle: pop_up_image
+            field:
+              container: assets
+              max_files: 1
+              type: assets
+              display: 'Pop-up Image'
+              instructions: 'Gambar pop-up. Image. 500x500px.'
+          -
+            handle: url
+            field:
+              collections:
+                - pages
+                - posts
+                - products
+                - careers
+              type: link
+              display: URL
+              instructions: Tautan.
+          -
+            handle: pop_up_location
+            field:
+              collections:
+                - pages
+              mode: select
+              type: entries
+              display: 'Pop Up Location'
+              instructions: 'Halaman tampil pop-up.'
   sidebar:
     display: Sidebar
     sections:
-    - fields:
-      - handle: slug
-        field:
-          type: slug
-          localizable: true
-          validate: max:200
-          instructions: URL otomatis dari judul.
-  SEO Meta:
-    display: SEO Meta
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+              display: 'URL Halaman'
+              instructions: 'URL otomatis dari judul.'
+  'SEO Meta':
+    display: 'SEO Meta'
     sections:
-    - fields:
-      - handle: seo
-        field:
-          type: seo_pro
-          listable: false
-          display: SEO
-  SEO Previews:
-    display: SEO Previews
+      -
+        fields:
+          -
+            handle: seo
+            field:
+              type: seo_pro
+              listable: false
+              display: SEO
+  'SEO Previews':
+    display: 'SEO Previews'
     sections:
-    - fields:
-      - handle: seo_previews
-        field:
-          type: seo_pro_previews
-          listable: false
-          display: SEO Previews
-          localizable: false
-          hide_display: true
-          unless:
-            seo.enabled: 'equals false'
+      -
+        fields:
+          -
+            handle: seo_previews
+            field:
+              type: seo_pro_previews
+              listable: false
+              display: 'SEO Previews'
+              localizable: false
+              hide_display: true
+              if: 'custom showSeoProPreviews'
+              unless:
+                seo.enabled: 'equals false'

@@ -25,5 +25,7 @@ fields:
     handle: avatar
     field:
       type: assets
+      display: Avatar
       max_files: 1
       container: assets
+      instructions: 'Foto profil. Ukuran file 200x200px; ukuran tampil 40x40px.'

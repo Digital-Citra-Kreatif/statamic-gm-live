@@ -1,0 +1,13 @@
+title: 'Icon Placeholder'
+fields:
+- import: common.identifier
+- handle: section_images
+  field:
+    container: assets
+    type: assets
+    display: 'Icon Placeholder'
+    max_files: 1
+    validate:
+    - required
+    instructions: 'Icon cadangan. Ukuran file 200x200px; ukuran tampil maksimal 40x40px.'
+- import: common.section_settings

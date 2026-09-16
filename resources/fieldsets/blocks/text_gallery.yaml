@@ -17,7 +17,7 @@ fields:
         max_files: 1
         type: assets
         display: Assets Field
-        instructions: File gambar.
+        instructions: 'File gambar. Image maksimal 400x300px.'
     instructions: Grid galeri.
 - handle: heading
   field:

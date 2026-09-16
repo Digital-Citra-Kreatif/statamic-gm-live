@@ -32,6 +32,7 @@ tabs:
             handle: slug
             field:
               type: slug
+              display: 'URL Halaman'
               required: true
               instructions: 'URL otomatis dari judul.'
               validate:

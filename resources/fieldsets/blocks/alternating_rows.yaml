@@ -25,7 +25,7 @@ fields:
         display: Icon
         container: assets
         max_files: 1
-        instructions: Ikon.
+        instructions: 'Ikon. Icon 48x48px.'
     - handle: title
       field:
         type: text
@@ -45,6 +45,6 @@ fields:
         container: assets
         max_files: 1
         validate: required
-        instructions: Gambar.
+        instructions: 'Gambar. Image maksimal 600x350px.'
     instructions: Daftar baris.
 - import: common.section_settings

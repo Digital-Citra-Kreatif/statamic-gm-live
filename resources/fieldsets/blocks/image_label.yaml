@@ -14,7 +14,7 @@ fields:
         display: Images
         validate:
         - required
-        instructions: Kumpulan gambar.
+        instructions: 'Gambar/logo. Ukuran tampil: tinggi maksimal 100px; lebar menyesuaikan proporsi dan area kartu.'
     - handle: label
       field:
         type: text

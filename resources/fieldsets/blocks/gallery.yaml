@@ -11,7 +11,7 @@ fields:
     display: Images
     container: assets
     validate: required
-    instructions: Kumpulan gambar.
+    instructions: 'Kumpulan gambar. Image maksimal 600x600px per gambar, tergantung jumlah kolom.'
 - handle: columns
   field:
     type: select

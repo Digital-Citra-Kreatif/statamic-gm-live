@@ -28,7 +28,7 @@ fields:
         display: Image
         validate:
         - required
-        instructions: Gambar.
+        instructions: 'Gambar. Image 400x300px.'
     - handle: heading_flip
       field:
         type: text
@@ -67,4 +67,4 @@ fields:
     display: Background image
     validate:
     - required
-    instructions: Gambar latar.
+    instructions: 'Gambar latar. Image 1440x800px.'

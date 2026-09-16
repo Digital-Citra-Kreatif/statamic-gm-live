@@ -3,148 +3,167 @@ tabs:
   main:
     display: Main
     sections:
-    - fields:
-      - handle: title
-        field:
-          type: text
-          required: true
-          display: Title
-          localizable: true
-          instructions: Judul konten.
-          validate:
-          - required
-      - handle: featured_image
-        field:
-          type: assets
-          display: Featured Image
-          container: assets
-          max_files: 1
-          localizable: true
-          instructions: Gambar utama.
-      - handle: categories
-        field:
-          type: terms
-          taxonomies:
-          - categories
-          display: Categories
-          localizable: true
-          instructions: Kategori.
-      - handle: social_media
-        field:
-          taxonomies:
-          - social_media
-          type: terms
-          display: Social Media
-          always_save: false
-          instructions: Platform sosial media.
-          if:
-            categories: 'contains categories::sosial-media'
-          width: 50
-      - handle: social_media_links
-        field:
-          type: link
-          display: Social Media Links
-          width: 50
-          always_save: false
-          instructions: Link postingan.
-          if:
-            categories: 'contains categories::sosial-media'
-      - handle: excerpt
-        field:
-          type: textarea
-          display: Excerpt
-          localizable: true
-          instructions: Ringkasan singkat.
-      - handle: description
-        field:
-          buttons:
-          - h2
-          - h3
-          - bold
-          - italic
-          - unorderedlist
-          - orderedlist
-          - removeformat
-          - quote
-          - anchor
-          - image
-          - table
-          - h4
-          - h5
-          - h6
-          - underline
-          - strikethrough
-          - small
-          - superscript
-          - subscript
-          container: assets
-          remove_empty_nodes: false
-          type: bard
-          display: Description
-          instructions: Deskripsi.
-          unless:
-            categories: 'contains categories::sosial-media'
-      - handle: gallery
-        field:
-          type: assets
-          display: Image Gallery
-          container: assets
-          mode: grid
-          localizable: true
-          instructions: Galeri foto.
-          validate:
-          - image
-          always_save: false
-          unless:
-            categories: 'contains categories::sosial-media'
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              display: Title
+              localizable: true
+              instructions: 'Judul konten.'
+              validate:
+                - required
+          -
+            handle: featured_image
+            field:
+              type: assets
+              display: 'Featured Image'
+              container: assets
+              max_files: 1
+              localizable: true
+              instructions: 'Gambar utama. 800x450px'
+          -
+            handle: categories
+            field:
+              type: terms
+              taxonomies:
+                - categories
+              display: Categories
+              localizable: true
+              instructions: Kategori.
+          -
+            handle: social_media
+            field:
+              taxonomies:
+                - social_media
+              type: terms
+              display: 'Social Media'
+              always_save: false
+              instructions: 'Platform sosial media.'
+              if:
+                categories: 'contains categories::sosial-media'
+              width: 50
+          -
+            handle: social_media_links
+            field:
+              type: link
+              display: 'Social Media Links'
+              width: 50
+              always_save: false
+              instructions: 'Link postingan.'
+              if:
+                categories: 'contains categories::sosial-media'
+          -
+            handle: excerpt
+            field:
+              type: textarea
+              display: Excerpt
+              localizable: true
+              instructions: 'Ringkasan singkat.'
+          -
+            handle: description
+            field:
+              buttons:
+                - h2
+                - h3
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - removeformat
+                - quote
+                - anchor
+                - image
+                - table
+                - h4
+                - h5
+                - h6
+                - underline
+                - strikethrough
+                - small
+                - superscript
+                - subscript
+              container: assets
+              remove_empty_nodes: false
+              type: bard
+              display: Description
+              instructions: Deskripsi.
+              unless:
+                categories: 'contains categories::sosial-media'
+          -
+            handle: gallery
+            field:
+              type: assets
+              display: 'Image Gallery'
+              container: assets
+              mode: grid
+              localizable: true
+              instructions: 'Galeri foto. 800x450px.'
+              validate:
+                - image
+              always_save: false
+              unless:
+                categories: 'contains categories::sosial-media'
   sidebar:
     display: Sidebar
     sections:
-    - fields:
-      - handle: slug
-        field:
-          type: slug
-          localizable: true
-          instructions: URL otomatis dari judul.
-          validate: max:200
-      - handle: date
-        field:
-          type: date
-          required: true
-          default: now
-          display: Publish Date
-          time_enabled: true
-          localizable: true
-          instructions: Tanggal publikasi.
-          validate:
-          - required
-      - handle: author
-        field:
-          type: users
-          display: Author
-          default: current
-          max_items: 1
-          localizable: true
-          instructions: Penulis.
-  SEO Meta:
-    display: SEO Meta
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+              display: 'URL Halaman'
+              instructions: 'URL otomatis dari judul.'
+          -
+            handle: date
+            field:
+              type: date
+              required: true
+              default: now
+              display: 'Publish Date'
+              time_enabled: true
+              localizable: true
+              instructions: 'Tanggal publikasi.'
+              validate:
+                - required
+          -
+            handle: author
+            field:
+              type: users
+              display: Author
+              default: current
+              max_items: 1
+              localizable: true
+              instructions: Penulis.
+  'SEO Meta':
+    display: 'SEO Meta'
     sections:
-    - fields:
-      - handle: seo
-        field:
-          type: seo_pro
-          listable: false
-          display: SEO
-  SEO Previews:
-    display: SEO Previews
+      -
+        fields:
+          -
+            handle: seo
+            field:
+              type: seo_pro
+              listable: false
+              display: SEO
+  'SEO Previews':
+    display: 'SEO Previews'
     sections:
-    - fields:
-      - handle: seo_previews
-        field:
-          type: seo_pro_previews
-          listable: false
-          display: SEO Previews
-          localizable: false
-          hide_display: true
-          unless:
-            seo.enabled: 'equals false'
+      -
+        fields:
+          -
+            handle: seo_previews
+            field:
+              type: seo_pro_previews
+              listable: false
+              display: 'SEO Previews'
+              localizable: false
+              hide_display: true
+              if: 'custom showSeoProPreviews'
+              unless:
+                seo.enabled: 'equals false'

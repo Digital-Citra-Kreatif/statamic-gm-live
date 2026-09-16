@@ -22,7 +22,7 @@ tabs:
               max_files: 1
               type: assets
               display: Images
-              instructions: 'Gambar kategori.'
+              instructions: 'Gambar kategori. Image 200x200px.'
               validate:
                 - required
   sidebar:
@@ -34,6 +34,7 @@ tabs:
             handle: slug
             field:
               type: slug
+              display: 'URL Halaman'
               required: true
               instructions: 'URL otomatis dari judul.'
               validate:

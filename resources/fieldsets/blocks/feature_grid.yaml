@@ -39,7 +39,7 @@ fields:
         display: Icon / image
         container: assets
         max_files: 1
-        instructions: Ikon.
+        instructions: 'Ikon. Icon 48x48px pada blok umum dan 40x40px pada halaman khusus.'
     - handle: title
       field:
         type: text

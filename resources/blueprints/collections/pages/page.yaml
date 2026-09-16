@@ -20,7 +20,7 @@ tabs:
           container: assets
           max_files: 1
           localizable: true
-          instructions: Gambar utama.
+          instructions: 'Gambar utama. Image 1440x500px.'
     - display: Content blocks
       instructions: Tambah dan atur blok konten halaman.
       fields:
@@ -188,11 +188,21 @@ tabs:
                   fields:
                   - import: blocks.heading_description
                   instructions: Judul dan deskripsi.
-                section_images:
-                  display: Section Images
+                section_image:
+                  display: Section Image
                   fields:
-                  - import: blocks.section_images
+                  - import: blocks.section_image
                   instructions: Gambar bagian.
+                icon_placeholder:
+                  display: Icon Placeholder
+                  fields:
+                  - import: blocks.icon_placeholder
+                  instructions: Icon cadangan untuk field kosong.
+                team_placeholder:
+                  display: Team Placeholder
+                  fields:
+                  - import: blocks.team_placeholder
+                  instructions: Foto profil cadangan untuk tim.
                 certificate_gallery:
                   display: Certificate Gallery
                   fields:
@@ -216,12 +226,7 @@ tabs:
                 text_counter_image:
                   display: Text, Counter & Image
                   fields:
-                  - import: common.identifier
-                  - import: blocks.image_text
-                  - import: blocks.gallery
-                  - import: blocks.counter_grid
-                  - import: blocks.section_images
-                  - import: common.section_settings
+                  - import: blocks.text_counter_image
                   instructions: Teks, angka, dan gambar.
                 text_button:
                   display: Text & Button
@@ -295,6 +300,7 @@ tabs:
       - handle: slug
         field:
           type: slug
+          display: URL Halaman
           localizable: true
           validate: max:200
           instructions: URL otomatis dari judul.

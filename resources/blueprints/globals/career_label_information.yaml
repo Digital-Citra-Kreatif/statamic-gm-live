@@ -37,7 +37,7 @@ tabs:
               max_files: 1
               type: assets
               display: 'Icon Employment Status'
-              instructions: 'Ikon status pekerjaan.'
+              instructions: 'Ikon status pekerjaan. Icon 20x20px.'
               validate:
                 - required
           -
@@ -47,7 +47,7 @@ tabs:
               max_files: 1
               type: assets
               display: 'Icon Location'
-              instructions: 'Ikon lokasi.'
+              instructions: 'Ikon lokasi. Icon 20x20px.'
               validate:
                 - required
       -
@@ -66,11 +66,19 @@ tabs:
               max_files: 1
               type: assets
               display: 'Background Call to Action'
-              instructions: 'Gambar latar bagian ajakan bertindak.'
+              instructions: 'Gambar latar bagian ajakan bertindak. Image 1280x600px.'
               validate:
                 - required
           -
-            import: blocks.section_images
+            handle: section_images
+            field:
+              container: assets
+              type: assets
+              display: 'Contact Icon Placeholder'
+              max_files: 1
+              validate:
+                - required
+              instructions: 'Icon kontak cadangan. Ukuran file 200x200px; ukuran tampil 20x20px.'
       -
         display: 'Skin - Label'
         fields:

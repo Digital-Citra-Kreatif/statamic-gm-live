@@ -16,7 +16,7 @@ fields:
     type: assets
     display: Partner / certification logos
     container: assets
-    instructions: Logo mitra.
+    instructions: 'Logo mitra. Image maksimal 140x50px per logo.'
 - handle: stats
   field:
     type: grid
@@ -50,7 +50,7 @@ fields:
     display: Image
     container: assets
     max_files: 1
-    instructions: Gambar.
+    instructions: 'Gambar. Image maksimal 600x600px.'
 - handle: image_position
   field:
     type: select

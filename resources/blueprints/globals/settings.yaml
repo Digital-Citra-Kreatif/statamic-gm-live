@@ -19,7 +19,7 @@ tabs:
             field:
               type: assets
               display: 'Site logo'
-              instructions: 'Logo situs.'
+              instructions: 'Logo situs. Image maksimal 128x64px.'
               container: assets
               max_files: 1
               localizable: true
@@ -32,7 +32,7 @@ tabs:
               max_files: 1
               type: assets
               display: Favicon
-              instructions: 'Ikon kecil di tab browser.'
+              instructions: 'Ikon kecil di tab browser. Image 32x32px.'
               validate:
                 - required
   social:
@@ -221,7 +221,7 @@ tabs:
               max_files: 1
               type: assets
               display: Icon
-              instructions: 'Ikon tombol WhatsApp.'
+              instructions: 'Ikon tombol WhatsApp. Icon 30x30px.'
           -
             handle: label_floating
             field:
@@ -278,7 +278,7 @@ tabs:
                     max_files: 1
                     type: assets
                     display: Avatar
-                    instructions: 'Foto kontak.'
+                    instructions: 'Foto kontak. Ukuran file 200x200px; ukuran tampil 42x42px.'
                 -
                   handle: title
                   field:

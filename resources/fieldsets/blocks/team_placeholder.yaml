@@ -1,13 +1,13 @@
-title: Section Images
+title: 'Team Placeholder'
 fields:
 - import: common.identifier
 - handle: section_images
   field:
     container: assets
     type: assets
-    display: Section Images
+    display: 'Team Placeholder'
     max_files: 1
     validate:
     - required
-    instructions: Gambar bagian.
+    instructions: 'Foto profil cadangan. Image 600x600px.'
 - import: common.section_settings

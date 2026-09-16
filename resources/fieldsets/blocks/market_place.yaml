@@ -19,7 +19,7 @@ fields:
         width: 50
         validate:
         - required
-        instructions: Logo marketplace.
+        instructions: 'Logo marketplace. Image maksimal 300x60px.'
     - handle: marketplace_url
       field:
         type: link

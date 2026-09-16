@@ -6,4 +6,12 @@ tabs:
       -
         fields:
           -
-            import: blocks.section_images
+            handle: section_images
+            field:
+              container: assets
+              type: assets
+              display: 'Hero Placeholder'
+              max_files: 1
+              validate:
+                - required
+              instructions: 'Gambar cadangan hero halaman. Image 1440x500px.'

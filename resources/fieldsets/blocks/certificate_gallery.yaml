@@ -12,7 +12,7 @@ fields:
         max_files: 1
         type: assets
         display: Certificate Image
-        instructions: Gambar sertifikat.
+        instructions: 'Gambar sertifikat. Image maksimal 300x400px.'
     - handle: certificate_name
       field:
         type: text

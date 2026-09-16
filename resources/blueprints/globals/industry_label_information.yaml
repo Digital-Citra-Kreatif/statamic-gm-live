@@ -12,7 +12,7 @@ tabs:
               max_files: 1
               type: assets
               display: 'Icon Accordion'
-              instructions: 'Ikon accordion saat tertutup.'
+              instructions: 'Ikon accordion saat tertutup. Icon 32x32px.'
               validate:
                 - required
           -
@@ -22,7 +22,7 @@ tabs:
               max_files: 1
               type: assets
               display: 'Icon Accordion Active'
-              instructions: 'Ikon accordion saat terbuka.'
+              instructions: 'Ikon accordion saat terbuka. Icon 32x32px.'
               validate:
                 - required
           -

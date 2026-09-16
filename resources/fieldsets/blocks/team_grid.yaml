@@ -21,7 +21,7 @@ fields:
         container: assets
         max_files: 1
         validate: required
-        instructions: Gambar.
+        instructions: 'Foto anggota. Image maksimal 400x500px.'
     - handle: name
       field:
         type: text

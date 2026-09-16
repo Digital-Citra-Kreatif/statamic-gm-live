@@ -22,14 +22,14 @@ fields:
     display: Background image
     container: assets
     max_files: 1
-    instructions: Gambar latar.
+    instructions: 'Gambar latar. Image 1440x600px.'
 - handle: image
   field:
     type: assets
     display: Foreground image
     container: assets
     max_files: 1
-    instructions: Gambar.
+    instructions: 'Gambar. Image maksimal 600x300px.'
 - handle: alignment
   field:
     type: select

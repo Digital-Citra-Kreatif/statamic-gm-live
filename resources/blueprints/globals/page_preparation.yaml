@@ -19,7 +19,7 @@ tabs:
               max_files: 1
               type: assets
               display: 'Background Image'
-              instructions: 'Gambar latar.'
+              instructions: 'Gambar latar. Image 1440x900px.'
               validate:
                 - required
           -

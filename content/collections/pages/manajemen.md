@@ -113,6 +113,6 @@ sections:
     identifier: placeholder-tim
     section_images: tim-placeholder.png
     show: true
-    type: section_images
+    type: team_placeholder
     enabled: true
 ---

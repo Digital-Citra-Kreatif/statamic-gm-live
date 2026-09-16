@@ -26,7 +26,7 @@ sections:
     identifier: section-image-teletech
     section_images: img-gm-teletech.jpg
     show: true
-    type: section_images
+    type: section_image
     enabled: true
   -
     id: sH4zaRWyGoiuRWXzgHV-c
@@ -73,7 +73,7 @@ sections:
     identifier: icon-placeholder-benefit
     section_images: icon-placeholder.svg
     show: true
-    type: section_images
+    type: icon_placeholder
     enabled: true
   -
     id: 8V_mkPasEbKGV8xqaH69y
@@ -93,6 +93,6 @@ sections:
     identifier: icon-placeholder-cta-grid
     section_images: whatsapp-white.svg
     show: true
-    type: section_images
+    type: icon_placeholder
     enabled: true
 ---

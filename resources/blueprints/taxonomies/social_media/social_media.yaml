@@ -24,6 +24,7 @@ tabs:
             handle: slug
             field:
               type: slug
+              display: 'URL Halaman'
               localizable: true
               instructions: 'URL otomatis dari judul.'
               validate: 'max:200'

@@ -47,7 +47,7 @@ tabs:
               max_files: 1
               type: assets
               display: 'Icon Maps Dealer'
-              instructions: 'Ikon penanda dealer di peta.'
+              instructions: 'Ikon penanda dealer di peta. Icon 40x40px.'
               validate:
                 - required
           -
@@ -57,7 +57,7 @@ tabs:
               max_files: 1
               type: assets
               display: 'Icon Phone Dealer'
-              instructions: 'Ikon telepon dealer.'
+              instructions: 'Ikon telepon dealer. Icon 20x20px.'
           -
             handle: icon_whatsapp_dealer
             field:
@@ -65,4 +65,4 @@ tabs:
               max_files: 1
               type: assets
               display: 'Icon WhatsApp Dealer'
-              instructions: 'Ikon WhatsApp dealer.'
+              instructions: 'Ikon WhatsApp dealer. Icon 20x20px.'

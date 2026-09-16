@@ -136,7 +136,7 @@ sections:
     identifier: placeholder-icon-faw-trucks
     section_images: icon-placeholder.svg
     show: true
-    type: section_images
+    type: icon_placeholder
     enabled: true
 parent: home
 featured_image: hero-tentang.jpg

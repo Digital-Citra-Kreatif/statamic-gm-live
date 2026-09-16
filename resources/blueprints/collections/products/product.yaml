@@ -3,301 +3,347 @@ tabs:
   main:
     display: Main
     sections:
-    - display: Hero
-      fields:
-      - handle: title
-        field:
-          type: text
-          required: true
-          display: Title
-          localizable: true
-          instructions: Judul konten.
-          validate:
-          - required
-      - handle: featured_image
-        field:
-          type: assets
-          display: Featured Image
-          container: assets
-          max_files: 1
-          localizable: true
-          instructions: Gambar utama.
-          validate:
-          - required
-      - handle: description
-        field:
-          type: bard
-          display: Description
-          localizable: true
-          instructions: Deskripsi.
-          buttons:
-          - bold
-          - italic
-          - anchor
-          - unorderedlist
-          - orderedlist
-          - removeformat
-      - handle: cta_label
-        field:
-          type: text
-          display: CTA Label
-          default: Kontak Kami
-          localizable: true
-          instructions: Teks tombol.
-          validate:
-          - required
-      - handle: cta_link
-        field:
-          type: link
-          display: CTA Link
-          localizable: true
-          instructions: Tautan tombol.
-          validate:
-          - required
-      - handle: background_image
-        field:
-          container: assets
-          max_files: 1
-          type: assets
-          display: Background image
-          instructions: Gambar latar.
-    - display: Other Information
-      fields:
-      - handle: other_descriptions
-        field:
-          buttons:
-          - h2
-          - h3
-          - bold
-          - italic
-          - unorderedlist
-          - orderedlist
-          - removeformat
-          - quote
-          - anchor
-          - image
-          - table
-          - h4
-          - h5
-          - h6
-          - underline
-          - superscript
-          - subscript
-          container: assets
-          remove_empty_nodes: false
-          type: bard
-          display: Other Descriptions
-          instructions: Konten tambahan.
-    - display: Spesification
-      fields:
-      - handle: power
-        field:
-          type: text
-          display: Power
-          width: 33
-          instructions: 'Contoh: 430HP'
-      - handle: fuel_tank_capacity
-        field:
-          type: text
-          display: Fuel Tank Capacity
-          width: 33
-          instructions: 'Contoh: 400 L'
-      - handle: torque
-        field:
-          type: text
-          display: Torque
-          width: 33
-          instructions: 'Contoh: 2.060 Nm'
-      - handle: dump_dimensions
-        field:
-          type: text
-          display: Dump Dimensions
-          width: 33
-          instructions: 'Contoh: 7.600 x 2.400 x 2.000'
-      - handle: gvw
-        field:
-          type: text
-          display: GVW
-          width: 33
-          instructions: 'Contoh: 50.000 Kg'
-      - handle: gcw
-        field:
-          type: text
-          display: GCW
-          width: 33
-          instructions: 'Contoh: 60.000 Kg'
-      - handle: transmission
-        field:
-          type: text
-          display: Transmission
-          width: 33
-          instructions: 'Contoh: 12 Speed Forward'
-      - handle: standard_emission
-        field:
-          type: text
-          display: Standard Emission
-          width: 33
-          instructions: 'Contoh: Euro 5'
-      - handle: brake_system
-        field:
-          type: text
-          display: Brake System
-          width: 33
-          instructions: 'Contoh: Full Air Brake'
-      - handle: product_specifications
-        field:
-          type: grid
-          display: Product Specifications (Optional)
-          instructions: Spesifikasi tambahan.
-          fields:
-          - handle: heading
+      -
+        display: Hero
+        fields:
+          -
+            handle: title
             field:
               type: text
-              display: Heading
-              width: 50
-              instructions: Judul bagian.
+              required: true
+              display: Title
+              localizable: true
+              instructions: 'Judul konten.'
               validate:
-              - required
-          - handle: short_description
+                - required
+          -
+            handle: featured_image
+            field:
+              type: assets
+              display: 'Featured Image'
+              container: assets
+              max_files: 1
+              localizable: true
+              instructions: 'Gambar utama. Image 500x500px.'
+              validate:
+                - required
+          -
+            handle: description
+            field:
+              type: bard
+              display: Description
+              localizable: true
+              instructions: Deskripsi.
+              buttons:
+                - bold
+                - italic
+                - anchor
+                - unorderedlist
+                - orderedlist
+                - removeformat
+          -
+            handle: cta_label
             field:
               type: text
-              display: Short Description
-              width: 50
-              instructions: Deskripsi singkat.
+              display: 'CTA Label'
+              default: 'Kontak Kami'
+              localizable: true
+              instructions: 'Teks tombol.'
               validate:
-              - required
-    - display: Features & Benefit
-      fields:
-      - handle: features_and_benefits
-        field:
-          mode: stacked
-          type: grid
-          display: Features and benefits
-          instructions: Fitur dan manfaat.
-          fields:
-          - handle: image
+                - required
+          -
+            handle: cta_link
+            field:
+              type: link
+              display: 'CTA Link'
+              localizable: true
+              instructions: 'Tautan tombol.'
+              validate:
+                - required
+          -
+            handle: background_image
             field:
               container: assets
               max_files: 1
               type: assets
-              display: Image
-              instructions: Gambar.
-              validate:
-              - required
-          - handle: heading
+              display: 'Background image'
+              instructions: 'Gambar latar. Image 1440x640px.'
+      -
+        display: 'Other Information'
+        fields:
+          -
+            handle: other_descriptions
             field:
-              type: text
-              display: Heading
-              instructions: Judul bagian.
-              validate:
-              - required
-          - handle: description
-            field:
+              buttons:
+                - h2
+                - h3
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - removeformat
+                - quote
+                - anchor
+                - image
+                - table
+                - h4
+                - h5
+                - h6
+                - underline
+                - superscript
+                - subscript
               container: assets
               remove_empty_nodes: false
               type: bard
-              display: Description
-              instructions: Deskripsi.
-              buttons:
-              - bold
-              - italic
-              - unorderedlist
-              - orderedlist
-              - removeformat
-              - anchor
-    - display: Product Gallery
-      fields:
-      - handle: product_gallery
-        field:
-          container: assets
-          type: assets
-          display: Product Gallery
-          instructions: Galeri foto.
-    - display: Catalogue
-      fields:
-      - handle: catalogue_link
-        field:
-          type: group
-          display: Catalogue Link
-          localizable: true
-          instructions: Tombol katalog.
-          fields:
-          - handle: label
+              display: 'Other Descriptions'
+              instructions: 'Konten tambahan.'
+      -
+        display: Spesification
+        fields:
+          -
+            handle: power
             field:
               type: text
-              display: Label
-              instructions: Teks label.
-          - handle: url
+              display: Power
+              width: 33
+              instructions: 'Contoh: 430HP'
+          -
+            handle: fuel_tank_capacity
             field:
-              type: link
-              display: URL
-              instructions: Tautan.
-          - handle: displayed
+              type: text
+              display: 'Fuel Tank Capacity'
+              width: 33
+              instructions: 'Contoh: 400 L'
+          -
+            handle: torque
             field:
-              type: toggle
-              display: Displayed
-              default: false
-              instructions: Tampilkan di halaman.
+              type: text
+              display: Torque
+              width: 33
+              instructions: 'Contoh: 2.060 Nm'
+          -
+            handle: dump_dimensions
+            field:
+              type: text
+              display: 'Dump Dimensions'
+              width: 33
+              instructions: 'Contoh: 7.600 x 2.400 x 2.000'
+          -
+            handle: gvw
+            field:
+              type: text
+              display: GVW
+              width: 33
+              instructions: 'Contoh: 50.000 Kg'
+          -
+            handle: gcw
+            field:
+              type: text
+              display: GCW
+              width: 33
+              instructions: 'Contoh: 60.000 Kg'
+          -
+            handle: transmission
+            field:
+              type: text
+              display: Transmission
+              width: 33
+              instructions: 'Contoh: 12 Speed Forward'
+          -
+            handle: standard_emission
+            field:
+              type: text
+              display: 'Standard Emission'
+              width: 33
+              instructions: 'Contoh: Euro 5'
+          -
+            handle: brake_system
+            field:
+              type: text
+              display: 'Brake System'
+              width: 33
+              instructions: 'Contoh: Full Air Brake'
+          -
+            handle: product_specifications
+            field:
+              type: grid
+              display: 'Product Specifications (Optional)'
+              instructions: 'Spesifikasi tambahan.'
+              fields:
+                -
+                  handle: heading
+                  field:
+                    type: text
+                    display: Heading
+                    width: 50
+                    instructions: 'Judul bagian.'
+                    validate:
+                      - required
+                -
+                  handle: short_description
+                  field:
+                    type: text
+                    display: 'Short Description'
+                    width: 50
+                    instructions: 'Deskripsi singkat.'
+                    validate:
+                      - required
+      -
+        display: 'Features & Benefit'
+        fields:
+          -
+            handle: features_and_benefits
+            field:
+              mode: stacked
+              type: grid
+              display: 'Features and benefits'
+              instructions: 'Fitur dan manfaat.'
+              fields:
+                -
+                  handle: image
+                  field:
+                    container: assets
+                    max_files: 1
+                    type: assets
+                    display: Image
+                    instructions: 'Image 500x500px.'
+                    validate:
+                      - required
+                -
+                  handle: heading
+                  field:
+                    type: text
+                    display: Heading
+                    instructions: 'Judul bagian.'
+                    validate:
+                      - required
+                -
+                  handle: description
+                  field:
+                    container: assets
+                    remove_empty_nodes: false
+                    type: bard
+                    display: Description
+                    instructions: Deskripsi.
+                    buttons:
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - removeformat
+                      - anchor
+      -
+        display: 'Product Gallery'
+        fields:
+          -
+            handle: product_gallery
+            field:
+              container: assets
+              type: assets
+              display: 'Product Gallery'
+              instructions: 'Galeri foto. 500x500px.'
+      -
+        display: Catalogue
+        fields:
+          -
+            handle: catalogue_link
+            field:
+              type: group
+              display: 'Catalogue Link'
+              localizable: true
+              instructions: 'Tombol katalog.'
+              fields:
+                -
+                  handle: label
+                  field:
+                    type: text
+                    display: Label
+                    instructions: 'Teks label.'
+                -
+                  handle: url
+                  field:
+                    type: link
+                    display: URL
+                    instructions: Tautan.
+                -
+                  handle: displayed
+                  field:
+                    type: toggle
+                    display: Displayed
+                    default: false
+                    instructions: 'Tampilkan di halaman.'
   sidebar:
     display: Sidebar
     sections:
-    - fields:
-      - handle: slug
-        field:
-          type: slug
-          localizable: true
-          instructions: URL otomatis dari judul.
-          validate: max:200
-      - handle: sku
-        field:
-          type: text
-          display: SKU
-          localizable: true
-          instructions: Kode atau nama model.
-          validate: new \Statamic\Rules\UniqueEntryValue({collection}, {id}, {site})
-      - handle: product_categories
-        field:
-          type: terms
-          taxonomies:
-          - product_categories
-          display: Product Categories
-          mode: select
-          instructions: Kategori produk.
-      - handle: industries
-        field:
-          type: terms
-          taxonomies:
-          - industries
-          display: Industries
-          mode: select
-          instructions: Industri terkait.
-      - handle: date
-        field:
-          type: date
-          required: true
-          default: now
-          instructions: Tanggal publikasi.
-          validate:
-          - required
-  SEO Meta:
-    display: SEO Meta
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+              display: 'URL Halaman'
+              instructions: 'URL otomatis dari judul.'
+          -
+            handle: sku
+            field:
+              type: text
+              display: SKU
+              localizable: true
+              instructions: 'Kode atau nama model.'
+              validate: 'new \Statamic\Rules\UniqueEntryValue({collection}, {id}, {site})'
+          -
+            handle: product_categories
+            field:
+              type: terms
+              taxonomies:
+                - product_categories
+              display: 'Product Categories'
+              mode: select
+              instructions: 'Kategori produk.'
+          -
+            handle: industries
+            field:
+              type: terms
+              taxonomies:
+                - industries
+              display: Industries
+              mode: select
+              instructions: 'Industri terkait.'
+          -
+            handle: date
+            field:
+              type: date
+              required: true
+              default: now
+              instructions: 'Tanggal publikasi.'
+              validate:
+                - required
+  'SEO Meta':
+    display: 'SEO Meta'
     sections:
-    - fields:
-      - handle: seo
-        field:
-          type: seo_pro
-          listable: false
-          display: SEO
-  SEO Previews:
-    display: SEO Previews
+      -
+        fields:
+          -
+            handle: seo
+            field:
+              type: seo_pro
+              listable: false
+              display: SEO
+  'SEO Previews':
+    display: 'SEO Previews'
     sections:
-    - fields:
-      - handle: seo_previews
-        field:
-          type: seo_pro_previews
-          listable: false
-          display: SEO Previews
-          localizable: false
-          hide_display: true
-          unless:
-            seo.enabled: 'equals false'
+      -
+        fields:
+          -
+            handle: seo_previews
+            field:
+              type: seo_pro_previews
+              listable: false
+              display: 'SEO Previews'
+              localizable: false
+              hide_display: true
+              if: 'custom showSeoProPreviews'
+              unless:
+                seo.enabled: 'equals false'

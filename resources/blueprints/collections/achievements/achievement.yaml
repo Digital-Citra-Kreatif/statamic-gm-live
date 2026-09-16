@@ -3,62 +3,74 @@ tabs:
   main:
     display: Main
     sections:
-    - fields:
-      - handle: featured_image
-        field:
-          type: assets
-          display: Featured Image
-          container: assets
-          max_files: 1
-          localizable: true
-          instructions: Gambar utama.
-      - handle: title
-        field:
-          type: text
-          required: true
-          display: Title
-          localizable: true
-          validate:
-          - required
-          instructions: Judul konten.
+      -
+        fields:
+          -
+            handle: featured_image
+            field:
+              type: assets
+              display: 'Featured Image'
+              container: assets
+              max_files: 1
+              localizable: true
+              instructions: 'Gambar utama. Image 500x500px.'
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              display: Title
+              localizable: true
+              validate:
+                - required
+              instructions: 'Judul konten.'
   sidebar:
     display: Sidebar
     sections:
-    - fields:
-      - handle: slug
-        field:
-          type: slug
-          localizable: true
-          validate: max:200
-          instructions: URL otomatis dari judul.
-      - handle: years
-        field:
-          type: terms
-          taxonomies:
-          - years
-          display: Years
-          mode: select
-          max_items: 1
-          instructions: Tahun.
-  SEO Meta:
-    display: SEO Meta
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+              display: 'URL Halaman'
+              instructions: 'URL otomatis dari judul.'
+          -
+            handle: years
+            field:
+              type: terms
+              taxonomies:
+                - years
+              display: Years
+              mode: select
+              max_items: 1
+              instructions: Tahun.
+  'SEO Meta':
+    display: 'SEO Meta'
     sections:
-    - fields:
-      - handle: seo
-        field:
-          type: seo_pro
-          listable: false
-          display: SEO
-  SEO Previews:
-    display: SEO Previews
+      -
+        fields:
+          -
+            handle: seo
+            field:
+              type: seo_pro
+              listable: false
+              display: SEO
+  'SEO Previews':
+    display: 'SEO Previews'
     sections:
-    - fields:
-      - handle: seo_previews
-        field:
-          type: seo_pro_previews
-          listable: false
-          display: SEO Previews
-          localizable: false
-          hide_display: true
-          unless:
-            seo.enabled: 'equals false'
+      -
+        fields:
+          -
+            handle: seo_previews
+            field:
+              type: seo_pro_previews
+              listable: false
+              display: 'SEO Previews'
+              localizable: false
+              hide_display: true
+              if: 'custom showSeoProPreviews'
+              unless:
+                seo.enabled: 'equals false'

@@ -36,5 +36,5 @@ fields:
         display: Photo
         container: assets
         max_files: 1
-        instructions: Gambar.
+        instructions: 'Foto profil. Ukuran file 200x200px; ukuran tampil 40x40px.'
     instructions: Daftar item.

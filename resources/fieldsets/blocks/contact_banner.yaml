@@ -6,14 +6,14 @@ fields:
     display: Background image
     container: assets
     max_files: 1
-    instructions: Gambar latar.
+    instructions: 'Gambar latar. Image 1440x400px.'
 - handle: side_image
   field:
     type: assets
     display: Side image
     container: assets
     max_files: 1
-    instructions: Gambar samping.
+    instructions: 'Gambar samping. Image maksimal 200x200px.'
 - handle: heading
   field:
     type: text
@@ -62,4 +62,4 @@ fields:
     display: Product / app visual
     container: assets
     max_files: 1
-    instructions: Gambar visual.
+    instructions: 'Gambar visual. Image maksimal 300x300px.'

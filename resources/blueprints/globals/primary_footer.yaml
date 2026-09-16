@@ -13,7 +13,7 @@ tabs:
               min_files: 1
               type: assets
               display: Image
-              instructions: 'Gambar utama footer.'
+              instructions: 'Gambar utama footer. Image maksimal 640x600px.'
               validate:
                 - required
           -
@@ -38,7 +38,7 @@ tabs:
               min_files: 1
               type: assets
               display: 'Backgound Image'
-              instructions: 'Silahkan upload image dengan overlay berwarna'
+              instructions: 'Silakan unggah gambar dengan overlay berwarna. Image 1440x480px.'
               validate:
                 - required
           -

@@ -24,7 +24,7 @@ sections:
   -
     id: 3ZeYHnSEno2p6LtaH92tl
     section_images: reman-image.jpg
-    type: section_images
+    type: section_image
     enabled: true
     show: true
     identifier: section-image-reman

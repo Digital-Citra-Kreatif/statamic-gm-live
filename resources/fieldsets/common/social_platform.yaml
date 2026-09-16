@@ -11,4 +11,4 @@ fields:
     display: Icon / logo
     container: assets
     max_files: 1
-    instructions: Gambar.
+    instructions: 'Ikon/logo. Icon 20x20px.'

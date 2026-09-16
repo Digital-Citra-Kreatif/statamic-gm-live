@@ -23,7 +23,7 @@ tabs:
               container: assets
               max_files: 1
               localizable: true
-              instructions: 'Gambar utama.'
+              instructions: 'Gambar utama. Image maksimal 600x350px.'
           -
             handle: content
             field:
@@ -49,6 +49,7 @@ tabs:
             handle: slug
             field:
               type: slug
+              display: 'URL Halaman'
               required: true
               instructions: 'URL otomatis dari judul.'
               validate:

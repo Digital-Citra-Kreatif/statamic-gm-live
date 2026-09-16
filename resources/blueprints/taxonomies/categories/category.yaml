@@ -22,7 +22,7 @@ tabs:
               max_files: 1
               type: assets
               display: 'Hero banner image'
-              instructions: 'Gambar banner (opsional).'
+              instructions: 'Gambar banner (opsional). Image 1440x500px.'
   sidebar:
     display: Sidebar
     sections:
@@ -32,6 +32,7 @@ tabs:
             handle: slug
             field:
               type: slug
+              display: 'URL Halaman'
               required: true
               instructions: 'URL otomatis dari judul.'
               validate:

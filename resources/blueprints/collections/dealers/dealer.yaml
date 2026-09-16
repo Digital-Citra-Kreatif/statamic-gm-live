@@ -87,6 +87,7 @@ tabs:
       - handle: slug
         field:
           type: slug
+          display: URL Halaman
           localizable: true
           validate: max:200
           instructions: URL otomatis dari judul.

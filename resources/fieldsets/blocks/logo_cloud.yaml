@@ -11,4 +11,4 @@ fields:
     display: Logos
     container: assets
     validate: required
-    instructions: Kumpulan logo.
+    instructions: 'Kumpulan logo. Image maksimal 140x50px per logo.'

@@ -169,7 +169,7 @@ tabs:
               max_files: 1
               type: assets
               display: 'Image Placeholders'
-              instructions: 'Gambar cadangan bila produk tanpa gambar.'
+              instructions: 'Gambar cadangan bila produk tanpa gambar. Image 600x600px.'
               validate:
                 - required
           -
@@ -178,7 +178,7 @@ tabs:
               container: assets
               type: assets
               display: 'Image Features & Benefit Placeholder'
-              instructions: 'Gambar cadangan bagian fitur dan keunggulan.'
+              instructions: 'Gambar cadangan bagian fitur dan keunggulan. Image 400x400px.'
               validate:
                 - required
           -
@@ -188,7 +188,7 @@ tabs:
               max_files: 1
               type: assets
               display: 'Background image Placeholder'
-              instructions: 'Gambar latar cadangan.'
+              instructions: 'Gambar latar cadangan. Image 1440x640px.'
               validate:
                 - required
           -
@@ -198,4 +198,4 @@ tabs:
               max_files: 1
               type: assets
               display: 'Background Pattern Image'
-              instructions: 'Gambar pola latar.'
+              instructions: 'Gambar pola latar. Image 400x900px.'

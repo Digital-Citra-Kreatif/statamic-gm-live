@@ -1,0 +1,63 @@
+title: 'Text, Counter & Image'
+fields:
+- import: common.identifier
+- handle: image
+  field:
+    type: assets
+    display: Image
+    container: assets
+    max_files: 1
+    instructions: 'Gambar kendaraan. Image maksimal 900x700px.'
+- handle: heading
+  field:
+    type: text
+    display: Heading
+    instructions: Judul bagian.
+- handle: text
+  field:
+    type: bard
+    display: Text
+    container: assets
+    buttons:
+    - bold
+    - italic
+    - anchor
+    - unorderedlist
+    - orderedlist
+    - removeformat
+    instructions: Teks konten.
+- handle: button
+  field:
+    type: group
+    display: Button
+    fields:
+    - import: common.button
+    instructions: Tombol aksi.
+- handle: images
+  field:
+    type: assets
+    display: 'Gallery Images'
+    container: assets
+    validate: required
+    instructions: 'Logo atau sertifikat. Image 200x200px.'
+- handle: columns
+  field:
+    type: select
+    display: Columns
+    default: '3'
+    options:
+      '2': 2 columns
+      '3': 3 columns
+      '4': 4 columns
+    instructions: Jumlah kolom.
+- import: blocks.counter_grid
+- handle: section_images
+  field:
+    container: assets
+    type: assets
+    display: 'Background Image'
+    max_files: 1
+    validate:
+    - required
+    instructions: 'Gambar latar bagian Tentang Kami. Image 1440x900px.'
+- import: common.section_settings

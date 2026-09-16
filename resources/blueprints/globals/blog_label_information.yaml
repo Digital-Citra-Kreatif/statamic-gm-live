@@ -77,7 +77,7 @@ tabs:
               max_files: 1
               type: assets
               display: 'Image Placeholders'
-              instructions: 'Gambar cadangan bila berita tanpa gambar.'
+              instructions: 'Gambar cadangan bila berita tanpa gambar. Image 400x250px.'
               validate:
                 - required
       -
@@ -99,7 +99,7 @@ tabs:
                     container: assets
                     type: assets
                     display: Icon
-                    instructions: 'Ikon media sosial.'
+                    instructions: 'Ikon media sosial. Icon 20x20px.'
                     width: 50
                     validate:
                       - required

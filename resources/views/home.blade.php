@@ -512,7 +512,7 @@
                                             @if (!empty($item['images']))
                                                 <img src="{{ $item['images']?->url() }}"
                                                     alt="{{ $item['label'] ?? '' }}"
-                                                    class="w-full h-12 md:h-10 lg:h-14 object-contain">
+                                                    class="w-full h-20 md:h-20 lg:h-25 object-contain">
                                             @endif
                                             @if (!empty($item['label']))
                                                 <p
@@ -526,7 +526,7 @@
                                             @if (!empty($item['images']))
                                                 <img src="{{ $item['images']?->url() }}"
                                                     alt="{{ $item['label'] ?? '' }}"
-                                                    class="w-full h-12 md:h-10 lg:h-14 object-contain">
+                                                    class="w-full h-20 md:h-20 lg:h-25 object-contain">
                                             @endif
                                             @if (!empty($item['label']))
                                                 <p

@@ -6,7 +6,7 @@ fields:
     display: Image
     container: assets
     max_files: 1
-    instructions: Gambar.
+    instructions: 'Gambar. Image maksimal 600x600px.'
 - handle: heading
   field:
     type: text

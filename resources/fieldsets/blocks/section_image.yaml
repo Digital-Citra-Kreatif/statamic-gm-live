@@ -1,0 +1,13 @@
+title: 'Section Image'
+fields:
+- import: common.identifier
+- handle: section_images
+  field:
+    container: assets
+    type: assets
+    display: 'Section Image'
+    max_files: 1
+    validate:
+    - required
+    instructions: 'Gambar bagian. Image maksimal 1280x600px.'
+- import: common.section_settings

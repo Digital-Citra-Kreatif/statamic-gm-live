@@ -7,7 +7,7 @@ fields:
     max_files: 1
     type: assets
     display: Photo
-    instructions: Foto.
+    instructions: 'Foto. Image maksimal 900x800px.'
 - handle: content
   field:
     type: grid
@@ -32,5 +32,5 @@ fields:
     max_files: 1
     type: assets
     display: Photo Background
-    instructions: Latar foto.
+    instructions: 'Latar foto. Image 1280x800px.'
 - import: common.section_settings

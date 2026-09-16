@@ -9,7 +9,7 @@ fields:
     display: Image Call to Action
     validate:
     - required
-    instructions: Gambar CTA.
+    instructions: 'Gambar CTA. Image maksimal 500x550px.'
 - handle: heading
   field:
     type: text
@@ -37,7 +37,7 @@ fields:
         max_files: 1
         type: assets
         display: Icon
-        instructions: Ikon.
+        instructions: 'Ikon. Icon 20x20px.'
     - handle: label
       field:
         type: text

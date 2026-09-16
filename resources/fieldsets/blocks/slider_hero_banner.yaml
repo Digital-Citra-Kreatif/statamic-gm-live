@@ -43,7 +43,7 @@ fields:
         max_files: 1
         type: assets
         display: Backgound Image
-        instructions: Gambar latar slide.
+        instructions: 'Gambar latar slide. Image 1440x900px.'
     - handle: backgound_video
       field:
         type: video
