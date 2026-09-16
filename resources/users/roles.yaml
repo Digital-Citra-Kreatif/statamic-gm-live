@@ -1,35 +1,3 @@
-admin:
-  title: Admin
-  permissions:
-    - 'access cp'
-    - 'configure sites'
-    - 'configure fields'
-    - 'configure form fields'
-    - 'manage preferences'
-    - 'configure collections'
-    - 'configure navs'
-    - 'configure globals'
-    - 'configure taxonomies'
-    - 'configure asset containers'
-    - 'view users'
-    - 'edit users'
-    - 'create users'
-    - 'delete users'
-    - 'change passwords'
-    - 'assign user groups'
-    - 'assign roles'
-    - 'edit user groups'
-    - 'edit roles'
-    - 'view updates'
-    - 'configure forms'
-    - 'view seo redirects'
-    - 'edit seo redirects'
-    - 'create seo redirects'
-    - 'delete seo redirects'
-    - 'view seo reports'
-    - 'delete seo reports'
-    - 'edit seo site defaults'
-    - 'edit seo section defaults'
 editor:
   title: Editor
   permissions:
