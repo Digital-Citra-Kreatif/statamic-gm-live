@@ -16,11 +16,11 @@ tree:
         id: 86eedf65-3030-47e0-afab-26c3495f18f6
         entry: 051c55b2-219f-41d3-a00e-18959f30f177
   -
-    id: 6961bf65-7371-4a36-aff1-a9452cfa1f74
-    entry: dealers
-  -
     id: ffee559f-9bab-45ab-a707-4a797b612530
     entry: products
+  -
+    id: 6961bf65-7371-4a36-aff1-a9452cfa1f74
+    entry: dealers
   -
     id: c5631229-2fb4-471d-a949-38984d6646ce
     title: Layanan
