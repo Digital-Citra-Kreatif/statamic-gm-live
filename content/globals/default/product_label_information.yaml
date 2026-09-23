@@ -19,7 +19,7 @@ product_not_found:
         type: text
         text: 'Sepertinya produk yang sedang Anda cari sudah tidak lagi tersedia di katalog kami, atau mungkin tautan yang Anda gunakan sudah kedaluwarsa.'
 benefit_label: 'Fitur dan Benefit'
-product_sort_order_by: judul_za
+product_sort_order_by: tanggal_upload
 type_labels: 'Tipe Model'
 model_labels: Model
 empty_placeholder_data: N/A
