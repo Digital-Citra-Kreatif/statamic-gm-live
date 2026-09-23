@@ -24,6 +24,11 @@ tabs:
               validate:
                 - required
               instructions: 'Judul konten.'
+          -
+            handle: tes_print
+            field:
+              type: text
+              display: 'tes print'
   sidebar:
     display: Sidebar
     sections:
