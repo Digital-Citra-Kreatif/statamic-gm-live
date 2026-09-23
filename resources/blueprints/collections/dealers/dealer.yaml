@@ -3,133 +3,156 @@ tabs:
   main:
     display: Main
     sections:
-    - display: Dealer
-      fields:
-      - handle: title
-        field:
-          type: text
-          required: true
-          display: Dealer Name
-          localizable: true
-          validate:
-          - required
-          instructions: Judul konten.
-    - display: Location
-      fields:
-      - handle: city
-        field:
-          type: text
-          display: City
-          localizable: true
-          validate:
-          - required
-          instructions: Nama kota.
-      - handle: address
-        field:
-          type: textarea
-          display: Address
-          instructions: Alamat lengkap.
-    - display: Contact
-      fields:
-      - handle: phone_number
-        field:
-          type: text
-          display: Phone Number
-          localizable: true
-          input_type: tel
-          instructions: Nomor telepon.
-      - handle: whatsapp_number
-        field:
-          type: text
-          display: WhatsApp Number
-          localizable: true
-          input_type: tel
-          instructions: Nomor WhatsApp.
-      - handle: whatsapp_link
-        field:
-          type: text
-          display: WhatsApp Link
-          localizable: true
-          input_type: url
-          validate: nullable|url
-          instructions: Link WhatsApp.
-      - handle: google_maps_url
-        field:
-          type: text
-          display: Google Maps URL
-          localizable: true
-          input_type: url
-          validate: nullable|url
-          instructions: Link Google Maps.
-      - handle: location
-        field:
-          type: group
-          display: Map Coordinates
-          localizable: true
-          instructions: Koordinat peta.
-          fields:
-          - handle: latitude
+      -
+        display: Dealer
+        fields:
+          -
+            handle: title
             field:
-              type: float
-              display: Latitude
-              width: 50
-              instructions: Garis lintang.
-          - handle: longitude
+              type: text
+              required: true
+              display: 'Dealer Name'
+              localizable: true
+              validate:
+                - required
+              instructions: 'Judul konten.'
+      -
+        display: Location
+        fields:
+          -
+            handle: city
             field:
-              type: float
-              display: Longitude
-              width: 50
-              instructions: Garis bujur.
+              type: text
+              display: City
+              localizable: true
+              validate:
+                - required
+              instructions: 'Nama kota.'
+          -
+            handle: address
+            field:
+              type: textarea
+              display: Address
+              instructions: 'Alamat lengkap.'
+      -
+        display: Contact
+        fields:
+          -
+            handle: phone_number
+            field:
+              type: text
+              display: 'Phone Number'
+              localizable: true
+              input_type: tel
+              instructions: 'Nomor telepon.'
+          -
+            handle: whatsapp_number
+            field:
+              type: text
+              display: 'WhatsApp Number'
+              localizable: true
+              input_type: tel
+              instructions: 'Nomor WhatsApp.'
+          -
+            handle: whatsapp_link
+            field:
+              type: text
+              display: 'WhatsApp Link'
+              localizable: true
+              input_type: url
+              validate: nullable|url
+              instructions: 'Link WhatsApp.'
+          -
+            handle: google_maps_url
+            field:
+              type: text
+              display: 'Google Maps URL'
+              localizable: true
+              input_type: url
+              validate: nullable|url
+              instructions: 'Link Google Maps.'
+          -
+            handle: location
+            field:
+              type: group
+              display: 'Map Coordinates'
+              localizable: true
+              instructions: 'Koordinat peta.'
+              fields:
+                -
+                  handle: latitude
+                  field:
+                    type: float
+                    display: Latitude
+                    width: 50
+                    instructions: 'Garis lintang.'
+                -
+                  handle: longitude
+                  field:
+                    type: float
+                    display: Longitude
+                    width: 50
+                    instructions: 'Garis bujur.'
   sidebar:
     display: Sidebar
     sections:
-    - fields:
-      - handle: slug
-        field:
-          type: slug
-          display: URL Halaman
-          localizable: true
-          validate: max:200
-          instructions: URL otomatis dari judul.
-      - handle: dealer_categories
-        field:
-          type: terms
-          taxonomies:
-          - dealer_categories
-          display: Dealer Categories
-          mode: select
-          instructions: Kategori dealer.
-      - handle: is_active
-        field:
-          type: toggle
-          display: Active
-          default: true
-          instructions: Status aktif.
-      - handle: display_grid_view
-        field:
-          default: true
-          type: toggle
-          display: Display Grid View
-          instructions: Tampil di grid.
-  SEO Meta:
-    display: SEO Meta
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+              display: 'URL Halaman'
+              instructions: 'URL otomatis dari judul.'
+          -
+            handle: dealer_categories
+            field:
+              type: terms
+              taxonomies:
+                - dealer_categories
+              display: 'Dealer Categories'
+              mode: select
+              instructions: 'Kategori dealer (Piih 1).'
+          -
+            handle: is_active
+            field:
+              type: toggle
+              display: Active
+              default: true
+              instructions: 'Status aktif.'
+          -
+            handle: display_grid_view
+            field:
+              default: true
+              type: toggle
+              display: 'Display Grid View'
+              instructions: 'Tampil di grid.'
+  'SEO Meta':
+    display: 'SEO Meta'
     sections:
-    - fields:
-      - handle: seo
-        field:
-          type: seo_pro
-          listable: false
-          display: SEO
-  SEO Previews:
-    display: SEO Previews
+      -
+        fields:
+          -
+            handle: seo
+            field:
+              type: seo_pro
+              listable: false
+              display: SEO
+  'SEO Previews':
+    display: 'SEO Previews'
     sections:
-    - fields:
-      - handle: seo_previews
-        field:
-          type: seo_pro_previews
-          listable: false
-          display: SEO Previews
-          localizable: false
-          hide_display: true
-          unless:
-            seo.enabled: 'equals false'
+      -
+        fields:
+          -
+            handle: seo_previews
+            field:
+              type: seo_pro_previews
+              listable: false
+              display: 'SEO Previews'
+              localizable: false
+              hide_display: true
+              if: 'custom showSeoProPreviews'
+              unless:
+                seo.enabled: 'equals false'
