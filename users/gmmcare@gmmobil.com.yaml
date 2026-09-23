@@ -3,3 +3,8 @@ roles:
   - dealer_manager
 id: 5cb2267c-622e-41be-9f2f-5bde4538270e
 password_hash: $2y$12$JivxHJ9TH7ZMWnSbTcO7euFJxO0JI0g0I02ZIBuLFv2Brg3lwulbe
+preferences:
+  nav:
+    content:
+      reorder:
+        - 'content::taxonomies'
