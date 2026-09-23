@@ -6,6 +6,7 @@ slider_banner:
     label_button: 'Mulai Konsultasi'
     url_button: 'entry::02bd16ee-6482-47b6-bdd1-28440329ffad'
     backgound_image: chassisbbm-1440x700px.jpg
+    backgound_video: 'https://youtu.be/MLpWrANjFbI?si=YX5mf1BYcBJFWfN8'
   -
     id: UwsR4PrGIT2jxEh7KvFhP
     heading: 'Armada Andal untuk Berbagai Industri'
