@@ -65,6 +65,7 @@ preferences:
   assets:
     assets:
       per_page: 50
+      mode: grid
     browser_thumbnail_size: 160
   forms:
     contact:
