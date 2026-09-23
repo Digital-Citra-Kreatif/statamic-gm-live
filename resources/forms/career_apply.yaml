@@ -2,11 +2,6 @@ title: 'Career Application'
 honeypot: website_url
 email:
   -
-    id: bD3lzrRZlRfP1T-ne_vAv
-    to: webmaster.imajiner@gmail.com
-    subject: '{{ location }} - {{ position }} - Form Karier'
-    attachments: true
-  -
     id: 3ojKPba5x93mPMuDI_a65
     to: recruitment@gmmobil.com
     subject: '{{ location }} - {{ position }} - Form Karier'
