@@ -1,4 +1,5 @@
-data: {  }
+data:
+  alt: 'tes alt'
 size: 6161533
 last_modified: 1790143176
 width: 2880
