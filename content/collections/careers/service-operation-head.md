@@ -1,7 +1,7 @@
 ---
 id: 7d57e42f-08ef-426f-9ff0-687778bdaeee
 blueprint: career
-title: 'Service Operation Head.'
+title: 'Service Operation Head'
 description:
   -
     type: bulletList
@@ -133,5 +133,5 @@ tags:
   - s1
   - 8-10-tahun-pengalaman
 updated_by: 28d34247-1c17-42bf-8548-5b36f18adcbd
-updated_at: 1790142374
+updated_at: 1790142383
 ---
