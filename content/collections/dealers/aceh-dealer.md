@@ -1,7 +1,7 @@
 ---
 id: 6f7d33ad-2de1-4302-b687-66ef80ddfbcf
 blueprint: dealer
-title: Aceh
+title: Aceh1
 city: Aceh
 address: |-
   PT GAYAMAKMUR FAW MOTORS
@@ -17,5 +17,5 @@ location:
   longitude: 95.323753
 display_grid_view: true
 updated_by: 28d34247-1c17-42bf-8548-5b36f18adcbd
-updated_at: 1787121602
+updated_at: 1790142409
 ---
