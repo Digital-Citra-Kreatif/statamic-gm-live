@@ -11,15 +11,13 @@ sections:
     identifier: opening-reman
     description:
       -
-        type: paragraph
+        type: heading
         attrs:
           textAlign: null
+          level: 3
         content:
           -
             type: text
-            marks:
-              -
-                type: bold
             text: 'Apa Itu GMM Reman Center'
       -
         type: paragraph
@@ -30,15 +28,13 @@ sections:
             type: text
             text: 'GMM Reman Center menyediakan layanan remanufacturing komponen unit FAW Truck dan XCMG, mulai dari engine, transmisi, hingga injector. Setiap komponen diuji menggunakan engine testbench sebelum diserahkan kepada customer dan dilengkapi garansi resmi.'
       -
-        type: paragraph
+        type: heading
         attrs:
           textAlign: null
+          level: 3
         content:
           -
             type: text
-            marks:
-              -
-                type: bold
             text: 'Keunggulan Utama'
       -
         type: bulletList
@@ -77,15 +73,13 @@ sections:
                     type: text
                     text: 'Harga komponen reman sekitar 50–60% dari komponen baru, dengan kualitas yang teruji.'
       -
-        type: paragraph
+        type: heading
         attrs:
           textAlign: null
+          level: 3
         content:
           -
             type: text
-            marks:
-              -
-                type: bold
             text: 'Skema Layanan Reman'
       -
         type: paragraph
@@ -430,15 +424,13 @@ sections:
         attrs:
           textAlign: null
       -
-        type: paragraph
+        type: heading
         attrs:
           textAlign: null
+          level: 3
         content:
           -
             type: text
-            marks:
-              -
-                type: bold
             text: 'COMEX Support Point'
       -
         type: paragraph
@@ -449,15 +441,13 @@ sections:
             type: text
             text: 'Komponen Reman siap pakai tersedia melalui jaringan COMEX Support Point di cabang GM Mobil, membantu mempercepat proses penggantian komponen.'
       -
-        type: paragraph
+        type: heading
         attrs:
           textAlign: null
+          level: 3
         content:
           -
             type: text
-            marks:
-              -
-                type: bold
             text: 'Jaminan Kualitas'
       -
         type: bulletList
@@ -496,15 +486,13 @@ sections:
                     type: text
                     text: 'Standar “Quality is Our Goal”'
       -
-        type: paragraph
+        type: heading
         attrs:
           textAlign: null
+          level: 3
         content:
           -
             type: text
-            marks:
-              -
-                type: bold
             text: 'Garansi Komponen'
       -
         type: paragraph
@@ -523,15 +511,13 @@ sections:
             type: text
             text: 'Komponen utama yang tercakup antara lain: Engine, Transmisi, dan Transfer Box.'
       -
-        type: paragraph
+        type: heading
         attrs:
           textAlign: null
+          level: 3
         content:
           -
             type: text
-            marks:
-              -
-                type: bold
             text: 'Call to Action'
       -
         type: paragraph
@@ -567,5 +553,5 @@ sections:
     show: true
     identifier: section-image-reman
 updated_by: 28d34247-1c17-42bf-8548-5b36f18adcbd
-updated_at: 1790425680
+updated_at: 1790425743
 ---
