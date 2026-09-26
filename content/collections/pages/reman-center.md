@@ -550,8 +550,8 @@ sections:
     section_images: reman-image.jpg
     type: section_image
     enabled: true
-    show: true
+    show: false
     identifier: section-image-reman
 updated_by: 28d34247-1c17-42bf-8548-5b36f18adcbd
-updated_at: 1790425743
+updated_at: 1790425767
 ---
