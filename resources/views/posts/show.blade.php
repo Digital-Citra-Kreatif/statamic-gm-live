@@ -216,7 +216,7 @@
                             @endif
 
                             {{-- Content --}}
-                            <div class="content-custom richtext">
+                            <div class="content-custom richtext text-left">
                                 @if ($page->description)
                                     {!! Statamic::modify($page->description)->widont() !!}
                                 @endif

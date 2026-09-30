@@ -25,6 +25,10 @@ fields:
     - unorderedlist
     - orderedlist
     - removeformat
+    - alignleft
+    - aligncenter
+    - alignright
+    - alignjustify
     instructions: Teks konten.
 - handle: button
   field:

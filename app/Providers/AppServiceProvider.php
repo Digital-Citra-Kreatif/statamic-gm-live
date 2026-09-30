@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Bard\CaptionedImageNode;
+use App\Bard\TextAlign;
 use App\Http\Controllers\CP\Forms\FormExportController;
 use Illuminate\Support\ServiceProvider;
 use Statamic\Fieldtypes\Bard\Augmentor;
@@ -28,6 +29,12 @@ class AppServiceProvider extends ServiceProvider
         // Gambar di dalam Bard dirender jadi <figure>+<figcaption> kalau
         // asset-nya punya caption di .meta.
         Augmentor::replaceExtension('image', new CaptionedImageNode);
+
+        // Keep an explicit left alignment when Bard content sits in a centered container.
+        Augmentor::replaceExtension('textAlign', new TextAlign([
+            'types' => ['heading', 'paragraph'],
+            'defaultAlignment' => null,
+        ]));
 
         // CSS tambahan control panel
         // Jangan taruh di /cp > bentrok dengan rute control panel

@@ -31,5 +31,9 @@ fields:
         - unorderedlist
         - orderedlist
         - removeformat
+        - alignleft
+        - aligncenter
+        - alignright
+        - alignjustify
         instructions: Jawaban.
     instructions: Daftar item.

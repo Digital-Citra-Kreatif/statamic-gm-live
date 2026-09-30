@@ -16,6 +16,10 @@ fields:
     - orderedlist
     - removeformat
     - quote
+    - alignleft
+    - aligncenter
+    - alignright
+    - alignjustify
     instructions: Isi konten.
 - handle: width
   field:

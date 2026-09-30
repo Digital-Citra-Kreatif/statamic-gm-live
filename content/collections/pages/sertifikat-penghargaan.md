@@ -1,9 +1,10 @@
 ---
 id: 051c55b2-219f-41d3-a00e-18959f30f177
+published: false
 blueprint: page
 title: 'Sertifikat & Penghargaan'
 updated_by: 28d34247-1c17-42bf-8548-5b36f18adcbd
-updated_at: 1781499831
+updated_at: 1790757266
 parent: home
 template: sertifikat-penghargaan
 featured_image: hero-sertifikat.jpg

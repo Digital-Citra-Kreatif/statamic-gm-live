@@ -280,6 +280,22 @@ tabs:
       - handle: content
         field:
           type: bard
+          buttons:
+          - h2
+          - h3
+          - bold
+          - italic
+          - unorderedlist
+          - orderedlist
+          - removeformat
+          - quote
+          - anchor
+          - image
+          - table
+          - alignleft
+          - aligncenter
+          - alignright
+          - alignjustify
           display: Content
           localizable: true
           instructions: Isi konten.

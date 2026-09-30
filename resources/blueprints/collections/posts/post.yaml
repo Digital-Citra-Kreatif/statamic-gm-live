@@ -85,6 +85,10 @@ tabs:
                 - small
                 - superscript
                 - subscript
+                - alignleft
+                - aligncenter
+                - alignright
+                - alignjustify
               container: assets
               remove_empty_nodes: false
               type: bard

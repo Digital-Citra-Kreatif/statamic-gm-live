@@ -39,7 +39,7 @@
 
                     @if ($remanSection && ($remanSection['show'] ?? false))
                         <div id="{{ $remanSection['anchor'] ?? 'reman-center' }}"
-                            class="text-left md:text-center lg:text-center lg:w-240">{!! $remanSection['description'] ?? '' !!}</div>
+                            class="lg:w-240">{!! $remanSection['description'] ?? '' !!}</div>
                     @endif
 
                     @if ($imgRemanSection && ($imgRemanSection['show'] ?? false))
