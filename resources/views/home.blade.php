@@ -198,7 +198,7 @@
 
                                 {{-- Text --}}
                                 @if (!empty($about['text']))
-                                    <div class="richtext">{!! $about['text'] !!}</div>
+                                    <div class="bard-content richtext">{!! $about['text'] !!}</div>
                                 @endif
 
                                 {{-- Counter grid --}}
@@ -370,7 +370,7 @@
                                 {{-- Text --}}
                                 @if (!empty($services['description']))
                                     <div
-                                        class="richtext text-start md:text-center lg:text-center w-full md:w-[70%] lg:w-[55%]">
+                                        class="bard-content richtext text-start md:text-center lg:text-center w-full md:w-[70%] lg:w-[55%]">
                                         {!! $services['description'] !!}</div>
                                 @endif
                             </div>
@@ -618,7 +618,7 @@
 
                             {{-- Text --}}
                             @if (!empty($blogSosmed['description']))
-                                <div class="richtext w-full md:w-full lg:w-[50%]">
+                                <div class="bard-content richtext w-full md:w-full lg:w-[50%]">
                                     {!! $blogSosmed['description'] !!}</div>
                             @endif
                         </div>

@@ -34,7 +34,7 @@
             </h1>
 
             @if ($page->description)
-                <div class="prose prose-zinc mx-auto mt-6 max-w-2xl dark:prose-invert">
+                <div class="bard-content prose prose-zinc mx-auto mt-6 max-w-2xl dark:prose-invert">
                     {!! $page->description !!}
                 </div>
             @endif

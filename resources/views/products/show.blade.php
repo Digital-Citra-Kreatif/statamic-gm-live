@@ -172,7 +172,7 @@
 
                             <h1 class="notranslate heading-single text-left text-white">{{ $page->title }}</h1>
                             @if ($page->description)
-                                <div class="richtext text-cust w-full text-left text-white/90">
+                                <div class="bard-content richtext text-cust w-full text-left text-white/90">
                                     {!! $page->description !!}
                                 </div>
                             @endif
@@ -210,7 +210,7 @@
         @if (filled((string) $otherDescriptions))
             <section id="other-descriptions">
                 <div class="container">
-                    <div class="mb-18 mt-20 lg:my-30 richtext">
+                    <div class="bard-content mb-18 mt-20 lg:my-30 richtext">
                         {!! $otherDescriptions !!}
                     </div>
                 </div>
@@ -271,7 +271,7 @@
                                                             {{ $feature['heading'] }}</p>
                                                     @endif
                                                     @if (!empty($feature['description']))
-                                                        <div class="richtext text-(--color-body)">
+                                                        <div class="bard-content richtext text-(--color-body)">
                                                             {!! $feature['description'] !!}
                                                         </div>
                                                     @endif
@@ -299,7 +299,7 @@
                                                 <h3 class="tracking-tight">{{ $feature['heading'] }}</h3>
                                             @endif
                                             @if (!empty($feature['description']))
-                                                <div class="richtext text-(--color-body)">
+                                                <div class="bard-content richtext text-(--color-body)">
                                                     {!! $feature['description'] !!}
                                                 </div>
                                             @endif

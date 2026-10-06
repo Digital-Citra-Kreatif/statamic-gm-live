@@ -32,7 +32,7 @@
             @endif
 
             @if ($block->text)
-                <div class="prose prose-zinc mt-4 dark:prose-invert max-w-none">
+                <div class="bard-content prose prose-zinc mt-4 dark:prose-invert max-w-none">
                     {!! $block->text !!}
                 </div>
             @endif

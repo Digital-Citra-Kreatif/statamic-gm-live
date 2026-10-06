@@ -117,7 +117,7 @@
                                 <div id="text-form">
                                     @if ($formText && ($formText['show'] ?? false))
                                         <h2 class="lg:w-180 mb-2 lg:mb-4">{{ $formText['heading'] ?? '' }}</h2>
-                                        <div class="richtext lg:w-150">{!! $formText['description'] ?? '' !!}</div>
+                                        <div class="bard-content richtext lg:w-150">{!! $formText['description'] ?? '' !!}</div>
                                     @endif
                                 </div>
 

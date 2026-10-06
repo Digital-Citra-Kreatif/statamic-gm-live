@@ -17,7 +17,7 @@
     class="px-4 py-12 sm:px-6 lg:py-16 {{ $sectionBg }}"
 >
     <div class="mx-auto {{ $maxWidth }}">
-        <div class="prose prose-zinc dark:prose-invert max-w-none">
+        <div class="bard-content prose prose-zinc dark:prose-invert max-w-none">
             {!! $block->content !!}
         </div>
     </div>

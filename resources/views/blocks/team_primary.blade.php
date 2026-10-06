@@ -24,7 +24,7 @@
         @endif
         <div>
             @if ($block->bio)
-                <div class="prose prose-zinc mb-8 dark:prose-invert max-w-none">
+                <div class="bard-content prose prose-zinc mb-8 dark:prose-invert max-w-none">
                     {!! $block->bio !!}
                 </div>
             @endif

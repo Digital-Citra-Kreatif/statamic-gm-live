@@ -134,7 +134,7 @@
 
             {{-- Description --}}
             @if ($descHtml)
-                <div class="text-cust mx-auto max-w-xl text-lg leading-relaxed">
+                <div class="bard-content text-cust mx-auto max-w-xl text-lg leading-relaxed">
                     {!! $descHtml !!}
                 </div>
             @endif

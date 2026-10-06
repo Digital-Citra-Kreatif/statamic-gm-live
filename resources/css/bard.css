@@ -1,0 +1,71 @@
+/* Shared rhythm for rendered Bard fields. Heading sizes follow the site tokens. */
+.bard-content > * {
+  margin-block: 0;
+}
+
+.bard-content > * + * {
+  margin-block-start: var(--flow-space-prose, 1.5rem);
+}
+
+.bard-content > :is(h1, h2, h3, h4, h5, h6):not(:first-child) {
+  margin-block-start: 2.5rem;
+}
+
+.bard-content > :is(h1, h2, h3, h4, h5, h6) + * {
+  margin-block-start: var(--flow-space-prose-after-heading, 0.75rem);
+}
+
+.bard-content h1 { font-size: var(--text-h1, 4rem); }
+.bard-content h2 { font-size: var(--text-h2, 2.5rem); }
+.bard-content h3 { font-size: var(--text-h3, 2rem); }
+.bard-content h4 { font-size: var(--text-h4, 1.5rem); }
+.bard-content h5 { font-size: var(--text-h5, 1.25rem); }
+.bard-content h6 { font-size: var(--text-h6, 1rem); }
+
+.bard-content:not(.mission-list-content) :is(ul, ol) {
+  padding-inline-start: var(--padding-inline-prose-list, 1.5rem);
+}
+
+.bard-content:not(.mission-list-content) ul { list-style-type: disc; }
+.bard-content:not(.mission-list-content) ol { list-style-type: decimal; }
+
+.bard-content:not(.mission-list-content) li + li {
+  margin-block-start: var(--flow-space-prose-list-item, 0.5rem);
+}
+
+.bard-content li > p { margin-block: 0; }
+
+.bard-content blockquote {
+  padding-inline-start: var(--padding-inline-prose-blockquote, 1.5rem);
+}
+
+.bard-content :is(img, video) {
+  max-width: 100%;
+  height: auto;
+}
+
+.bard-content figure figcaption {
+  margin-block-start: var(--flow-space-prose-figcaption, 0.5rem);
+}
+
+.bard-content pre {
+  overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+  .bard-content h1 { font-size: var(--text-h1-tablet, 2.5rem); }
+  .bard-content h2 { font-size: var(--text-h2-tablet, 2rem); }
+  .bard-content h3 { font-size: var(--text-h3-tablet, 1.7rem); }
+  .bard-content h4 { font-size: var(--text-h4-tablet, 1.5rem); }
+  .bard-content h5 { font-size: var(--text-h5-tablet, 1rem); }
+  .bard-content h6 { font-size: var(--text-h6-tablet, 0.875rem); }
+}
+
+@media (max-width: 640px) {
+  .bard-content h1 { font-size: var(--text-h1-mobile, 2.3rem); }
+  .bard-content h2 { font-size: var(--text-h2-mobile, 1.8rem); }
+  .bard-content h3 { font-size: var(--text-h3-mobile, 1.6rem); }
+  .bard-content h4 { font-size: var(--text-h4-mobile, 1.5rem); }
+  .bard-content h5 { font-size: var(--text-h5-mobile, 0.875rem); }
+  .bard-content h6 { font-size: var(--text-h6-mobile, 0.75rem); }
+}

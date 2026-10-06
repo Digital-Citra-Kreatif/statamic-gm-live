@@ -114,13 +114,13 @@
 
                             {{-- Deskripsi --}}
                             @if ($page->description)
-                                <div id="description" class="richtext mt-4 md:mt-4 lg:mt-5">{!! $page->description !!}
+                                <div id="description" class="bard-content richtext mt-4 md:mt-4 lg:mt-5">{!! $page->description !!}
                                 </div>
                             @endif
 
                             {{-- Persyaratan --}}
                             @if ($page->qualifications)
-                                <div id="qualifications" class="richtext custom-heading-blog">
+                                <div id="qualifications" class="bard-content richtext custom-heading-blog">
                                     <h2 class="mb-2">
                                         {{ $career['requirements_label'] ?? 'Persyaratan' }}</h2>
                                     {!! $page->qualifications !!}
@@ -129,7 +129,7 @@
 
                             {{-- Jobdesc --}}
                             @if ($page->jobdesc)
-                                <div id="jobdesc" class="richtext custom-heading-blog">
+                                <div id="jobdesc" class="bard-content richtext custom-heading-blog">
                                     <h2 class=" mb-2">{{ $career['label_jobdesc'] ?? 'Jobdesc' }}
                                     </h2>
                                     {!! $page->jobdesc !!}

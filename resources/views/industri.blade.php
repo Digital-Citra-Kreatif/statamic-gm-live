@@ -125,7 +125,7 @@
                                     @endif
 
                                     @if ($item['industry']->content)
-                                        <div class="w-full richtext">
+                                        <div class="bard-content w-full richtext">
                                             {!! $item['industry']->content !!}
                                         </div>
                                     @endif

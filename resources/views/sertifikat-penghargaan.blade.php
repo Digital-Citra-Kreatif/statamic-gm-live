@@ -53,7 +53,7 @@
                             {{ $sertifikatOpening['heading'] ?? '' }}
                         </h2>
 
-                        <div class="text-left md:text-center lg:text-center lg:w-[55%]">{!! $sertifikatOpening['description'] ?? '' !!}</div>
+                        <div class="bard-content text-left md:text-center lg:text-center lg:w-[55%]">{!! $sertifikatOpening['description'] ?? '' !!}</div>
                     </div>
                 </div>
             </section>

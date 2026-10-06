@@ -65,7 +65,7 @@
                         <h2 class="text-left md:text-center lg:text-center w-full md:w-150 lg:w-180">
                             {{ $opening['heading'] ?? '' }}
                         </h2>
-                        <div class="text-left md:text-center lg:text-center w-full md:w-full lg:w-250">
+                        <div class="bard-content text-left md:text-center lg:text-center w-full md:w-full lg:w-250">
                             {!! $opening['description'] ?? '' !!}</div>
                     </div>
                 </div>
@@ -97,7 +97,7 @@
                                     <div id="vision"
                                         class="glass rounded-xl p-4 w-full md:w-[40%] lg:w-full md:p-5 lg:p-8 flex flex-col gap-4 lg:gap-6">
                                         <h3>{{ $vision['title'] ?? '' }}</h3>
-                                        <div>{!! $vision['description'] ?? '' !!}</div>
+                                        <div class="bard-content">{!! $vision['description'] ?? '' !!}</div>
                                     </div>
                                 @endif
 
@@ -105,7 +105,7 @@
                                     <div id="mission"
                                         class="glass rounded-xl p-4 w-full md:w-[60%] lg:w-full md:p-5 lg:p-8 flex flex-col md:gap-0 lg:gap-6">
                                         <h3>{{ $mission['title'] ?? '' }}</h3>
-                                        <div class="mission-list-content">{!! $mission['description'] ?? '' !!}</div>
+                                        <div class="bard-content mission-list-content">{!! $mission['description'] ?? '' !!}</div>
                                     </div>
                                 @endif
                             </div>
@@ -142,7 +142,7 @@
                         {{-- Faw konten --}}
                         <div id="faw-content" class="w-full flex flex-col gap-4 lg:gap-5">
                             <h3 class="text-base md:text-xl lg:text-2xl">{{ $fawText['heading'] ?? '' }}</h3>
-                            <div class="w-full">{!! $fawText['description'] ?? '' !!}</div>
+                            <div class="bard-content w-full">{!! $fawText['description'] ?? '' !!}</div>
                         </div>
                     </div>
                 </div>

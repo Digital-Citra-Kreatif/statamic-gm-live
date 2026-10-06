@@ -79,7 +79,7 @@
             <section id="{{ $opening['anchor'] ?? 'gm-teletech-desc' }}">
                 <div class="container">
                     <div class="flex flex-col items-center my-18 lg:my-30">
-                        <div class="text-left md:text-center lg:text-center lg:w-280">{!! $opening['description'] ?? '' !!}</div>
+                        <div class="bard-content text-left md:text-center lg:text-center lg:w-280">{!! $opening['description'] ?? '' !!}</div>
                     </div>
                 </div>
             </section>

@@ -51,7 +51,7 @@
 
     {{-- Success Summary --}}
     @if ($success)
-        <div class="rounded-xl bg-green-50 px-5 py-4 text-(--color-primary)/50 border border-(--color-primary)/30">
+        <div class="bard-content rounded-xl bg-green-50 px-5 py-4 text-(--color-primary)/50 border border-(--color-primary)/30">
             {!! $successHtml ?: $success !!}
         </div>
     @endif
@@ -60,7 +60,7 @@
     @if (count($errors))
         <div class="rounded-xl bg-red-50 px-5 py-4 text-red-800 border border-red-800/30">
             @if (!empty($failedHtml))
-                <div class="mb-2 font-medium">{!! $failedHtml !!}</div>
+                <div class="bard-content mb-2 font-medium">{!! $failedHtml !!}</div>
             @endif
             <ul class="flex flex-col gap-1">
                 @foreach ($errors as $error_message)

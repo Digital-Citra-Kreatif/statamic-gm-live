@@ -97,7 +97,7 @@
                     <div class="flex flex-col items-center my-18 lg:my-30 richtext">
                         <h2 class="text-left md:text-center lg:text-center w-full md:w-[80%] lg:w-[50%]">
                             {{ $opening['heading'] ?? '' }}</h2>
-                        <div class="text-left md:text-center lg:text-center w-full md:w-[80%] lg:w-[50%]">
+                        <div class="bard-content text-left md:text-center lg:text-center w-full md:w-[80%] lg:w-[50%]">
                             {!! $opening['description'] ?? '' !!}</div>
                     </div>
                 </div>

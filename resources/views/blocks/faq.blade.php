@@ -28,7 +28,7 @@
                             </span>
                         </summary>
                         @if ($item->answer)
-                            <div class="prose prose-zinc mt-3 pb-1 dark:prose-invert max-w-none">
+                            <div class="bard-content prose prose-zinc mt-3 pb-1 dark:prose-invert max-w-none">
                                 {!! $item->answer !!}
                             </div>
                         @endif

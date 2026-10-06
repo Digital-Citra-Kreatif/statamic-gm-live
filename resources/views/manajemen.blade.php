@@ -54,7 +54,7 @@
                         <h2 class="text-left md:text-center lg:text-center w-full md:w-120 lg:w-155">
                             {{ $opening['heading'] ?? '' }}
                         </h2>
-                        <div class="text-left md:text-center lg:text-center w-full lg:w-220">{!! $opening['description'] ?? '' !!}
+                        <div class="bard-content text-left md:text-center lg:text-center w-full lg:w-220">{!! $opening['description'] ?? '' !!}
                         </div>
                     </div>
                 </div>
@@ -79,7 +79,7 @@
                         <div class="flex flex-col justify-between gap-8 md:gap-10 lg:gap-2 w-full md:w-[60%] lg:w-[60%]">
 
                             {{-- Sambutan --}}
-                            <div class="flow flex flex-col richtext">
+                            <div class="bard-content flow flex flex-col richtext">
                                 {!! $direkturUtama['bio'] ?? '' !!}
                             </div>
 

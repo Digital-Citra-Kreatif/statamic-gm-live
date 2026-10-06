@@ -147,7 +147,7 @@
                 <div class="container">
                     <div class="my-18 md:my-18 lg:my-30 flow flex flex-col gap-4 items-center">
                         <h2 class="text-left md:text-center lg:text-center">{{ $dealerSection['heading'] ?? '' }}</h2>
-                        <div class="w-full lg:w-160 text-left md:text-center lg:text-center">
+                        <div class="bard-content w-full lg:w-160 text-left md:text-center lg:text-center">
                             {!! $dealerSection['description'] ?? '' !!}
                         </div>
                     </div>
