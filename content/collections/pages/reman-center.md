@@ -510,37 +510,6 @@ sections:
           -
             type: text
             text: 'Komponen utama yang tercakup antara lain: Engine, Transmisi, dan Transfer Box.'
-      -
-        type: heading
-        attrs:
-          textAlign: null
-          level: 3
-        content:
-          -
-            type: text
-            text: 'Call to Action'
-      -
-        type: paragraph
-        attrs:
-          textAlign: null
-        content:
-          -
-            type: text
-            text: 'Butuh solusi komponen yang lebih efisien untuk unit XCMG atau FAW Trucks? Hubungi '
-          -
-            type: text
-            marks:
-              -
-                type: link
-                attrs:
-                  href: 'https://wa.link/9m7b0h'
-                  rel: null
-                  target: _blank
-                  title: null
-            text: 'GMM Reman Center'
-          -
-            type: text
-            text: .
     show: true
     type: heading_description
     enabled: true
@@ -553,5 +522,5 @@ sections:
     show: false
     identifier: section-image-reman
 updated_by: 28d34247-1c17-42bf-8548-5b36f18adcbd
-updated_at: 1790425767
+updated_at: 1791271399
 ---
