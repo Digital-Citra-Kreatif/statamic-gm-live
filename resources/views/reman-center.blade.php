@@ -43,7 +43,7 @@
                             @if (!empty($remanSection['heading']))
                                 <h2 class="mb-6 lg:mb-8">{{ $remanSection['heading'] }}</h2>
                             @endif
-                            <div class="bard-content">{!! $remanSection['description'] ?? '' !!}</div>
+                            <div class="content-custom richtext">{!! $remanSection['description'] ?? '' !!}</div>
                         </div>
                     @endif
 
