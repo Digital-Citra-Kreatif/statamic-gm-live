@@ -9,3 +9,5 @@ preferences:
       view: tree
     posts:
       view: tree
+    achievements:
+      view: tree
