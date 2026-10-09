@@ -8,7 +8,7 @@ preferences:
     pages:
       view: tree
     posts:
-      view: tree
+      view: list
     achievements:
       view: tree
     careers:
