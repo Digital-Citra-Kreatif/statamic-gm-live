@@ -7,3 +7,5 @@ preferences:
   collections:
     pages:
       view: tree
+    posts:
+      view: tree
