@@ -11,3 +11,7 @@ preferences:
       view: tree
     achievements:
       view: tree
+    careers:
+      view: tree
+    dealers:
+      view: tree
