@@ -4,7 +4,7 @@ blueprint: page
 title: 'Reman Center'
 template: reman-center
 parent: home
-featured_image: hero-reman-center.jpg
+featured_image: banner-reman-center.jpg
 sections:
   -
     id: 5rT226vEbdYMmujUyBJOD
@@ -516,7 +516,7 @@ sections:
     heading: 'Komponen Reman, Setara Baru. Lebih Hemat!'
   -
     id: 3ZeYHnSEno2p6LtaH92tl
-    section_images: reman-image.jpg
+    section_images: image-reman-center.jpg
     type: section_image
     enabled: true
     show: false

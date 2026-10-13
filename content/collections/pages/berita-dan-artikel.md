@@ -6,7 +6,7 @@ template: blog
 parent: home
 updated_by: 28d34247-1c17-42bf-8548-5b36f18adcbd
 updated_at: 1781504963
-featured_image: hero-archive-berita.jpg
+featured_image: banner-berita-artikel.jpg
 sections:
   -
     id: fHaTAXUcI4Za0P1LFHLGl

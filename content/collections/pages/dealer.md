@@ -4,7 +4,7 @@ blueprint: page
 title: Dealer
 template: dealers
 parent: home
-featured_image: hero-dealer.jpg
+featured_image: banner-dealer.jpg
 sections:
   -
     id: h9aONol07lLVKS02-ZNkC

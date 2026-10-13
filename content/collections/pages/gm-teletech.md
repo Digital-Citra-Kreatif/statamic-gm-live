@@ -5,7 +5,7 @@ title: 'GM Teletech'
 template: gm-teletech
 updated_by: 28d34247-1c17-42bf-8548-5b36f18adcbd
 updated_at: 1780814682
-featured_image: hero-gm-teletech.jpg
+featured_image: banner-gm-teletech.jpg
 parent: home
 sections:
   -
@@ -24,7 +24,7 @@ sections:
   -
     id: ZYNnfxFrvN3LIcHEj2KoG
     identifier: section-image-teletech
-    section_images: img-gm-teletech.jpg
+    section_images: image-gm-teletech.jpg
     show: true
     type: section_image
     enabled: true

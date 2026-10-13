@@ -4,7 +4,7 @@ blueprint: page
 title: Produk
 template: products
 parent: home
-featured_image: hero-archice-produk.jpg
+featured_image: banner-produk.jpg
 sections:
   -
     id: lpdjRgF7CwtIPihOD2j18

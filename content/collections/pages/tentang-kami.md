@@ -139,7 +139,7 @@ sections:
     type: icon_placeholder
     enabled: true
 parent: home
-featured_image: hero-tentang.jpg
+featured_image: banner-tentang-kami.jpg
 updated_by: 28d34247-1c17-42bf-8548-5b36f18adcbd
 updated_at: 1787114932
 ---

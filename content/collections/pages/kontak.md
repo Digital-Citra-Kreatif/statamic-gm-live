@@ -6,7 +6,7 @@ updated_by: 28d34247-1c17-42bf-8548-5b36f18adcbd
 updated_at: 1781488660
 parent: home
 template: kontak
-featured_image: hero-kontak.jpg
+featured_image: banner-kontak.jpg
 sections:
   -
     id: 5O6e0dpGJnzF8qpu4piK1
