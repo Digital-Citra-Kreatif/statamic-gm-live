@@ -519,8 +519,8 @@ sections:
     section_images: image-reman-center.jpg
     type: section_image
     enabled: true
-    show: false
+    show: true
     identifier: section-image-reman
 updated_by: 28d34247-1c17-42bf-8548-5b36f18adcbd
-updated_at: 1791271399
+updated_at: 1791874216
 ---
