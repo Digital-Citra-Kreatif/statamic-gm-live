@@ -92,7 +92,7 @@
                     <div class="flex flex-col items-center my-18 lg:my-30">
                         <img src="{{ $teletechImage['section_images'] ?? '' }}"
                             alt="{{ $teletechImage['section_images']?->alt ?? $page->title }}"
-                            class="rounded-2xl w-full lg:h-150 object-cover">
+                            class="rounded-2xl w-full max-w-[1000px] h-auto">
                     </div>
                 </div>
             </section>
