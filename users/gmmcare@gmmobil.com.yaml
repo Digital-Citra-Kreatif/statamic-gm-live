@@ -15,3 +15,5 @@ preferences:
       view: tree
     dealers:
       view: tree
+    products:
+      view: tree
