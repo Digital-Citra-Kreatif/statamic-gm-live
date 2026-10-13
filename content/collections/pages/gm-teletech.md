@@ -4,7 +4,7 @@ blueprint: page
 title: 'GM Teletech'
 template: gm-teletech
 updated_by: 28d34247-1c17-42bf-8548-5b36f18adcbd
-updated_at: 1780814682
+updated_at: 1791874557
 featured_image: banner-gm-teletech.jpg
 parent: home
 sections:
@@ -25,7 +25,7 @@ sections:
     id: ZYNnfxFrvN3LIcHEj2KoG
     identifier: section-image-teletech
     section_images: image-gm-teletech.jpg
-    show: true
+    show: false
     type: section_image
     enabled: true
   -
