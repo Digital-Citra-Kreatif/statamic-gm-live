@@ -3,8 +3,8 @@ id: 44019b3e-9005-4c58-a58d-7da1641b96d3
 blueprint: page
 title: 'GM Teletech'
 template: gm-teletech
-updated_by: 28d34247-1c17-42bf-8548-5b36f18adcbd
-updated_at: 1791874557
+updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
+updated_at: 1791960127
 featured_image: banner-gm-teletech.jpg
 parent: home
 sections:
@@ -85,7 +85,7 @@ sections:
         kontak: '62 000 0000 0000'
     type: call_to_action_grid
     enabled: true
-    image_call_to_action: cta-gmteletch.jpg
+    image_call_to_action: image-(gm-teletech).jpg
     identifier: section-cta-faw
     show: true
   -
