@@ -2,3 +2,4 @@ name: cendy
 roles:
   - editor
 id: 0f95e045-bc84-4d33-806d-e90f85a9a25e
+password_hash: $2y$12$lb8WxeoLKJok06H7xW3nRuQhLHbgSMROYPva.g135sjcDmOdKvy2a
