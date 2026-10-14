@@ -8,14 +8,16 @@ featured_image: banner-dealer.jpg
 sections:
   -
     id: h9aONol07lLVKS02-ZNkC
-    heading: 'Jaringan Dealer di Seluruh Indonesia'
+    heading: 'Kami hadir di seluruh Indonesia'
     description:
       -
         type: paragraph
+        attrs:
+          textAlign: null
         content:
           -
             type: text
-            text: 'Didukung jaringan dealer, workshop, dan layanan purna jual yang tersebar di berbagai untuk memastikan armada Anda tetap produktif dan bekerja optimal.'
+            text: 'Didukung jaringan lengkap dengan layanan purna jual serta ketersediaan sparepart yang tersebar di seluruh indonesia untuk memastikan armada Anda tetap produktif dan bekerja optimal.'
     type: heading_description
     enabled: true
     identifier: opening-dealer
@@ -25,6 +27,6 @@ sections:
     show_grid_dealer: true
     type: grid_dealers_show
     enabled: true
-updated_by: 28d34247-1c17-42bf-8548-5b36f18adcbd
-updated_at: 1787118422
+updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
+updated_at: 1791958888
 ---
