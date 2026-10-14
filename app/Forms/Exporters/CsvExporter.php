@@ -35,8 +35,7 @@ class CsvExporter extends StatamicCsvExporter
 
     public function download(): BinaryFileResponse
     {
-        // LiteSpeed HTTP/2 rejects downloads when unexpected buffered output
-        // makes Content-Length mismatch (browser shows ERR_INVALID_RESPONSE).
+        // Bersihkan buffer sebelum unduhan CSV.
         while (ob_get_level() > 0) {
             ob_end_clean();
         }

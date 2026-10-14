@@ -24,9 +24,7 @@ class FormExportController extends StatamicFormExportController
             return $exporter->response();
         }
 
-        // Stream the file instead of BinaryFileResponse. LiteSpeed + Cloudflare
-        // often return ERR_INVALID_RESPONSE when Content-Length does not match
-        // the body (common with temp-file downloads and leftover output buffers).
+        // Stream unduhan untuk LiteSpeed dan Cloudflare.
         while (ob_get_level() > 0) {
             ob_end_clean();
         }

@@ -156,9 +156,7 @@ body.background-grey {
 
 
 
-/* Sea colour behind the flat vector land layer - DEALER MAPS */
-/* !important because leaflet.css is imported unlayered and its
-   `.leaflet-container { background: #ddd }` otherwise beats this layered rule. */
+/* Warna laut peta dealer; override Leaflet. */
 #dealer-map.leaflet-container {
    background: #D5E8EB !important;
 }

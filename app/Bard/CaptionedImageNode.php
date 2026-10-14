@@ -7,13 +7,7 @@ use Statamic\Fieldtypes\Bard\ImageNode;
 use Statamic\Support\Str;
 use Tiptap\Utils\HTML;
 
-/**
- * Render gambar Bard sebagai <figure> + <figcaption> kalau asset punya caption.
- *
- * Caption diambil dari .meta asset (field `caption` di blueprint assets),
- * yaitu tempat Statamic menyimpan metadata gambar. Kalau caption kosong,
- * output-nya tetap <img> biasa seperti bawaan Statamic.
- */
+/** Gambar Bard dengan caption aset. */
 class CaptionedImageNode extends ImageNode
 {
     public function renderHTML($node, $HTMLAttributes = [])
@@ -24,9 +18,7 @@ class CaptionedImageNode extends ImageNode
             return parent::renderHTML($node, $HTMLAttributes);
         }
 
-        // Serializer tiptap tidak bisa menyusun <figure><img><figcaption>teks
-        // lewat bentuk array bersarang (tidak ada cara menaruh teks setelah
-        // elemen void). Bentuk ['content' => ...] merender string apa adanya.
+        // Figure dirender sebagai HTML lengkap.
         $attributes = HTML::renderAttributes(
             HTML::mergeAttributes($this->options['HTMLAttributes'], $HTMLAttributes)
         );

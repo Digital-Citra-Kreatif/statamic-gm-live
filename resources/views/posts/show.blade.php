@@ -328,7 +328,7 @@
     </main>
 
     @if ($hasFooter)
-        {{-- Section berita terkait berlatar warna, jadi margin atas footer dinetralkan biar tidak ada gap putih --}}
+        {{-- Jarak footer berita terkait --}}
         <div @class(['lg:-mt-50' => $hasBlogSkin && $posts->isNotEmpty()])>
             <x-layouts.footer.footer />
         </div>

@@ -1,31 +1,23 @@
-/* =========================
-   1. Box sizing
-========================= */
+/* Box sizing */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* =========================
-   2. Reset margins
-========================= */
+/* Reset margins */
 * {
   margin: 0;
 }
 
-/* =========================
-   3. Root defaults
-========================= */
+/* Root defaults */
 html {
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
 }
 
-/* =========================
-   4. Body defaults
-========================= */
+/* Body defaults */
 body {
   min-height: 100vh;
   font-family: var(--font-sans);
@@ -36,9 +28,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* =========================
-   5. Media elements
-========================= */
+/* Media elements */
 img,
 picture,
 video,
@@ -48,9 +38,7 @@ svg {
   max-width: 100%;
 }
 
-/* =========================
-   6. Form elements
-========================= */
+/* Form elements */
 input,
 button,
 textarea,
@@ -64,26 +52,20 @@ button {
   cursor: pointer;
 }
 
-/* =========================
-   7. Links
-========================= */
+/* Links */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* =========================
-   8. Lists
-========================= */
+/* Lists */
 ul,
 ol {
   list-style: none;
   padding: 0;
 }
 
-/* =========================
-   9. Headings
-========================= */
+/* Headings */
 h1,
 h2,
 h3,
@@ -94,17 +76,13 @@ h6 {
   font-weight: inherit;
 }
 
-/* =========================
-   10. Tables
-========================= */
+/* Tables */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* =========================
-   11. Text overflow
-========================= */
+/* Text overflow */
 p,
 h1,
 h2,
@@ -115,17 +93,13 @@ h6 {
   overflow-wrap: break-word;
 }
 
-/* =========================
-   12. Accessibility
-========================= */
+/* Accessibility */
 :focus-visible {
   outline: var(--focus-ring-width) solid var(--color-focus);
   outline-offset: var(--focus-ring-offset);
 }
 
-/* =========================
-   13. Reduce motion
-========================= */
+/* Reduce motion */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;

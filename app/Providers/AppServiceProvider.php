@@ -17,7 +17,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        // Stream form exports (avoids LiteSpeed ERR_INVALID_RESPONSE on CSV download).
+        // Ekspor formulir via stream.
         $this->app->bind(StatamicFormExportController::class, FormExportController::class);
     }
 
@@ -26,18 +26,16 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        // Gambar di dalam Bard dirender jadi <figure>+<figcaption> kalau
-        // asset-nya punya caption di .meta.
+        // Caption gambar Bard.
         Augmentor::replaceExtension('image', new CaptionedImageNode);
 
-        // Keep an explicit left alignment when Bard content sits in a centered container.
+        // Perataan teks Bard.
         Augmentor::replaceExtension('textAlign', new TextAlign([
             'types' => ['heading', 'paragraph'],
             'defaultAlignment' => null,
         ]));
 
-        // CSS tambahan control panel
-        // Jangan taruh di /cp > bentrok dengan rute control panel
+        // CSS control panel.
         Statamic::externalStyle(url('/cp-custom.css'));
     }
 }

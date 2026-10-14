@@ -36,7 +36,7 @@ section, .section {
   }
 }
 
-/* Flow: default spacing between direct siblings, usually used together with container class */
+/* Jarak elemen flow. */
 .flow > * + * {
   margin-block-start: var(--flow-space);
 }

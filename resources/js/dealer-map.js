@@ -1,4 +1,4 @@
-// Maps dealer — search, filter, hotspot (hover desktop / click mobile)
+// Peta dealer.
 
 import landGeoJson from './data/land.json';
 import markerIcon from 'leaflet/dist/images/marker-icon.png';
@@ -37,8 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const map = L.map('dealer-map', { zoomControl: false }).setView([-2.5, 118], 5);
     L.control.zoom({ position: 'bottomright' }).addTo(map);
 
-    // Flat vector basemap: land drawn from local GeoJSON over a solid sea
-    // colour. No raster tiles, so there is no terrain texture and no labels.
+    // Peta dasar vektor lokal.
     const layerStreet = L.geoJSON(landGeoJson, {
         style: {
             fillColor: '#FBF8F3',

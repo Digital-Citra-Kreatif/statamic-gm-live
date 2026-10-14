@@ -50,7 +50,7 @@
                 </div>
             @else
                 <div class="aspect-video rounded-xl bg-zinc-100 dark:bg-zinc-800" data-dealer-map>
-                    {{-- Map pins/layout: wire Leaflet or similar in site.js using dealer coordinates --}}
+                    {{-- Pin peta dealer --}}
                 </div>
             @endif
             @if ($block->dealers)

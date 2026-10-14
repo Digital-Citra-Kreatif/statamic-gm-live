@@ -9,13 +9,7 @@ use Statamic\Facades\Site;
 //    'title' => 'Example'
 // ]);
 
-/*
-|--------------------------------------------------------------------------
-| Product comparison (AJAX)
-|--------------------------------------------------------------------------
-| Returns the specification data for a single product so the comparison
-| section on the single-product page can swap columns without a reload.
-*/
+// Product comparison API.
 Route::get('/api/products/{id}/comparison', function (string $id) {
     $site = Site::current()->handle();
 
@@ -29,8 +23,7 @@ Route::get('/api/products/{id}/comparison', function (string $id) {
 
     $image = $entry->augmentedValue('featured_image')->value();
 
-    // Sumber tunggal: checkboxes "spesification_info".
-    // Options (key => label) dari blueprint, key tercentang dari value.
+    // Spesifikasi terpilih dari global.
     $options = collect($global?->blueprint()?->field('spesification_info')?->config()['options'] ?? [])
         ->mapWithKeys(function ($opt, $k) {
             if (is_array($opt) && array_key_exists('key', $opt)) {
@@ -41,7 +34,7 @@ Route::get('/api/products/{id}/comparison', function (string $id) {
 
     $selected = collect($global?->value('spesification_info') ?? [])->filter(fn ($v) => is_string($v));
 
-    // Handle field yang benar-benar ada di produk (key tanpa field diabaikan).
+    // Field produk yang tersedia.
     $productFieldHandles = $entry->blueprint()?->fields()->all()->keys() ?? collect();
 
     $specRows = $options
@@ -53,13 +46,13 @@ Route::get('/api/products/{id}/comparison', function (string $id) {
         ])
         ->values();
 
-    // Baris Model selalu paling atas, lalu baris dari spesification_info.
+    // Model di baris pertama.
     $rows = collect([
         ['field' => 'model', 'label' => $global?->value('model_labels') ?: 'Model', 'value' => $entry->value('sku') ?: $entry->value('title')],
     ])->concat($specRows)->map(fn ($row) => [
         'field' => $row['field'],
         'label' => $row['label'],
-        // Nilai kosong ditangani klien (placeholder / hide baris).
+        // Nilai kosong ditangani klien.
         'value' => (string) ($row['value'] ?? ''),
     ])->values();
 
