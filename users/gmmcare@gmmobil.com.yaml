@@ -16,4 +16,4 @@ preferences:
     dealers:
       view: tree
     products:
-      view: list
+      view: tree
