@@ -1,6 +1,4 @@
 name: Recruitment
-roles:
-  - career_manager
 groups:
   - career_managers
 super: false
