@@ -24,6 +24,7 @@ preferences:
         - industries
         - status
         - date
+        - order_number
       after_save: continue_editing
     pages:
       view: list
