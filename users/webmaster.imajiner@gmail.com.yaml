@@ -40,7 +40,7 @@ preferences:
         - display_grid_view
         - is_active
       after_save: continue_editing
-      per_page: 100
+      per_page: 25
     careers:
       view: list
       columns:

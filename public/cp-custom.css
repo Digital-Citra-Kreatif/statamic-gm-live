@@ -9,7 +9,7 @@ body.outside .logo .white-label-logo {
     margin-inline: auto;
 }
 
-.page-tree .product-tree-category {
+.page-tree .collection-tree-badge {
     display: inline-flex;
     align-items: center;
     padding: 2px 8px;
@@ -23,7 +23,7 @@ body.outside .logo .white-label-logo {
     white-space: nowrap;
 }
 
-.dark .page-tree .product-tree-category {
+.dark .page-tree .collection-tree-badge {
     border-color: #4338ca;
     background: #312e81;
     color: #e0e7ff;

@@ -4,7 +4,7 @@ namespace App\Providers;
 
 use App\Bard\CaptionedImageNode;
 use App\Bard\TextAlign;
-use App\Http\Controllers\CP\Collections\ProductCategoryTreeController;
+use App\Http\Controllers\CP\Collections\CollectionTreeLabelController;
 use App\Http\Controllers\CP\Forms\FormExportController;
 use Illuminate\Support\ServiceProvider;
 use Statamic\Fieldtypes\Bard\Augmentor;
@@ -21,7 +21,7 @@ class AppServiceProvider extends ServiceProvider
     {
         // Ekspor formulir via stream.
         $this->app->bind(StatamicFormExportController::class, FormExportController::class);
-        $this->app->bind(StatamicCollectionTreeController::class, ProductCategoryTreeController::class);
+        $this->app->bind(StatamicCollectionTreeController::class, CollectionTreeLabelController::class);
     }
 
     /**
@@ -40,6 +40,6 @@ class AppServiceProvider extends ServiceProvider
 
         // CSS control panel.
         Statamic::externalStyle(url('/cp-custom.css'));
-        Statamic::externalScript(url('/cp-product-tree.js'));
+        Statamic::externalScript(url('/cp-collection-tree.js'));
     }
 }
