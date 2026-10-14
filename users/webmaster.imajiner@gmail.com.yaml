@@ -16,7 +16,7 @@ preferences:
       per_page: 100
       after_save: continue_editing
     products:
-      view: tree
+      view: list
       columns:
         - featured_image
         - title
