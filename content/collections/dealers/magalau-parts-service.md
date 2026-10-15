@@ -10,9 +10,9 @@ dealer_categories:
 location:
   latitude: -2.7833
   longitude: 115.9167
-address: |-
-  PART & SERVICE CENTER
-  GAYA MAKMUR MOBIL
-updated_by: 28d34247-1c17-42bf-8548-5b36f18adcbd
-updated_at: 1787131713
+address: 'Jalan Hauling SDE KM.28, Desa Magalau hulu, Kelumpang barat'
+updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
+updated_at: 1792045256
+whatsapp_number: '0811 1997 0654'
+whatsapp_link: 'http://wa.me//081119970654'
 ---
