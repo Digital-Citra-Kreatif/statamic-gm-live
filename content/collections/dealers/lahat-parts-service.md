@@ -14,7 +14,8 @@ address: |-
   PARTS AND SERVICE CENTER GAYA MAKMUR MOBIL
   Jalan Lahat - Muara Enim, Desa Tanjung Jambu, Merapi Timur,  Lahat, Sumatera Selatan 31471
 updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
-updated_at: 1792045738
-whatsapp_number: '0811 1929 2702'
+updated_at: 1792045925
+whatsapp_number: '081119292702'
+whatsapp_link: 'http://wa.me//081119292702'
 google_maps_url: 'https://maps.app.goo.gl/Fgnr2Lwd1EdfTECa7'
 ---
