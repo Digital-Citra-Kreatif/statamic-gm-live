@@ -10,9 +10,11 @@ dealer_categories:
 location:
   latitude: -2.7833
   longitude: 115.9167
-address: 'Jalan Hauling SDE KM.28, Desa Magalau hulu, Kelumpang barat'
+address: |-
+  PARTS AND SERVICE CENTER GAYA MAKMUR MOBIL
+  Jalan Hauling SDE KM.28, Desa Magalau hulu, Kelumpang barat
 updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
-updated_at: 1792045256
+updated_at: 1792045727
 whatsapp_number: '0811 1997 0654'
 whatsapp_link: 'http://wa.me//081119970654'
 ---
