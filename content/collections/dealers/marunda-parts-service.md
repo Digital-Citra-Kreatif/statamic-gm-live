@@ -10,9 +10,8 @@ dealer_categories:
 location:
   latitude: -6.105
   longitude: 106.945
-address: |-
-  PART CENTER & SERVICE CENTER
-  GAYA MAKMUR MOBIL
-updated_by: 28d34247-1c17-42bf-8548-5b36f18adcbd
-updated_at: 1787131550
+address: 'Jalan Marunda Makmur, Sagara Makmur, Taruma Jaya, Bekasi, Jawa Barat'
+updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
+updated_at: 1792045331
+whatsapp_number: '0811 1929 2702'
 ---
