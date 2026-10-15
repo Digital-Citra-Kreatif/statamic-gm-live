@@ -5,9 +5,8 @@ title: Mataram
 city: Mataram
 address: |-
   PART & SERVICE CENTER GAYA MAKMUR MOBIL
-  Jalan TGH. Faesal No.31, Turida
-  Kec. Sandubaya, Kota Mataram, Nusa Tenggara Barat
-whatsapp_number: '0812 3766 511'
+  Jalan TGH. Faesal No.31, Turida Kec. Sandubaya, Kota Mataram, Nusa Tenggara Barat
+whatsapp_number: '08123766 511'
 whatsapp_link: 'https://wa.me/628123766511'
 is_active: true
 display_grid_view: true
@@ -16,6 +15,6 @@ dealer_categories:
 location:
   latitude: -8.583333
   longitude: 116.116667
-updated_by: 28d34247-1c17-42bf-8548-5b36f18adcbd
-updated_at: 1787117739
+updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
+updated_at: 1792048086
 ---
