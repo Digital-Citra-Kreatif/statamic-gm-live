@@ -14,6 +14,8 @@ dealer_categories:
 location:
   latitude: -6.732
   longitude: 108.5523
-updated_by: 28d34247-1c17-42bf-8548-5b36f18adcbd
-updated_at: 1787130512
+updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
+updated_at: 1792046936
+whatsapp_number: '081119292702'
+whatsapp_link: 'http://wa.me//081119292702'
 ---
