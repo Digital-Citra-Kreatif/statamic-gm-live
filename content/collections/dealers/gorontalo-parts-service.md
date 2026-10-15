@@ -12,6 +12,7 @@ location:
   longitude: 123.059
 address: 'PARTS & SERVICE CENTER'
 updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
-updated_at: 1791972373
-whatsapp_number: '0811 1212 9380'
+updated_at: 1792046512
+whatsapp_number: '081112129380'
+whatsapp_link: 'http://wa.me//081112129380'
 ---
