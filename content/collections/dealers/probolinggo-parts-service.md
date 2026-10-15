@@ -6,7 +6,7 @@ city: Probolinggo
 address: |-
   PART CENTER & SERVICE CENTER GAYA MAKMUR MOBIL
   Jalan Bromo, Kel. Triwung Lor, Kec. Kademangan, Kota Probolinggo, Jawa Timur
-whatsapp_number: '0811 1927 1116'
+whatsapp_number: '081119271116'
 whatsapp_link: 'https://wa.me/6281119271116'
 is_active: true
 display_grid_view: true
@@ -15,6 +15,7 @@ dealer_categories:
 location:
   latitude: -7.756111
   longitude: 113.211944
-updated_by: 28d34247-1c17-42bf-8548-5b36f18adcbd
-updated_at: 1787117739
+updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
+updated_at: 1792049457
+google_maps_url: 'https://maps.app.goo.gl/cmmYpEM6tapohXePA'
 ---
