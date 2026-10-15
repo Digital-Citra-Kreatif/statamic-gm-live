@@ -14,7 +14,7 @@ address: |-
   PART CENTER & SERVICE CENTER GAYA MAKMUR MOBIL
   Jalan Dokter Angka 1 No. 90A, RT.002, RW.07, Sokanegara, Purwokerto Timur, Jawa Tengah
 updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
-updated_at: 1792046121
+updated_at: 1792046425
 whatsapp_number: '081119292702'
-whatsapp_link: 'http://wa.me//081119292702'
+whatsapp_link: 'http://wa.me//6281119292702'
 ---
