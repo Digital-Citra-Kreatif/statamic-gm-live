@@ -6,8 +6,8 @@ city: Jambi
 address: |-
   PT MITRA PERDANA MOBIL
   Jl. LingkarSelatan III No 082 RT 031, Talang Bakung, Paal Merah, Jambi 36135
-whatsapp_number: 0811 1051 7007
-whatsapp_link: 'https://wa.me/6281110517007'
+whatsapp_number: '08127408816'
+whatsapp_link: 'https://wa.me/628127408816'
 google_maps_url: 'https://maps.app.goo.gl/LyyDX8poWozX24T69'
 is_active: true
 display_grid_view: true
@@ -16,6 +16,6 @@ dealer_categories:
 location:
   latitude: -1.610123
   longitude: 103.613121
-updated_by: 28d34247-1c17-42bf-8548-5b36f18adcbd
-updated_at: 1787117739
+updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
+updated_at: 1792047046
 ---
