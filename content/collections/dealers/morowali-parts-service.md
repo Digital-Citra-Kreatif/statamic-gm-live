@@ -14,8 +14,8 @@ address: |-
   PART & SERVICE CENTER GAYA MAKMUR MOBIL
   Jalan Trans Sulawesi, Kolono, Bungku Timur, Morowali, Sulawesi Tengah
 updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
-updated_at: 1792045874
+updated_at: 1792046448
 whatsapp_number: '081112129365'
-whatsapp_link: 'https://wa.me//081112129365'
+whatsapp_link: 'https://wa.me//6281112129365'
 google_maps_url: 'https://maps.app.goo.gl/66UvTbjJQQqRLZFv9'
 ---
