@@ -10,9 +10,11 @@ dealer_categories:
 location:
   latitude: -3.786944
   longitude: 103.542778
-address: 'Jalan Lahat - Muara Enim, Desa Tanjung Jambu, Merapi Timur,  Lahat, Sumatera Selatan 31471'
+address: |-
+  PARTS AND SERVICE CENTER GAYA MAKMUR MOBIL
+  Jalan Lahat - Muara Enim, Desa Tanjung Jambu, Merapi Timur,  Lahat, Sumatera Selatan 31471
 updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
-updated_at: 1792044927
+updated_at: 1792045738
 whatsapp_number: '0811 1929 2702'
 google_maps_url: 'https://maps.app.goo.gl/Fgnr2Lwd1EdfTECa7'
 ---
