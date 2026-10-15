@@ -13,9 +13,6 @@ is_active: true
 display_grid_view: true
 dealer_categories:
   - cabang-dealer
-location:
-  latitude: -0.02633
-  longitude: 109.342503
 updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
-updated_at: 1792048691
+updated_at: 1792048860
 ---
