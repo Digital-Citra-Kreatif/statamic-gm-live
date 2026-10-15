@@ -5,8 +5,8 @@ title: Cilegon
 city: Cilegon
 address: |-
   PT PUTRA GALUH PERSADA
-  Jl Raya Merak No 21, Rw.Arum, Kec. Grogol, Kota Cilegon, Banten 42436
-phone_number: (0254) 8494 094
+  Jalan Mayjend Suloyo, No.18, Rawa Arum, Grogol, Cilegon, Banten
+phone_number: '(0254) 8494 094'
 is_active: true
 display_grid_view: true
 dealer_categories:
@@ -14,6 +14,7 @@ dealer_categories:
 location:
   latitude: -6.0025
   longitude: 106.011944
-updated_by: 28d34247-1c17-42bf-8548-5b36f18adcbd
-updated_at: 1787117739
+updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
+updated_at: 1792046867
+google_maps_url: 'https://maps.app.goo.gl/1NFT9B36a1rxzpKT8'
 ---
