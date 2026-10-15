@@ -11,10 +11,10 @@ location:
   latitude: -6.105
   longitude: 106.945
 address: |-
-  PT GAYA MAKMUR MOBIL
+  Parts and Service Center GM Mobil
   Jalan Marunda Makmur, Sagara Makmur, Taruma Jaya, Bekasi, Jawa Barat
 updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
-updated_at: 1792045631
+updated_at: 1792045675
 whatsapp_number: '081119292702'
 whatsapp_link: 'https://wa.me/081119292702'
 google_maps_url: 'https://maps.app.goo.gl/1yCJYwEHu5CKBj9K9'
