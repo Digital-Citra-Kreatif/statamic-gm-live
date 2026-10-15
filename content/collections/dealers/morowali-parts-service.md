@@ -11,8 +11,11 @@ location:
   latitude: -2.5333
   longitude: 121.9667
 address: |-
-  PART & SERVICE CENTER
-  GAYA MAKMUR MOBIL
-updated_by: 28d34247-1c17-42bf-8548-5b36f18adcbd
-updated_at: 1787131724
+  PART & SERVICE CENTER GAYA MAKMUR MOBIL
+  Jalan Trans Sulawesi, Kolono, Bungku Timur, Morowali, Sulawesi Tengah
+updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
+updated_at: 1792045874
+whatsapp_number: '081112129365'
+whatsapp_link: 'https://wa.me//081112129365'
+google_maps_url: 'https://maps.app.goo.gl/66UvTbjJQQqRLZFv9'
 ---
