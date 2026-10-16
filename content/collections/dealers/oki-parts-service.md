@@ -14,8 +14,7 @@ address: |-
   PART & SERVICE CENTER GAYA MAKMUR MOBIL
   Pulp. Air Sugihan, Ogan Komering Ilir, Sumatera Selatan
 updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
-updated_at: 1792046437
+updated_at: 1792121461
 whatsapp_number: '081112129380'
 whatsapp_link: 'http://wa.me//6281112129380'
-google_maps_url: 'https://maps.app.goo.gl/dZ4anz51NQJcP7No9'
 ---
