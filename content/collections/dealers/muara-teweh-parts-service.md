@@ -13,9 +13,9 @@ display_grid_view: true
 dealer_categories:
   - parts-service-center
 location:
-  latitude: -0.951944
-  longitude: 114.891389
+  latitude: -0.976217
+  longitude: 114.9007302
 updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
-updated_at: 1792048436
-google_maps_url: 'https://maps.app.goo.gl/EKaQsCpFK6SJE5kz6'
+updated_at: 1792140619
+google_maps_url: 'https://www.google.com/maps/place/GM+Mobil+Service+Center+Muara+Teweh/@-0.976217,114.8981499,1207m/data=!3m2!1e3!4b1!4m6!3m5!1s0x2df9793918d56cf7:0x8d865a86c18417e9!8m2!3d-0.976217!4d114.9007302!16s%2Fg%2F11yn02t4xm?entry=tts&g_ep=EgoyMDI2MTAxMi4wIPu8ASoASAFQAw%3D%3D&skid=e2cd399b-a406-4701-8b0b-10d64d1f0542'
 ---
