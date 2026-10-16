@@ -13,9 +13,9 @@ display_grid_view: true
 dealer_categories:
   - parts-service-center
 location:
-  latitude: -2.0217
-  longitude: 103.7075
+  latitude: -2.1661626
+  longitude: 103.7134738
 updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
-updated_at: 1792046672
-google_maps_url: 'https://maps.app.goo.gl/grRtSXcMbZdZ8TeY8'
+updated_at: 1792121714
+google_maps_url: 'https://www.google.com/maps/place/GM+Mobil+Service+Center+Bayung+Lencir/@-2.1661626,103.7134738,1206m/data=!3m2!1e3!4b1!4m6!3m5!1s0x2e255b8027f094ad:0xee4af983921fc1c!8m2!3d-2.1661626!4d103.7134738!16s%2Fg%2F11zk1dklwc?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D'
 ---
