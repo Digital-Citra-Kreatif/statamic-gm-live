@@ -13,9 +13,9 @@ display_grid_view: true
 dealer_categories:
   - parts-service-center
 location:
-  latitude: -4.056389
-  longitude: 121.593611
+  latitude: -3.8480733
+  longitude: 121.3134514
 updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
-updated_at: 1792047611
-google_maps_url: 'https://maps.app.goo.gl/HHggdivLvRU6o8tCA'
+updated_at: 1792140482
+google_maps_url: 'https://www.google.com/maps/place/GM+Mobil+Service+Center+Kolaka/@-3.8480733,121.3134514,1205m/data=!3m2!1e3!4b1!4m6!3m5!1s0x2d9799703c20112b:0x6d51bca78d8dacae!8m2!3d-3.8480733!4d121.3134514!16s%2Fg%2F11xtxvx943?entry=tts&g_ep=EgoyMDI2MTAxMi4wIPu8ASoASAFQAw%3D%3D&skid=52402d3c-4815-4cdb-93aa-0da89ee5ef90'
 ---
