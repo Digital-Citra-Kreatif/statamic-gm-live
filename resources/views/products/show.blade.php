@@ -360,7 +360,7 @@
                                         class="gallery-thumbs-track flex overflow-x-auto scroll-smooth flex-1 scrollbar-none [&::-webkit-scrollbar]:hidden">
                                         @foreach ($gallery as $image)
                                             <button type="button"
-                                                class="gallery-thumb shrink-0 mr-3 last:mr-0 w-[calc((100%-3*0.75rem)/4)] rounded-xl overflow-hidden transition-opacity {{ $loop->first ? 'opacity-100' : 'opacity-50' }}">
+                                                class="gallery-thumb shrink-0 mr-3 first:ml-auto last:mr-auto w-[calc((100%-3*0.75rem)/4)] rounded-xl overflow-hidden transition-opacity {{ $loop->first ? 'opacity-100' : 'opacity-50' }}">
                                                 <img src="{{ $image->url() }}" alt="{{ $image->alt ?? $page->title }}"
                                                     class="w-full h-15 md:h-15 lg:h-30 object-contain" />
                                             </button>

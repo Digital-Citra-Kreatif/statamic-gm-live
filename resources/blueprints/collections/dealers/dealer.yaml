@@ -77,7 +77,7 @@ tabs:
               type: group
               display: 'Map Coordinates'
               localizable: true
-              instructions: 'Koordinat peta.'
+              instructions: 'Otomatis dari Google Maps URL saat disimpan.'
               fields:
                 -
                   handle: latitude
