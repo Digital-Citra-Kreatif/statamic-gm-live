@@ -2,7 +2,7 @@
 id: 4545cd73-1378-4190-b466-5d3c158f21f8
 blueprint: career
 title: 'Senior Programmer'
-excerpt: 'Minimal pendidikan S1 Teknik Informatika, Sistem Informasi, Teknik Komputer dan lainnya, Pengalaman sebagai Programmer, mmenguasai bahasa pemrograman'
+excerpt: 'Minimal pendidikan S1 Teknik Informatika, Sistem Informasi, Teknik Komputer dan lainnya, Pengalaman sebagai Programmer, Menguasai bahasa pemrograman'
 qualifications:
   -
     type: bulletList
@@ -88,5 +88,5 @@ seo:
   title: '@seo:title'
   description: '@seo:description'
 updated_by: a97f9563-5e8f-460f-bc29-6c59cd30db1b
-updated_at: 1792405512
+updated_at: 1792405549
 ---
