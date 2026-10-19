@@ -86,5 +86,5 @@ seo:
   title: '@seo:title'
   description: '@seo:description'
 updated_by: a97f9563-5e8f-460f-bc29-6c59cd30db1b
-updated_at: 1792405196
+updated_at: 1792405218
 ---
