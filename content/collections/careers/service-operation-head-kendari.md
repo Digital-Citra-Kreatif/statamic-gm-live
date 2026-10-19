@@ -2,7 +2,7 @@
 id: 141d93b0-5ff3-42e8-bc7d-d0c7225c32c1
 blueprint: career
 title: 'Service Operation Head'
-excerpt: 'PT Gaya Makmur Mobil membuka kesempatan bagi profesional berpengalaman untuk bergabung sebagai Service Operation Head. Posisi ini bertanggung jawab memimpin dan mengoptimalkan operasional layanan purnajual, memastikan kualitas pelayanan servis, meningkatkan kepuasan pelanggan, serta mencapai target operasional dan bisnis cabang.'
+excerpt: 'Service Operation Head ini bertanggung jawab memimpin dan mengoptimalkan operasional layanan purnajual, memastikan kualitas pelayanan servis, meningkatkan kepuasan pelanggan, serta mencapai target operasional dan bisnis cabang.'
 description:
   -
     type: paragraph
@@ -280,5 +280,5 @@ seo:
   title: '@seo:title'
   description: '@seo:description'
 updated_by: a97f9563-5e8f-460f-bc29-6c59cd30db1b
-updated_at: 1792405897
+updated_at: 1792406071
 ---
