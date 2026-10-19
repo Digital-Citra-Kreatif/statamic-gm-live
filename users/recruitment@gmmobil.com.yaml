@@ -7,3 +7,8 @@ preferences:
   collections:
     careers:
       view: tree
+  forms:
+    career_apply:
+      columns:
+        - datestamp
+        - cv_resume
