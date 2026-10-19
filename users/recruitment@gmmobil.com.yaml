@@ -7,6 +7,7 @@ preferences:
   collections:
     careers:
       view: tree
+      after_save: continue_editing
   forms:
     career_apply:
       columns:
