@@ -2,7 +2,7 @@
 id: 141d93b0-5ff3-42e8-bc7d-d0c7225c32c1
 blueprint: career
 title: 'Service Operation Head'
-excerpt: 'Min. S1 Teknik Mesin, Teknik Otomotif, atau jurusan relevan, dengan pengalaman minimal 5 tahun di bidang aftersales, service operation, atau pengelolaan bengkel otomotif. Memiliki pemahaman yang baik mengenai sistem kendaraan, proses perawatan dan perbaikan, serta operasional bengkel kendaraan niaga atau truk. Mampu memimpin dan mengoordinasikan tim, mengambil keputusan, serta menyelesaikan masalah secara efektif. Memahami pengelolaan biaya operasional, pencapaian target layanan, produktivitas mekanik, dan indikator kinerja bengkel.'
+excerpt: 'Min. S1 Teknik Mesin, Teknik Otomotif, atau jurusan relevan, dengan pengalaman minimal 5 tahun di bidang aftersales, service operation, atau pengelolaan bengkel otomotif. Memiliki pemahaman yang baik mengenai sistem kendaraan, proses perawatan dan perbaikan, serta operasional bengkel kendaraan niaga atau truk. Mampu memimpin dan mengoordinasikan tim, mengambil keputusan, serta menyelesaikan masalah secara efektif.'
 description:
   -
     type: paragraph
@@ -280,5 +280,5 @@ seo:
   title: '@seo:title'
   description: '@seo:description'
 updated_by: a97f9563-5e8f-460f-bc29-6c59cd30db1b
-updated_at: 1792406141
+updated_at: 1792406185
 ---
