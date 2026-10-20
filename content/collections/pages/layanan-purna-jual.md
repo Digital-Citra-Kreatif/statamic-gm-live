@@ -3,9 +3,9 @@ id: 24ae8af8-2863-4b05-9f50-033227224acb
 blueprint: page
 title: 'Layanan Purna Jual'
 template: layanan-purna-jual
-updated_by: 28d34247-1c17-42bf-8548-5b36f18adcbd
-updated_at: 1781500631
-featured_image: banner-after-sales.jpg
+updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
+updated_at: 1792487841
+featured_image: banner-(after-sales)-hr.jpg
 parent: home
 sections:
   -
