@@ -17,10 +17,3 @@ preferences:
       view: tree
     products:
       view: list
-  forms:
-    career_apply:
-      columns:
-        - datestamp
-        - position
-        - name
-        - location
