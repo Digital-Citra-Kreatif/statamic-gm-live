@@ -4,7 +4,7 @@ blueprint: page
 title: 'Layanan Purna Jual'
 template: layanan-purna-jual
 updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
-updated_at: 1792489463
+updated_at: 1792489524
 featured_image: banner-(after-sales)-hr.jpg
 parent: home
 sections:
@@ -16,7 +16,7 @@ sections:
         icon: icon-purnajual-1.svg
         title: 'Pelatihan Pengemudi & Teknik'
         text: 'Pusat pelatihan GMM di dirikan dan dipersiapkan sebagai kebutuhan untuk menciptakan sumber daya manusia yang berkualitas dan profesional dengan meningkatkan kemampuan teknis dan skill yang diberikan oleh para pelatih yang sangat berpengalaman dibidangnya. Dan GMM juga memberikan kesempatan kepada pelanggan setia GMM yang memiliki mekanik dan pengemudi untuk GMM berikan pelatihan teknis & keahlian/skill agar dapat memahami dan mengerti tentang produk GMM.'
-        image: image-driver-training.jpg
+        image: image-driver-training-customer.jpg
       -
         id: 0FCrmj31wX9C-0nG2biCX
         icon: fitur-benefit-6.svg
