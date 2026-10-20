@@ -13,3 +13,8 @@ preferences:
       columns:
         - datestamp
         - cv_resume
+        - email
+        - location
+        - phone
+        - name
+        - position
