@@ -21,6 +21,6 @@ preferences:
     career_apply:
       columns:
         - datestamp
-        - name
         - position
+        - name
         - location
