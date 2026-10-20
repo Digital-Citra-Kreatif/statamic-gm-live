@@ -168,9 +168,9 @@ sections:
           -
             type: text
             text: 'Ikuti perkembangan terbaru, dokumentasi serah terima unit, dan edukasi interaktif kami di seluruh kanal media sosial resmi PT Gaya Makmur Mobil.'
-    show: false
+    show: true
     type: heading_description
     enabled: true
 updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
-updated_at: 1791881070
+updated_at: 1792479457
 ---
