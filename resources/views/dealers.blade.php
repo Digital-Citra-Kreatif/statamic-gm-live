@@ -69,6 +69,7 @@
         ->map(
             fn($dealer) => [
                 'title' => $dealer->title,
+                'city' => $dealer->city,
                 'category' => $dealer->dealer_categories?->first()?->slug(),
                 'address' => $dealer->address,
                 'maps_url' => $dealer->google_maps_url,
@@ -186,10 +187,10 @@
                                                         <a href="{{ $item['maps_url'] }}" target="_blank"
                                                             rel="noopener noreferrer"
                                                             class="font-(family-name:--font-display) text-black hover:text-(--color-primary) transition-colors">
-                                                            {{ $item['title'] }}
+                                                            {{ $item['city'] ?: $item['title'] }}
                                                         </a>
                                                     @else
-                                                        {{ $item['title'] }}
+                                                        {{ $item['city'] ?: $item['title'] }}
                                                     @endif
                                                 </h3>
 
