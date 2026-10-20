@@ -4,7 +4,7 @@ blueprint: page
 title: 'GM Teletech'
 template: gm-teletech
 updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
-updated_at: 1791960127
+updated_at: 1792477934
 featured_image: banner-gm-teletech.jpg
 parent: home
 sections:
@@ -82,7 +82,7 @@ sections:
       -
         id: Gvl4XbPi8nrkF5dN3IeOg
         label: 'Call & WA Center'
-        kontak: '62 000 0000 0000'
+        kontak: '08119226798'
     type: call_to_action_grid
     enabled: true
     image_call_to_action: image-(gm-teletech).jpg
