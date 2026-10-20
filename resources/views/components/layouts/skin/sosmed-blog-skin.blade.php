@@ -50,7 +50,7 @@
                 <div
                     class="flex items-center gap-5 uppercase text-(--color-primary) font-medium text-sm lg:text-base justify-between">
                     @if ($displayTerm)
-                        <span>{{ $displayTerm->title }}</span>
+                        <x-layouts.skin.term-label :term="$displayTerm" />
                     @endif
 
                     @if ($entry->date)

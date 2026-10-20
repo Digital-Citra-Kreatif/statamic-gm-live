@@ -74,7 +74,7 @@
                     @if ($displayTerms->isNotEmpty())
                         <span>
                             @foreach ($displayTerms as $term)
-                                {{ $term->title }}
+                                <x-layouts.skin.term-label :term="$term" />
                                 @unless ($loop->last)
                                     ,
                                 @endunless

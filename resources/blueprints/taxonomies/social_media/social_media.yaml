@@ -15,6 +15,14 @@ tabs:
               instructions: 'Nama platform (dipakai di post kategori Sosial Media).'
               validate:
                 - required
+          -
+            handle: icon
+            field:
+              container: assets
+              max_files: 1
+              type: assets
+              display: Icon
+              localizable: true
   sidebar:
     display: Sidebar
     sections:
