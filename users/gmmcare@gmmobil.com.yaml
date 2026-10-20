@@ -24,3 +24,8 @@ preferences:
         - name
         - location
         - position
+  taxonomies:
+    dealer_categories:
+      columns:
+        - title
+        - slug
