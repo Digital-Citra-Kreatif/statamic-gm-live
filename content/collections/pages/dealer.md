@@ -4,7 +4,7 @@ blueprint: page
 title: Dealer
 template: dealers
 parent: home
-featured_image: banner-dealer.jpg
+featured_image: banner-(dealer)-hr.jpg
 sections:
   -
     id: h9aONol07lLVKS02-ZNkC
@@ -28,5 +28,5 @@ sections:
     type: grid_dealers_show
     enabled: true
 updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
-updated_at: 1791958888
+updated_at: 1792487280
 ---
