@@ -17,3 +17,10 @@ preferences:
       view: tree
     products:
       view: list
+  forms:
+    career_apply:
+      columns:
+        - date
+        - name
+        - location
+        - position
