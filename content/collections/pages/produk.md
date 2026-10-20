@@ -4,7 +4,7 @@ blueprint: page
 title: Produk
 template: products
 parent: home
-featured_image: banner-produk.jpg
+featured_image: banner-(produk)-hr.jpg
 sections:
   -
     id: lpdjRgF7CwtIPihOD2j18
@@ -20,8 +20,12 @@ sections:
     show: true
     type: heading_description
     enabled: true
-updated_by: 28d34247-1c17-42bf-8548-5b36f18adcbd
-updated_at: 1787115063
+updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
+updated_at: 1792487429
+seo:
+  title: '@seo:title'
+  description: 'PT. Gaya Makmur Mobil Jual Truk FAW Indonesia, kami menyediakan produk beragam jenis seperti Truk Molen, Truk Kargo, Truk Tangki, Dump Truk,'
+  image: '@seo:featured_image'
 content:
   -
     type: paragraph
@@ -31,8 +35,4 @@ content:
       -
         type: text
         text: 'Browse our product catalog. Filter by **product category** or **industry** using the links below.'
-seo:
-  title: '@seo:title'
-  description: 'PT. Gaya Makmur Mobil Jual Truk FAW Indonesia, kami menyediakan produk beragam jenis seperti Truk Molen, Truk Kargo, Truk Tangki, Dump Truk,'
-  image: '@seo:featured_image'
 ---
