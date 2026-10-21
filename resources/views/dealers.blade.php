@@ -103,6 +103,13 @@
         ->get()
         ->mapWithKeys(fn($term) => [$term->slug() => $term->title]);
 
+    // Jumlah dealer per kategori
+    $dealerCounts = $dealers->groupBy('dealer-category')->map(fn($group) => $group->count());
+
+    // Kategori untuk counter
+    $counterCategories = $dealerCategories->filter(fn($label, $slug) => ($dealerCounts[$slug] ?? 0) > 0);
+    $counterCategoryCount = $counterCategories->count();
+
     // Label informasi dealer
     $dealerLabels =
         \Statamic\Facades\GlobalSet::findByHandle('dealer_label_information')?->inCurrentSite()?->data() ?? collect();
@@ -160,7 +167,27 @@
         @if ($hasDealerMap)
             <section id="dealer">
                 <div class="container">
-                    <div class="my-18 md:my-18 lg:my-30">
+                    <div class="my-18 md:my-18 lg:my-30 flex flex-col gap-8 lg:gap-10">
+
+                        {{-- Counter --}}
+                        @if ($counterCategoryCount > 0)
+                            <div class="w-full grid gap-2 md:gap-4 lg:gap-4"
+                                style="grid-template-columns: repeat({{ $counterCategoryCount }}, minmax(0, 1fr));">
+                                @foreach ($counterCategories as $slug => $label)
+                                    <a href="{{ '?' . http_build_query(['dealer_category' => $slug]) . '#dealer-content' }}"
+                                        class="group flex flex-col items-start lg:items-center gap-2 lg:gap-4 bg-(--color-surface) hover:bg-(--color-primary) p-4 lg:px-4 lg:py-8 rounded-xl transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--color-primary)">
+                                        <p
+                                            class="text-3xl lg:text-4xl text-(--color-primary) group-hover:text-white group-focus-visible:text-white font-(family-name:--font-display) font-semibold transition-colors">
+                                            {{ $dealerCounts[$slug] ?? 0 }}
+                                        </p>
+                                        <p
+                                            class="text-(--color-primary) group-hover:text-white group-focus-visible:text-white text-xs md:text-xs lg:text-sm lg:leading-[1.2rem] transition-colors">
+                                            {{ $label }}</p>
+                                    </a>
+                                @endforeach
+                            </div>
+                        @endif
+
                         <x-layouts.dealer-map :dealers="$dealers" :categories="$dealerCategories" :labels="$dealerLabels" />
                     </div>
                 </div>
