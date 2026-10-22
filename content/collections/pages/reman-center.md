@@ -100,7 +100,8 @@ sections:
                 attrs:
                   colspan: 1
                   rowspan: 1
-                  colwidth: null
+                  colwidth:
+                    - 235
                   align: null
                 content:
                   -
@@ -120,7 +121,7 @@ sections:
                   colspan: 1
                   rowspan: 1
                   colwidth:
-                    - 221
+                    - 281
                   align: null
                 content:
                   -
@@ -140,7 +141,7 @@ sections:
                   colspan: 1
                   rowspan: 1
                   colwidth:
-                    - 221
+                    - 232
                   align: null
                 content:
                   -
@@ -162,7 +163,8 @@ sections:
                 attrs:
                   colspan: 1
                   rowspan: 1
-                  colwidth: null
+                  colwidth:
+                    - 235
                   align: null
                 content:
                   -
@@ -172,14 +174,14 @@ sections:
                     content:
                       -
                         type: text
-                        text: '01. Core Swap / Exchange (COMEX)'
+                        text: 'Core Swap / Exchange (COMEX)'
               -
                 type: tableCell
                 attrs:
                   colspan: 1
                   rowspan: 1
                   colwidth:
-                    - 221
+                    - 281
                   align: null
                 content:
                   -
@@ -196,7 +198,7 @@ sections:
                   colspan: 1
                   rowspan: 1
                   colwidth:
-                    - 221
+                    - 232
                   align: null
                 content:
                   -
@@ -215,7 +217,8 @@ sections:
                 attrs:
                   colspan: 1
                   rowspan: 1
-                  colwidth: null
+                  colwidth:
+                    - 235
                   align: null
                 content:
                   -
@@ -225,14 +228,14 @@ sections:
                     content:
                       -
                         type: text
-                        text: '02. Outright Sale / Sell Off'
+                        text: 'Outright Sale / Sell Off'
               -
                 type: tableCell
                 attrs:
                   colspan: 1
                   rowspan: 1
                   colwidth:
-                    - 221
+                    - 281
                   align: null
                 content:
                   -
@@ -249,7 +252,7 @@ sections:
                   colspan: 1
                   rowspan: 1
                   colwidth:
-                    - 221
+                    - 232
                   align: null
                 content:
                   -
@@ -268,7 +271,8 @@ sections:
                 attrs:
                   colspan: 1
                   rowspan: 1
-                  colwidth: null
+                  colwidth:
+                    - 235
                   align: null
                 content:
                   -
@@ -278,14 +282,14 @@ sections:
                     content:
                       -
                         type: text
-                        text: '03. Repair & Return'
+                        text: 'Repair & Return'
               -
                 type: tableCell
                 attrs:
                   colspan: 1
                   rowspan: 1
                   colwidth:
-                    - 221
+                    - 281
                   align: null
                 content:
                   -
@@ -302,7 +306,7 @@ sections:
                   colspan: 1
                   rowspan: 1
                   colwidth:
-                    - 221
+                    - 232
                   align: null
                 content:
                   -
@@ -321,7 +325,8 @@ sections:
                 attrs:
                   colspan: 1
                   rowspan: 1
-                  colwidth: null
+                  colwidth:
+                    - 235
                   align: null
                 content:
                   -
@@ -331,14 +336,14 @@ sections:
                     content:
                       -
                         type: text
-                        text: '04. Warranty Claim Principle'
+                        text: 'Warranty Claim Principle'
               -
                 type: tableCell
                 attrs:
                   colspan: 1
                   rowspan: 1
                   colwidth:
-                    - 221
+                    - 281
                   align: null
                 content:
                   -
@@ -355,7 +360,7 @@ sections:
                   colspan: 1
                   rowspan: 1
                   colwidth:
-                    - 221
+                    - 232
                   align: null
                 content:
                   -
@@ -374,7 +379,8 @@ sections:
                 attrs:
                   colspan: 1
                   rowspan: 1
-                  colwidth: null
+                  colwidth:
+                    - 235
                   align: null
                 content:
                   -
@@ -384,14 +390,14 @@ sections:
                     content:
                       -
                         type: text
-                        text: '05. Injector COMEX & Repair'
+                        text: 'Injector COMEX & Repair'
               -
                 type: tableCell
                 attrs:
                   colspan: 1
                   rowspan: 1
                   colwidth:
-                    - 221
+                    - 281
                   align: null
                 content:
                   -
@@ -408,7 +414,7 @@ sections:
                   colspan: 1
                   rowspan: 1
                   colwidth:
-                    - 221
+                    - 232
                   align: null
                 content:
                   -
@@ -419,97 +425,6 @@ sections:
                       -
                         type: text
                         text: 'Hemat 50–60% dari harga baru'
-      -
-        type: paragraph
-        attrs:
-          textAlign: null
-      -
-        type: heading
-        attrs:
-          textAlign: null
-          level: 3
-        content:
-          -
-            type: text
-            text: 'COMEX Support Point'
-      -
-        type: paragraph
-        attrs:
-          textAlign: null
-        content:
-          -
-            type: text
-            text: 'Komponen Reman siap pakai tersedia melalui jaringan COMEX Support Point di cabang GM Mobil, membantu mempercepat proses penggantian komponen.'
-      -
-        type: heading
-        attrs:
-          textAlign: null
-          level: 3
-        content:
-          -
-            type: text
-            text: 'Jaminan Kualitas'
-      -
-        type: bulletList
-        content:
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                attrs:
-                  textAlign: null
-                content:
-                  -
-                    type: text
-                    text: 'Quality Test by Engine Testbench'
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                attrs:
-                  textAlign: null
-                content:
-                  -
-                    type: text
-                    text: 'Warranty Coverage'
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                attrs:
-                  textAlign: null
-                content:
-                  -
-                    type: text
-                    text: 'Standar “Quality is Our Goal”'
-      -
-        type: heading
-        attrs:
-          textAlign: null
-          level: 3
-        content:
-          -
-            type: text
-            text: 'Garansi Komponen'
-      -
-        type: paragraph
-        attrs:
-          textAlign: null
-        content:
-          -
-            type: text
-            text: 'Masa garansi dihitung berdasarkan jam mesin (HM) atau bulan sejak serah terima, mana yang tercapai lebih dahulu.'
-      -
-        type: paragraph
-        attrs:
-          textAlign: null
-        content:
-          -
-            type: text
-            text: 'Komponen utama yang tercakup antara lain: Engine, Transmisi, dan Transfer Box.'
     show: true
     type: heading_description
     enabled: true
@@ -522,5 +437,5 @@ sections:
     show: true
     identifier: section-image-reman
 updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
-updated_at: 1792489639
+updated_at: 1792633435
 ---
