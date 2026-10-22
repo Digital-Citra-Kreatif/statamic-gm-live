@@ -17,7 +17,6 @@ fields:
     display: Rows
     mode: stacked
     add_row: Add row
-    validate: required
     fields:
     - handle: icon
       field:
@@ -44,7 +43,6 @@ fields:
         display: Image
         container: assets
         max_files: 1
-        validate: required
-        instructions: 'Gambar. Image maksimal 600x350px.'
+        instructions: 'Gambar (opsional). Image maksimal 600x350px.'
     instructions: Daftar baris.
 - import: common.section_settings

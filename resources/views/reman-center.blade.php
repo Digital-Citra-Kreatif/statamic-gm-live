@@ -16,6 +16,19 @@
         fn($section) => (string) ($section['identifier'] ?? '') === 'section-image-reman',
     );
 
+    $remanRows = collect($page->sections)->first(
+        fn($section) => (string) ($section['type'] ?? '') === 'alternating_rows',
+    );
+
+    $otherDescription = collect($page->sections)->first(
+        fn($section) => (string) ($section['type'] ?? '') === 'other_description',
+    );
+
+    // Baris "- " jadi list
+    $rowTextLines = fn($text) => collect(preg_split('/\R/', trim((string) $text)))
+        ->map(fn($line) => trim($line))
+        ->filter();
+
     // Cek component
     $hasHeader = view()->exists('components.layouts.header.header');
     $hasHeroPage = view()->exists('components.layouts.hero.heropage');
@@ -35,15 +48,84 @@
         {{-- Halaman Reman Center --}}
         <section id="reman-center">
             <div class="container">
-                <div class="flex flex-col items-center my-18 gap-18 lg:my-30 lg:gap-30">
+                <div class="flex flex-col my-18 gap-18 lg:my-30 lg:gap-30">
 
-                    @if ($remanSection && ($remanSection['show'] ?? false))
-                        <div id="{{ $remanSection['anchor'] ?? 'reman-center' }}"
-                            class="w-full lg:w-240">
-                            @if (!empty($remanSection['heading']))
-                                <h2 class="mb-6 lg:mb-8">{{ $remanSection['heading'] }}</h2>
-                            @endif
-                            <div class="content-custom richtext">{!! $remanSection['description'] ?? '' !!}</div>
+                    {{-- Judul & alternating rows --}}
+                    <div class="flex flex-col gap-10 lg:gap-14 w-full">
+                        @if ($remanSection && ($remanSection['show'] ?? false))
+                            <div id="{{ $remanSection['anchor'] ?? 'reman-center' }}"
+                                class="w-full text-left lg:text-center">
+                                @if (!empty($remanSection['heading']))
+                                    <h2 @class(['mb-6 lg:mb-8' => filled((string) ($remanSection['description'] ?? ''))])>
+                                        {{ $remanSection['heading'] }}</h2>
+                                @endif
+                                @if (filled((string) ($remanSection['description'] ?? '')))
+                                    <div class="content-custom richtext">{!! $remanSection['description'] !!}</div>
+                                @endif
+                            </div>
+                        @endif
+
+                        {{-- Alternating rows --}}
+                        @if ($remanRows && ($remanRows['show'] ?? true) && !empty($remanRows['rows']))
+                            <div id="{{ $remanRows['anchor'] ?? 'layanan-reman' }}" class="w-full">
+                                @if (!empty($remanRows['heading']) || !empty($remanRows['intro']))
+                                    <div class="flex flex-col mb-18 lg:mb-20">
+                                        @if (!empty($remanRows['heading']))
+                                            <h2 class="mb-2 md:mb-2 lg:mb-3">
+                                                {{ $remanRows['heading'] }}</h2>
+                                        @endif
+                                        @if (!empty($remanRows['intro']))
+                                            <p>{{ $remanRows['intro'] }}</p>
+                                        @endif
+                                    </div>
+                                @endif
+
+                                <div class="reverse-div flex flex-col gap-18 lg:gap-20 w-full">
+                                    @foreach ($remanRows['rows'] as $item)
+                                        @php
+                                            $lines = $rowTextLines($item['text'] ?? '');
+                                            $isList = $lines->isNotEmpty() && $lines->every(fn($line) => str_starts_with($line, '- '));
+                                            $hasImage = filled((string) ($item['image'] ?? ''));
+                                        @endphp
+                                        <div class="flex flex-col gap-4 md:gap-4 lg:gap-6 lg:flex-row lg:items-stretch">
+                                            @if ($hasImage)
+                                                <img src="{{ $item['image'] }}"
+                                                    alt="{{ $item['image']?->alt ?? ($item['title'] ?? '') }}"
+                                                    class="w-full object-cover rounded-xl lg:rounded-3xl h-50 md:h-60 lg:h-auto lg:min-h-100 lg:basis-1/2 lg:min-w-0"
+                                                    loading="lazy" decoding="async">
+                                            @endif
+                                            <div
+                                                class="flex flex-col justify-center gap-6 lg:gap-8 bg-(--color-surface) rounded-xl lg:rounded-3xl p-4 md:p-5 lg:p-8 lg:min-w-0 {{ $hasImage ? 'lg:basis-1/2' : 'w-full' }}">
+                                                @if (!empty($item['icon']))
+                                                    <img src="{{ $item['icon'] }}" alt="{{ $item['icon']?->alt ?? 'Icon' }}"
+                                                        class="w-8 h-8 lg:w-10 lg:h-10" loading="lazy" decoding="async">
+                                                @endif
+                                                <h3 class="text-2xl lg:text-3xl normal-case">{{ $item['title'] ?? '' }}</h3>
+                                                <div class="content-custom richtext">
+                                                    @if ($isList)
+                                                        <ul class="ms-0! ps-5!">
+                                                            @foreach ($lines as $line)
+                                                                <li>{{ substr($line, 2) }}</li>
+                                                            @endforeach
+                                                        </ul>
+                                                    @else
+                                                        @foreach ($lines as $line)
+                                                            <p>{{ $line }}</p>
+                                                        @endforeach
+                                                    @endif
+                                                </div>
+                                            </div>
+                                        </div>
+                                    @endforeach
+                                </div>
+                            </div>
+                        @endif
+                    </div>
+
+                    {{-- Other Description --}}
+                    @if ($otherDescription && ($otherDescription['show'] ?? false) && filled((string) ($otherDescription['description'] ?? '')))
+                        <div id="{{ $otherDescription['anchor'] ?? 'other-description-reman' }}" class="w-full">
+                            <div class="content-custom richtext">{!! $otherDescription['description'] !!}</div>
                         </div>
                     @endif
 

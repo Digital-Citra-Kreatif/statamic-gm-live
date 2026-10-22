@@ -1,0 +1,30 @@
+title: Other Description
+fields:
+- import: common.identifier
+- handle: description
+  field:
+    container: assets
+    remove_empty_nodes: false
+    type: bard
+    display: Description
+    buttons:
+    - h2
+    - h3
+    - h4
+    - h5
+    - h6
+    - bold
+    - italic
+    - unorderedlist
+    - orderedlist
+    - removeformat
+    - quote
+    - anchor
+    - image
+    - table
+    - alignleft
+    - aligncenter
+    - alignright
+    - alignjustify
+    instructions: Deskripsi tambahan.
+- import: common.section_settings

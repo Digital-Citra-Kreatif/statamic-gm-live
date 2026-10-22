@@ -188,6 +188,11 @@ tabs:
                   fields:
                   - import: blocks.heading_description
                   instructions: Judul dan deskripsi.
+                other_description:
+                  display: Other Description
+                  fields:
+                  - import: blocks.other_description
+                  instructions: Deskripsi tambahan (Bard).
                 section_image:
                   display: Section Image
                   fields:

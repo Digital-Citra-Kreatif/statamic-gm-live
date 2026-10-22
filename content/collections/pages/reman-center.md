@@ -9,69 +9,38 @@ sections:
   -
     id: 5rT226vEbdYMmujUyBJOD
     identifier: opening-reman
+    show: true
+    type: heading_description
+    enabled: true
+    heading: 'Komponen Reman, Setara Baru. Lebih Hemat!'
+  -
+    id: Rm7kQx2Lp9WvA4tNc8yHe
+    identifier: section-reman-rows
+    rows:
+      -
+        id: uXnSB6Auj4RfZGd0I6O36
+        title: 'Apa Itu GMM Reman Center'
+        text: 'GMM Reman Center menyediakan layanan remanufacturing komponen unit FAW Truck dan XCMG, mulai dari engine, transmisi, hingga injector. Setiap komponen diuji menggunakan engine testbench sebelum diserahkan kepada customer dan dilengkapi garansi resmi.'
+        image: reman-1.jpg
+      -
+        id: jPBlQjMPUSoIxYAjJvRhK
+        title: 'Keunggulan Utama'
+        text: |-
+          - Hemat hingga 70% dibanding komponen baru pada skema Core Swap / COMEX.
+          - Garansi resmi hingga 2.000 HM atau 4 bulan, mana yang tercapai lebih dahulu.
+          - Harga komponen reman sekitar 50–60% dari komponen baru, dengan kualitas yang teruji.
+        image: image-pertukaran-komponen.jpg
+    background: default
+    type: alternating_rows
+    enabled: true
+    show: true
+  -
+    id: Od3fJs6Ub1ZqM5rKw0gTi
+    identifier: other-description-reman
+    type: other_description
+    enabled: true
+    show: true
     description:
-      -
-        type: heading
-        attrs:
-          textAlign: null
-          level: 3
-        content:
-          -
-            type: text
-            text: 'Apa Itu GMM Reman Center'
-      -
-        type: paragraph
-        attrs:
-          textAlign: null
-        content:
-          -
-            type: text
-            text: 'GMM Reman Center menyediakan layanan remanufacturing komponen unit FAW Truck dan XCMG, mulai dari engine, transmisi, hingga injector. Setiap komponen diuji menggunakan engine testbench sebelum diserahkan kepada customer dan dilengkapi garansi resmi.'
-      -
-        type: heading
-        attrs:
-          textAlign: null
-          level: 3
-        content:
-          -
-            type: text
-            text: 'Keunggulan Utama'
-      -
-        type: bulletList
-        content:
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                attrs:
-                  textAlign: null
-                content:
-                  -
-                    type: text
-                    text: 'Hemat hingga 70% dibanding komponen baru pada skema Core Swap / COMEX.'
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                attrs:
-                  textAlign: null
-                content:
-                  -
-                    type: text
-                    text: 'Garansi resmi hingga 2.000 HM atau 4 bulan, mana yang tercapai lebih dahulu.'
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                attrs:
-                  textAlign: null
-                content:
-                  -
-                    type: text
-                    text: 'Harga komponen reman sekitar 50–60% dari komponen baru, dengan kualitas yang teruji.'
       -
         type: heading
         attrs:
@@ -425,10 +394,6 @@ sections:
                       -
                         type: text
                         text: 'Hemat 50–60% dari harga baru'
-    show: true
-    type: heading_description
-    enabled: true
-    heading: 'Komponen Reman, Setara Baru. Lebih Hemat!'
   -
     id: 3ZeYHnSEno2p6LtaH92tl
     section_images: image-reman-center.jpg
