@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     popups.forEach(function (popup) {
 
-        // Klik overlay > menutup
+        // Klik overlay
         popup.addEventListener('click', function (e) {
             const box = popup.querySelector('.site-popup-inner');
             if (box && !box.contains(e.target)) {

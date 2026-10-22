@@ -13,7 +13,7 @@
         ?->in(\Statamic\Facades\Site::current()->handle())
         ?->toAugmentedArray();
 
-    // Urutan mengikuti pilihan di Global > Career Label Information
+    // Urutan label career
     $sortOrderBy = (string) ($career['sort_order_by'] ?? 'tanggal_upload');
 
     [$sortField, $sortDir] = match ($sortOrderBy) {
@@ -72,6 +72,9 @@
                 </div>
             </section>
         @endif
+        {{-- Section tambahan --}}
+        <x-layouts.content-rows :rows="$page->content_rows ?? null" />
+
     </main>
 
     @if ($hasFooter)

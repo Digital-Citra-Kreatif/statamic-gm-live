@@ -23,7 +23,7 @@
                 {{-- Background --}}
                 @if (!empty($cta['background_call_to_action']))
                     <img src="{{ $cta['background_call_to_action'] }}" alt="" aria-hidden="true"
-                        class="inset-0 w-full h-200 md:h-90 lg:h-140 object-cover pointer-events-none rounded-3xl">
+                        class="inset-0 w-full h-200 md:h-90 lg:h-140 object-cover pointer-events-none rounded-3xl" loading="lazy" decoding="async">
                 @endif
 
                 {{-- Konten --}}
@@ -35,11 +35,11 @@
                         <div class="flex items-end lg:justify-center md:w-[40%] lg:w-[45%]">
                             <img src="{{ $cta['image_call_to_action'] }}"
                                 alt="{{ $cta['image_call_to_action']?->alt ?? ($cta['heading'] ?? '') }}"
-                                class="w-full lg:w-[83%] object-contain">
+                                class="w-full lg:w-[83%] object-contain" loading="lazy" decoding="async">
                         </div>
                     @endif
 
-                    {{-- Konten teks & kontak --}}
+                    {{-- Konten teks kontak --}}
                     <div class="flow flex flex-col justify-center md:w-[60%] lg:w-[40%]">
                         @if (!empty($cta['heading']))
                             <h2 class="text-white w-[80%]">{{ $cta['heading'] }}</h2>
@@ -75,7 +75,7 @@
                                             <div
                                                 class="bg-(--color-primary) group-hover:bg-black flex items-center justify-center rounded-full transition-colors w-12 h-12 md:w-12 md:h-12 lg:w-12 lg:h-12">
                                                 <img src="{{ $contactIcon }}"
-                                                    alt="{{ $contactIcon?->alt ?? $contact['label'] }}" class="w-5 h-5">
+                                                    alt="{{ $contactIcon?->alt ?? $contact['label'] }}" class="w-5 h-5" loading="lazy" decoding="async">
                                             </div>
                                         @endif
                                     </a>

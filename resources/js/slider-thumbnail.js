@@ -1,4 +1,4 @@
-// Galeri slider (single Artikel & Produk)
+// Galeri slider single
 
 const setupGallery = () => {
     const main = document.querySelector('.gallery-main');

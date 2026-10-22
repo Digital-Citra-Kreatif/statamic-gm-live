@@ -274,31 +274,9 @@ tabs:
                       instructions: Tampilkan grid dealer.
                   instructions: Tampilkan grid dealer.
           instructions: Blok konten halaman.
-    - display: Simple content
-      instructions: Konten sederhana (opsional).
+    - display: Section tambahan
       fields:
-      - handle: content
-        field:
-          type: bard
-          buttons:
-          - h2
-          - h3
-          - bold
-          - italic
-          - unorderedlist
-          - orderedlist
-          - removeformat
-          - quote
-          - anchor
-          - image
-          - table
-          - alignleft
-          - aligncenter
-          - alignright
-          - alignjustify
-          display: Content
-          localizable: true
-          instructions: Isi konten.
+      - import: blocks.content_rows
   seo:
     display: SEO
     sections:

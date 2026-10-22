@@ -13,12 +13,12 @@ class ComingSoonMode
 {
     public function handle(Request $request, Closure $next)
     {
-        // Control Panel selalu bisa diakses
+        // Akses Control Panel
         if ($request->is('cp') || $request->is('cp/*')) {
             return $next($request);
         }
 
-        // Admin yang login tetap bisa lihat site normal
+        // Bypass admin login
         if (auth()->check()) {
             return $next($request);
         }
@@ -28,7 +28,7 @@ class ComingSoonMode
 
         $active = $global?->get('activate_mode') ?? false;
 
-        // Durasi habis > mode dimatikan
+        // Durasi habis
         if ($active && $this->durationHasPassed($global->get('duration'))) {
             $global->set('activate_mode', false)->save();
             $active = false;

@@ -23,7 +23,7 @@ Route::get('/api/products/{id}/comparison', function (string $id) {
 
     $image = $entry->augmentedValue('featured_image')->value();
 
-    // Spesifikasi terpilih dari global.
+    // Spesifikasi terpilih global.
     $options = collect($global?->blueprint()?->field('spesification_info')?->config()['options'] ?? [])
         ->mapWithKeys(function ($opt, $k) {
             if (is_array($opt) && array_key_exists('key', $opt)) {
@@ -34,7 +34,7 @@ Route::get('/api/products/{id}/comparison', function (string $id) {
 
     $selected = collect($global?->value('spesification_info') ?? [])->filter(fn ($v) => is_string($v));
 
-    // Field produk yang tersedia.
+    // Field produk tersedia.
     $productFieldHandles = $entry->blueprint()?->fields()->all()->keys() ?? collect();
 
     $specRows = $options
@@ -46,13 +46,13 @@ Route::get('/api/products/{id}/comparison', function (string $id) {
         ])
         ->values();
 
-    // Model di baris pertama.
+    // Model baris pertama.
     $rows = collect([
         ['field' => 'model', 'label' => $global?->value('model_labels') ?: 'Model', 'value' => $entry->value('sku') ?: $entry->value('title')],
     ])->concat($specRows)->map(fn ($row) => [
         'field' => $row['field'],
         'label' => $row['label'],
-        // Nilai kosong ditangani klien.
+        // Nilai kosong.
         'value' => (string) ($row['value'] ?? ''),
     ])->values();
 

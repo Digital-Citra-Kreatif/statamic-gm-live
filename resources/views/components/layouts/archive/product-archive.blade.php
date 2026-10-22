@@ -38,7 +38,7 @@
         $productsQuery->whereTaxonomy($taxonomyHandle . '::' . $page->slug());
     }
 
-    // Urutan produk mengikuti pilihan di Global > Product Label Information
+    // Urutan label produk
     $sortOrderBy = (string) ($product['product_sort_order_by'] ?? 'tanggal_upload');
 
     [$sortField, $sortDir] = match ($sortOrderBy) {
@@ -151,7 +151,7 @@
                         </aside>
                     @endif
 
-                    {{-- Grid card produk (kanan) --}}
+                    {{-- Grid card produk --}}
                     <div class="w-full flex flex-col gap-20 {{ $hasSidebar ? 'md:w-[70%] lg:w-[75%]' : '' }}">
                         @if ($products->isNotEmpty())
                             <div id="product-grid"
@@ -187,7 +187,7 @@
                                     {!! $product['product_not_found'] ?? '<p>Produk tidak ditemukan.</p>' !!}
                                 </div>
 
-                                {{-- Kembali ke semua produk > filter kategori --}}
+                                {{-- Kembali semua produk --}}
                                 @if ($isCategory)
                                     <a href="{{ $productArchiveUrl }}" class="button button--primary">
                                         {{ $product['all_products_labels'] ?? 'Lihat Semua Produk' }}
@@ -200,6 +200,9 @@
                 </div>
             </div>
         </section>
+
+        {{-- Section tambahan --}}
+        <x-layouts.content-rows :rows="$page->content_rows ?? null" />
 
     </main>
 

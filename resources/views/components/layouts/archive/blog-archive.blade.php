@@ -30,7 +30,7 @@
         fn($section) => (string) ($section['identifier'] ?? '') === 'opening-blog',
     );
 
-    // Urutan mengikuti pilihan di Global > Blog Label Information
+    // Urutan label blog
     $sortOrderBy = (string) ($blog['sort_order_by'] ?? 'tanggal_upload');
 
     [$sortField, $sortDir] = match ($sortOrderBy) {
@@ -64,7 +64,7 @@
                 ->count() > 0;
         });
 
-    // Sidebar 3 post terbaru
+    // Sidebar post terbaru
     $latestPosts = \Statamic\Facades\Entry::query()
         ->where('collection', 'posts')
         ->whereStatus('published')
@@ -173,6 +173,9 @@
                 </div>
             </div>
         </section>
+
+        {{-- Section tambahan --}}
+        <x-layouts.content-rows :rows="$page->content_rows ?? null" />
 
     </main>
 

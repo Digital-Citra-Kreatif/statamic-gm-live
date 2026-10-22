@@ -24,6 +24,7 @@
                             :asset="$image"
                             :alt="$page->title"
                             class="max-h-80 w-auto object-contain"
+                            loading="eager"
                         />
                     @endforeach
                 </div>

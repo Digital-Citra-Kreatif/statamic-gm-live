@@ -17,7 +17,7 @@
         return $oldVal($handle);
     };
 
-    // Bard fields -> augmented value biar jadi HTML
+    // Augmented Bard fields
     $successHtml = (string) ($set?->augmentedValue('success_message')?->value() ?? '');
     $failedHtml = (string) ($set?->augmentedValue('message_failed')?->value() ?? '');
 @endphp

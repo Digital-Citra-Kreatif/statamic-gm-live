@@ -59,7 +59,7 @@
         fn($section) => (string) ($section['type'] ?? '') === 'grid_dealers_show',
     );
 
-    // Daftar dealer untuk grid (tanpa filter koordinat)
+    // Daftar dealer grid
     $dealerList = \Statamic\Facades\Entry::query()
         ->where('collection', 'dealers')
         ->where('is_active', true)
@@ -83,7 +83,7 @@
         )
         ->values();
 
-    // Kelompokkan dealer per kategori
+    // Grup dealer kategori
     $dealerGroups = \Statamic\Facades\Term::query()
         ->where('taxonomy', 'dealer_categories')
         ->get()
@@ -103,7 +103,7 @@
         ->get()
         ->mapWithKeys(fn($term) => [$term->slug() => $term->title]);
 
-    // Jumlah dealer per kategori
+    // Jumlah dealer kategori
     $dealerCounts = $dealers->groupBy('dealer-category')->map(fn($group) => $group->count());
 
     // Kategori untuk counter
@@ -269,6 +269,9 @@
                 </div>
             </section>
         @endif
+        {{-- Section tambahan --}}
+        <x-layouts.content-rows :rows="$page->content_rows ?? null" />
+
     </main>
 
     @if ($hasFooter)

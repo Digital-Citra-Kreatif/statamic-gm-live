@@ -4,13 +4,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const popup = document.getElementById('career-popup');
     if (!popup) return;
 
-    // Lock scroll > popup terbuka
+    // Lock scroll
     const observer = new MutationObserver(function () {
         document.body.style.overflow = popup.open ? 'hidden' : '';
     });
     observer.observe(popup, { attributes: true, attributeFilter: ['open'] });
 
-    // Klik di luar box > menutup
+    // Klik luar box
     popup.addEventListener('click', function (e) {
         const box = popup.querySelector('.career-popup-inner');
         if (box && !box.contains(e.target)) {
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (el) el.classList.remove('hidden');
     }
 
-    // Daftar pesan error validasi di popup
+    // Pesan error validasi
     function showErrors(messages) {
         if (!errorBox) return;
         const failedMsg = errorBox.dataset.messageFailed || '';
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
         errorBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }
 
-    // Pesan sukses > form terkirim
+    // Pesan sukses
     function showSuccess(message) {
         hide(errorBox);
         if (successBox) {

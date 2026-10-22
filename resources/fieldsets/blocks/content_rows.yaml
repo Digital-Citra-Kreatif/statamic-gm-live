@@ -1,0 +1,81 @@
+title: Content rows
+fields:
+- handle: content_rows
+  field:
+    type: grid
+    display: Section Tambahan
+    mode: stacked
+    add_row: Tambah Row
+    reorderable: true
+    fullscreen: true
+    localizable: true
+    fields:
+    - handle: image_position
+      field:
+        type: button_group
+        display: Posisi Gambar
+        default: left
+        options:
+          left: Kiri
+          right: Kanan
+          top: Atas
+          bottom: Bawah
+        width: 50
+        instructions: 'Teks mengikuti otomatis. Atas/bawah memakai ukuran asli foto.'
+    - handle: show
+      field:
+        type: toggle
+        display: Show
+        default: true
+        width: 50
+        instructions: Tampilkan atau sembunyikan.
+    - handle: heading
+      field:
+        type: text
+        display: Heading
+        instructions: Judul row (opsional).
+    - handle: text
+      field:
+        type: bard
+        display: Text
+        buttons:
+        - h2
+        - h3
+        - h4
+        - h5
+        - h6
+        - bold
+        - italic
+        - anchor
+        - unorderedlist
+        - orderedlist
+        - alignleft
+        - aligncenter
+        - alignright
+        - alignjustify
+        - removeformat
+        instructions: Teks konten.
+    - handle: image
+      field:
+        type: assets
+        display: Image
+        container: assets
+        max_files: 1
+        instructions: 'Gambar row (opsional). Image 800x600px.'
+    - handle: button_label
+      field:
+        type: text
+        display: Button Label
+        width: 50
+        instructions: Teks tombol (opsional).
+    - handle: button_link
+      field:
+        type: link
+        display: Button Link
+        width: 50
+        instructions: Tautan tombol.
+    - handle: anchor
+      field:
+        type: text
+        display: Anchor ID
+        instructions: ID anchor (opsional).

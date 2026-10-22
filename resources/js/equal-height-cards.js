@@ -1,6 +1,6 @@
-// Tinggi card sama dalam satu container (GM Teletech).
+// Equal height card
 
-// Samakan tinggi semua card > card tertinggi
+// Samakan tinggi card
 function equalizeHeights(container) {
     const cards = Array.from(container.children);
     cards.forEach((c) => (c.style.height = ''));
@@ -8,7 +8,7 @@ function equalizeHeights(container) {
     cards.forEach((c) => (c.style.height = maxHeight + 'px'));
 }
 
-// Khusus Tablet + Desktop
+// Tablet dan Desktop
 function initEqualHeightCards() {
     const containers = document.querySelectorAll('[data-equal-height]');
     if (window.innerWidth <= 640) {

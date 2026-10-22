@@ -96,11 +96,11 @@
                         {{-- Background Member --}}
                         <div class="w-full md:w-[40%] lg:w-[40%] relative">
                             <img src="{{ $bgDireksiUrl }}" alt="{{ $bgDireksiAlt ?: $direkturUtama['name'] ?? '' }}"
-                                class="image-grayscale pointer-events-none rounded-xl w-full md:h-105 lg:h-118 object-cover">
+                                class="image-grayscale pointer-events-none rounded-xl w-full md:h-105 lg:h-118 object-cover" loading="lazy" decoding="async">
                             <div class="overlay-bg-management"></div>
                             <div class="flex justify-center">
                                 <img src="{{ $direkturImageUrl }}" alt="{{ $direkturImageAlt }}"
-                                    class="w-[48%] md:w-[80%] lg:w-[62%] absolute bottom-0 z-3">
+                                    class="w-[48%] md:w-[80%] lg:w-[62%] absolute bottom-0 z-3" loading="lazy" decoding="async">
                             </div>
                         </div>
                     </div>
@@ -131,12 +131,12 @@
                                                 {{-- Background & Image --}}
                                                 <div class="relative w-full overflow-hidden rounded-xl">
                                                     <img src="{{ $bgDireksiUrl }}" alt="{{ $bgDireksiAlt }}"
-                                                        class="image-grayscale pointer-events-none w-full h-55 md:h-70 lg:h-110 object-cover">
+                                                        class="image-grayscale pointer-events-none w-full h-55 md:h-70 lg:h-110 object-cover" loading="lazy" decoding="async">
 
                                                     <div class="overlay-bg-management"></div>
 
                                                     <img src="{{ $memberImageUrl }}" alt="{{ $memberImageAlt }}"
-                                                        class="absolute bottom-0 left-1/2 -translate-x-1/2 h-full w-[70%] md:w-[64%] lg:w-[50%] object-contain object-bottom z-3">
+                                                        class="absolute bottom-0 left-1/2 -translate-x-1/2 h-full w-[70%] md:w-[64%] lg:w-[50%] object-contain object-bottom z-3" loading="lazy" decoding="async">
                                                 </div>
 
                                                 {{-- Profil member --}}
@@ -158,6 +158,9 @@
                 @endif
             </div>
         </section>
+
+        {{-- Section tambahan --}}
+        <x-layouts.content-rows :rows="$page->content_rows ?? null" />
 
     </main>
     @if ($hasFooter)

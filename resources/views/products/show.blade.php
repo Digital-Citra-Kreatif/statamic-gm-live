@@ -76,7 +76,7 @@
         ->filter()
         ->values();
 
-    // Hero banner > placeholder global (foto produk di gallery)
+    // Hero banner placeholder
     $heroBackground = null;
     $placeholder = $product['background_image_placeholder'] ?? null;
     if ($placeholder) {
@@ -140,7 +140,7 @@
 
         {{-- Produk informasi --}}
         <section id="product-information" class="relative bg-zinc-900">
-            {{-- Hero banner (placeholder global) --}}
+            {{-- Hero banner placeholder --}}
             @if ($heroBackground)
                 <div class="absolute inset-0 overflow-hidden pointer-events-none select-none" aria-hidden="true">
                     <img src="{{ $heroBackground->url() }}" alt=""
@@ -261,7 +261,7 @@
                                                     <div class="features-card-image">
                                                         <img src="{{ $feature['image']->url() }}"
                                                             alt="{{ $feature['image']->alt ?? ($feature['heading'] ?? '') }}"
-                                                            class="w-full aspect-square object-cover" />
+                                                            class="w-full aspect-square object-cover" loading="lazy" decoding="async" />
                                                     </div>
                                                 @endif
                                                 <div class="p-5 flex flex-col gap-2">
@@ -291,7 +291,7 @@
                                             <div class="features-card-image">
                                                 <img src="{{ $feature['image']->url() }}"
                                                     alt="{{ $feature['image']->alt ?? ($feature['heading'] ?? '') }}"
-                                                    class="w-full aspect-square object-cover" />
+                                                    class="w-full aspect-square object-cover" loading="lazy" decoding="async" />
                                             </div>
                                         @endif
                                         <div class="p-5 flex flex-col gap-2">
@@ -337,7 +337,7 @@
                                 @foreach ($gallery as $image)
                                     <div class="gallery-slide {{ $loop->first ? '' : 'hidden' }}">
                                         <img src="{{ $image->url() }}" alt="{{ $image->alt ?? $page->title }}"
-                                            class="w-full h-auto md:h-90 lg:h-90 object-contain" />
+                                            class="w-full h-auto md:h-90 lg:h-90 object-contain" loading="lazy" decoding="async" />
                                     </div>
                                 @endforeach
                             </div>
@@ -362,7 +362,7 @@
                                             <button type="button"
                                                 class="gallery-thumb shrink-0 mr-3 first:ml-auto last:mr-auto w-[calc((100%-3*0.75rem)/4)] rounded-xl overflow-hidden transition-opacity {{ $loop->first ? 'opacity-100' : 'opacity-50' }}">
                                                 <img src="{{ $image->url() }}" alt="{{ $image->alt ?? $page->title }}"
-                                                    class="w-full h-15 md:h-15 lg:h-30 object-contain" />
+                                                    class="w-full h-15 md:h-15 lg:h-30 object-contain" loading="lazy" decoding="async" />
                                             </button>
                                         @endforeach
                                     </div>
@@ -414,7 +414,7 @@
                 <div class="absolute inset-0 z-0 pointer-events-none select-none">
                     <img src="{{ $backgroundPattern->url() }}" alt="{{ $backgroundPattern->alt ?? $page->title }}"
                         oncontextmenu="return false" draggable="false"
-                        class="h-full w-[40%] md:w-[50%] lg:w-100 opacity-10 object-cover">
+                        class="h-full w-[40%] md:w-[50%] lg:w-100 opacity-10 object-cover" loading="lazy" decoding="async">
                 </div>
             @endif
 

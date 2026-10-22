@@ -44,7 +44,7 @@
                         @if (!empty($career['icon_employment_status']))
                             <img src="{{ $career['icon_employment_status'] }}"
                                 alt="{{ $career['icon_employment_status']?->alt }}"
-                                class="w-4 h-4 shrink-0 -mt-1 group-hover:brightness-0" />
+                                class="w-4 h-4 shrink-0 -mt-1 group-hover:brightness-0" loading="lazy" decoding="async" />
                         @endif
                         {{ $entry->employment_status->label() }}
                     </p>
@@ -55,7 +55,7 @@
                         class="flex items-center gap-2 uppercase text-(--color-primary) font-medium group-hover:text-black">
                         @if (!empty($career['icon_location']))
                             <img src="{{ $career['icon_location'] }}" alt="{{ $career['icon_location']?->alt }}"
-                                class="w-4 h-4 shrink-0 -mt-1 group-hover:brightness-0" />
+                                class="w-4 h-4 shrink-0 -mt-1 group-hover:brightness-0" loading="lazy" decoding="async" />
                         @endif
                         {{ $entryLocationTitle }}
                     </p>

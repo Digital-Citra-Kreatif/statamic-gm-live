@@ -7,7 +7,7 @@ const setupComparison = () => {
     const endpoint = grid.dataset.endpoint;
     const selects = grid.querySelectorAll('.comparison-select');
 
-    // Cache respons (id produk)
+    // Cache respons
     const cache = new Map();
 
     const fetchProduct = async (id) => {
@@ -28,7 +28,7 @@ const setupComparison = () => {
     const columnValues = new Map();
     const isEmpty = (value) => value === undefined || value === null || String(value).trim() === '';
 
-    // Hide kolom kosong dari data-field
+    // Hide kolom kosong
     const refreshRows = () => {
         grid.querySelectorAll('.comparison-row').forEach((row) => {
             const field = row.dataset.field;
@@ -63,7 +63,7 @@ const setupComparison = () => {
         refreshRows();
     };
 
-    // Gambar kolom > efek fade
+    // Fade gambar
     const setColumnImage = (image, url, alt) => {
         const wrap = image.closest('.comparison-image-wrap');
 
@@ -96,7 +96,7 @@ const setupComparison = () => {
         preload.src = url;
     };
 
-    // Data produk dropdown > render kolom
+    // Render kolom produk
     const loadColumn = async (select) => {
         const col = select.dataset.column;
         const id = select.value;

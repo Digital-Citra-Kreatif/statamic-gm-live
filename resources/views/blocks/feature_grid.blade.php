@@ -39,6 +39,8 @@
                                     src="{{ $icon->url }}"
                                     alt=""
                                     class="mb-4 h-12 w-12 object-contain"
+                                    loading="lazy"
+                                    decoding="async"
                                 >
                             @endforeach
                         @endif

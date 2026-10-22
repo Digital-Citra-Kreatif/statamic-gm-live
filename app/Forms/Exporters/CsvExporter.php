@@ -35,7 +35,7 @@ class CsvExporter extends StatamicCsvExporter
 
     public function download(): BinaryFileResponse
     {
-        // Bersihkan buffer sebelum unduhan CSV.
+        // Bersihkan output buffer
         while (ob_get_level() > 0) {
             ob_end_clean();
         }

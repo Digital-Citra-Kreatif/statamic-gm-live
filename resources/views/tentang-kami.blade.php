@@ -79,7 +79,7 @@
                     <div id="background-visi-misi" class="overlay-visimisi relative my-18 md:my-18 lg:my-30 rounded-3xl">
                         <img src="{{ $visionMission['photo_background'] ?? '' }}"
                             alt="{{ $visionMission['photo_background']?->alt ?? 'Visi Misi Background' }}"
-                            class="rounded-xl md:rounded-xl lg:rounded-3xl w-full h-245 md:h-260 lg:h-200 object-cover pointer-events-none">
+                            class="rounded-xl md:rounded-xl lg:rounded-3xl w-full h-245 md:h-260 lg:h-200 object-cover pointer-events-none" loading="lazy" decoding="async">
 
                         <div id="visi-misi-content"
                             class="absolute bottom-0 inset-0 z-2 flex flex-col-reverse gap-10 md:gap-10 px-4 md:px-6 md:flex-col-reverse lg:flex-row lg:pr-16 lg:py-10 items-center">
@@ -87,7 +87,7 @@
                             {{-- Image truk --}}
                             <div class="w-full -mb-10 lg:-mb-30 lg:w-[70%] lg:-mr-70">
                                 <img src="{{ $visionMission['photo'] ?? '' }}"
-                                    alt="{{ $visionMission['photo']?->alt ?? 'Visi Misi' }}" class="lg:-ml-25">
+                                    alt="{{ $visionMission['photo']?->alt ?? 'Visi Misi' }}" class="lg:-ml-25" loading="lazy" decoding="async">
                             </div>
 
                             {{-- Teks visi misi --}}
@@ -133,7 +133,7 @@
                                             <p>{{ $cert['label'] }}</p>
                                         @endif
                                         <img src="{{ $cert['assets_field'] ?? '' }}"
-                                            alt="{{ $cert['assets_field']?->alt ?? ($cert['label'] ?? '') }}">
+                                            alt="{{ $cert['assets_field']?->alt ?? ($cert['label'] ?? '') }}" loading="lazy" decoding="async">
                                     </div>
                                 @endforeach
                             </div>
@@ -167,7 +167,7 @@
                                 <div
                                     class="flex flex-col gap-8 p-4 bg-white rounded-xl lg:rounded-3xl md:p-4 md:gap-8 lg:p-6 lg:gap-12">
                                     <img src="{{ $item['icon'] ?: $iconPlaceholder }}"
-                                        alt="{{ $item['icon']?->alt ?? 'Icon' }}" class="w-8 h-8 lg:w-10 lg:h-10">
+                                        alt="{{ $item['icon']?->alt ?? 'Icon' }}" class="w-8 h-8 lg:w-10 lg:h-10" loading="lazy" decoding="async">
                                     <div class="flex flex-col gap-2 lg:gap-4">
                                         <p
                                             class="w-full lg:w-70 text-(--color-heading) title-display text-xl tracking-tight lg:text-2xl">
@@ -181,6 +181,9 @@
                 </div>
             </section>
         @endif
+
+        {{-- Section tambahan --}}
+        <x-layouts.content-rows :rows="$page->content_rows ?? null" />
 
     </main>
 

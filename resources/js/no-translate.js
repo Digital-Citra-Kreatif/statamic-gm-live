@@ -1,6 +1,6 @@
-// Nama perusahaan tidak diterjemahkan GTranslate
+// Proteksi nama perusahaan
 
-// Varian terpanjang lebih dulu
+// Urutan varian
 const BRAND_TERMS = [
     'PT\\.?\\s+Gaya\\s?Makmur\\s+FAW\\s+Motors',
     'PT\\.?\\s+Gaya\\s?Makmur\\s+Mobil',
@@ -43,7 +43,7 @@ const wrapMatches = (textNode) => {
         const start = found.index;
         let end = start + match.length;
 
-        // Spasi ikut masuk span > tidak dipangkas Google Translate
+        // Spasi dalam span
         let before = text.slice(lastIndex, start);
         const leadingSpace = /[ \t]$/.test(before);
 

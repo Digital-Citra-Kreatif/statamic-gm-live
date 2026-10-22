@@ -7,9 +7,17 @@ use Statamic\Fieldtypes\Bard\ImageNode;
 use Statamic\Support\Str;
 use Tiptap\Utils\HTML;
 
-/** Gambar Bard dengan caption aset. */
+/** Gambar caption Bard */
 class CaptionedImageNode extends ImageNode
 {
+    // Lazyload gambar Bard
+    public function addOptions()
+    {
+        return [
+            'HTMLAttributes' => ['loading' => 'lazy', 'decoding' => 'async'],
+        ];
+    }
+
     public function renderHTML($node, $HTMLAttributes = [])
     {
         $caption = $this->captionFor($node->attrs->src ?? null);
@@ -18,7 +26,7 @@ class CaptionedImageNode extends ImageNode
             return parent::renderHTML($node, $HTMLAttributes);
         }
 
-        // Figure dirender sebagai HTML lengkap.
+        // Render figure HTML
         $attributes = HTML::renderAttributes(
             HTML::mergeAttributes($this->options['HTMLAttributes'], $HTMLAttributes)
         );

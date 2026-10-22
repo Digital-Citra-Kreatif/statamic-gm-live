@@ -43,7 +43,7 @@ body.background-grey {
 
 
 
-/* Hero Banner Overlay - HOME */
+/* Hero Overlay Home */
 .hero-banner-overlay {
     background: radial-gradient(
         72.36% 100% at 50% 0%,
@@ -55,7 +55,7 @@ body.background-grey {
 
 
 
-/* Hero Banner Overlay - ALL PAGE */
+/* Hero Overlay Halaman */
 .heropage-overlay {
    background:
       linear-gradient(0deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.66) 2.88%, rgba(0, 0, 0, 0.00) 57.69%);
@@ -63,7 +63,7 @@ body.background-grey {
 
 
 
-/* Dot Slider Hero Banner - HOME */
+/* Dot Hero Slider */
 .hero-slider-dot {
     position: relative;
     overflow: hidden;
@@ -107,14 +107,14 @@ body.background-grey {
 
 
 
-/* Hero banner - SINGLE PRODUK */
+/* Hero Single Produk */
 .heropage-product-overlay {
    background: linear-gradient(180deg, #000 3.04%, rgba(0, 0, 0, 0.50) 59.98%, rgba(0, 0, 0, 0.00) 105.31%);
 }
 
 
 
-/* Judul informasi - KONTAK */
+/* Judul Info Kontak */
 .title-display {
    font-family: var(--font-display);
    font-weight: 600;
@@ -122,7 +122,7 @@ body.background-grey {
 
 
 
-/* Reverse layout - PURNA JUAL */
+/* Reverse Purna Jual */
 @media (min-width: 1024px) {
     .reverse-div > div:nth-child(2n+1) {
         flex-direction: row-reverse !important;
@@ -131,13 +131,13 @@ body.background-grey {
 
 
 
-/* Button filter active - DEALER MAPS */
+/* Filter Aktif Dealer */
 .dealer-cat-btn.active {
     color: white !important;
     background: var(--color-primary) !important;
 }
 
-/* Empty search feedback - DEALER MAPS */
+/* Pencarian Kosong Dealer */
 .dealer-search-empty {
     margin: 0;
     padding: 0.875rem 1.25rem;
@@ -156,7 +156,7 @@ body.background-grey {
 
 
 
-/* Warna laut peta dealer; override Leaflet. */
+/* Warna Laut Peta */
 #dealer-map.leaflet-container {
    background: #D5E8EB !important;
 }
@@ -165,7 +165,7 @@ body.background-grey {
    background: none !important;
 }
 
-/* Marker icon - DEALER MAPS */
+/* Marker Peta Dealer */
 .dealer-map-marker {
     object-fit: contain;
 }
@@ -178,7 +178,7 @@ body.background-grey {
 
 
 
-/* Layer toggle Peta/Satelit - DEALER MAPS */
+/* Toggle Layer Peta */
 .leaflet-layer-toggle {
     display: flex;
     background: white;
@@ -208,7 +208,7 @@ body.background-grey {
 
 
 
-/* Popup maps - DEALER MAPS */
+/* Popup Peta Dealer */
 .leaflet-popup-close-button {
    display: none !important;
 }
@@ -321,7 +321,7 @@ body.background-grey {
 
 
 
-/* Overlay Background Direksi - MANAJEMEN */
+/* Overlay Direksi Manajemen */
 .overlay-bg-management {
     position: absolute;
     inset: 0;
@@ -332,7 +332,7 @@ body.background-grey {
 
 
 
-/* Glass Effect - TENTANG KAMI */
+/* Glass Effect */
 .glass {
    background: rgba(255, 255, 255, 0.64);
    backdrop-filter: blur(20px);
@@ -342,7 +342,7 @@ body.background-grey {
 
 
 
-/* Background Overlay Visi Misi - TENTANG KAMI */
+/* Overlay Visi Misi */
 .overlay-visimisi {
   position: relative;
 }
@@ -357,7 +357,7 @@ body.background-grey {
 
 
 
-/* Misson Number - TENTANG KAMI */
+/* Nomor Misi */
 .mission-list {
    font-family: var(--font-body) !important;
    font-weight: 500;  
@@ -393,7 +393,7 @@ body.background-grey {
 
 
 
-/* Misson Number - TENTANG KAMI (Tablet) */
+/* Nomor Misi (Tablet) */
 @media (max-width: 768px) {
    .mission-list-content ol li {
       gap: 1.2rem;
@@ -406,7 +406,7 @@ body.background-grey {
 
 
 
-/* Misson Number - TENTANG KAMI (Mobile) */
+/* Nomor Misi (Mobile) */
 @media (max-width: 640px) {
    .mission-list-content ol li {
       gap: 1rem;
@@ -419,7 +419,7 @@ body.background-grey {
 
 
 
-/* Sertifikat - TENTANG KAMI */
+/* Sertifikat Tentang Kami */
 @media (min-width: 1024px) {
    .h3-cust-about {
       font-size: 1.5rem;
@@ -549,7 +549,7 @@ body:has(dialog[open].career-popup) {
 
 
 
-/* Heading Size - SKIN BLOG */
+/* Heading Skin Blog */
 .custom-heading-blog h2,
 .custom-heading-blog span {
    font-size: 1.5rem;
@@ -599,7 +599,7 @@ blockquote {
 
 
 
-/* Gallery Thumbnail Single Blog & Single Product */
+/* Galeri Thumbnail Single */
 .gallery-thumbs .swiper-slide {
     width: auto;
 }
@@ -618,7 +618,7 @@ blockquote {
 
 
 
-/* Heading Single Produk dan Blog */
+/* Heading Single */
 .heading-single {
    font-size: 3rem !important;
    line-height: 3.5rem !important;
@@ -641,7 +641,7 @@ blockquote {
 
 
 
-/* Spesifikasi Heading Single Produk */
+/* Heading Spesifikasi Produk */
 .specifi-title {
    font-family: var(--font-display) !important;
    font-weight: 700 !important;
@@ -686,7 +686,7 @@ blockquote {
 
 
 
-/* Section About - HOME */
+/* About Home */
 .overlay-section-about {
    position: relative;
 }
@@ -736,7 +736,7 @@ body:has(dialog[open].site-popup) {
 
 
 
-/* Section services - HOME */
+/* Services Home */
 .overlay-section-services {
    position: relative;
 }
@@ -803,7 +803,7 @@ body:has(dialog[open].site-popup) {
 
 
 
-/* Sticky Header (transparent header) */
+/* Sticky Header */
 .header-fixed.is-sticky {
    position: fixed;
    background: white;
@@ -937,7 +937,7 @@ body:has(dialog[open].site-popup) {
 
 
 
-/* Comparison image loading skeleton */
+/* Skeleton Gambar Comparison */
 .comparison-image-wrap {
     position: relative;
 }
@@ -1118,7 +1118,7 @@ body:has(dialog[open].site-popup) {
 
 
 
-/* Konten single posts custom */
+/* Konten Single Post */
 .content-custom h2 {
    font-size: 1.8rem;
    letter-spacing: -1px;
@@ -1200,7 +1200,7 @@ body:has(dialog[open].site-popup) {
 }
 
 
-/* Konten single posts custom (Tablet) */
+/* Single Post (Tablet) */
 @media (max-width: 768px) {
    .content-custom h2 {
       font-size: 1.6rem;
@@ -1235,7 +1235,7 @@ body:has(dialog[open].site-popup) {
 
 
 
-/* Konten single posts custom (Mobile) */
+/* Single Post (Mobile) */
 @media (max-width: 640px) {
    .content-custom h2 {
       font-size: 1.5rem;
@@ -1331,7 +1331,7 @@ body:has(dialog[open].site-popup) {
     display: block;
 }
 
-/* Icon upload dipaksa putih */
+/* Icon Upload Putih */
 .floating-whatsapp-icon img {
     filter: brightness(0) invert(1);
 }

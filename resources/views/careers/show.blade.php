@@ -84,7 +84,7 @@
                                             @if (!empty($career['icon_employment_status']))
                                                 <img src="{{ $career['icon_employment_status'] }}"
                                                     alt="{{ $career['icon_employment_status']?->alt }}"
-                                                    class="w-5 h-5 shrink-0" />
+                                                    class="w-5 h-5 shrink-0" loading="lazy" decoding="async" />
                                             @endif
                                             {{ $employmentLabel }}
                                         </p>
@@ -96,7 +96,7 @@
                                             @if (!empty($career['icon_location']))
                                                 <img src="{{ $career['icon_location'] }}"
                                                     alt="{{ $career['icon_location']?->alt }}"
-                                                    class="w-5 h-5 shrink-0" />
+                                                    class="w-5 h-5 shrink-0" loading="lazy" decoding="async" />
                                             @endif
                                             {{ $locationTitle }}
                                         </p>

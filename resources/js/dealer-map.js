@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const map = L.map('dealer-map', { zoomControl: false }).setView([-2.5, 118], 5);
     L.control.zoom({ position: 'bottomright' }).addTo(map);
 
-    // Peta dasar vektor lokal.
+    // Peta dasar vektor
     const layerStreet = L.geoJSON(landGeoJson, {
         style: {
             fillColor: '#FBF8F3',
@@ -219,7 +219,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
 
-        // Desktop > popup dibuka lewat hover
+        // Popup hover desktop
         marker.on('click', function (e) {
             L.DomEvent.stopPropagation(e);
             this.openPopup();

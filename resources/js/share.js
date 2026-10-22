@@ -1,6 +1,6 @@
-// Share link (Single Artikel)
+// Share link artikel
 
-// Salin teks > clipboard
+// Salin teks
 const copyText = async (text) => {
     if (navigator.clipboard && window.isSecureContext) {
         await navigator.clipboard.writeText(text);

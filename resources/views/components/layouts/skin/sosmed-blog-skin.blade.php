@@ -40,7 +40,7 @@
         <div class="overflow-hidden">
             <img src="{{ $entry->featured_image?->url() ?? ($blog['image_placeholders'] ?? '') }}"
                 alt="{{ $entry->featured_image?->alt ?? $entry->title }}"
-                class="w-full h-60 object-cover group-hover:scale-110 transition-transform duration-500" />
+                class="w-full h-60 object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" decoding="async" />
         </div>
 
         <div class="p-5 flex flex-col gap-10">

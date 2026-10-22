@@ -1,6 +1,6 @@
 // Dropdown select custom
 
-// Create dropdown custom elemen <select> > select asli hide
+// Build dropdown custom
 function buildDropdown(select) {
   const wrap = document.createElement('div');
   wrap.className = 'cmp-dd';

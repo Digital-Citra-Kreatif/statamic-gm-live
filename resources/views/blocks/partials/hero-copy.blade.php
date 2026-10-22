@@ -10,6 +10,7 @@
                     :asset="$image"
                     :alt="$block->headline"
                     class="max-h-64 w-auto rounded-xl object-contain"
+                    loading="eager"
                 />
             @endforeach
         </div>

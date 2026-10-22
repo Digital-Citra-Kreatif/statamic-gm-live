@@ -50,11 +50,14 @@
                     @if ($imgRemanSection && ($imgRemanSection['show'] ?? false))
                         <img id="{{ $imgRemanSection['anchor'] ?? 'image-reman-center' }}"
                             src="{{ $imgRemanSection['section_images'] ?? '' }}" alt=""
-                            class="rounded-2xl w-full lg:h-150 object-cover">
+                            class="rounded-2xl w-full lg:h-150 object-cover" loading="lazy" decoding="async">
                     @endif
                 </div>
             </div>
         </section>
+
+        {{-- Section tambahan --}}
+        <x-layouts.content-rows :rows="$page->content_rows ?? null" />
 
     </main>
 

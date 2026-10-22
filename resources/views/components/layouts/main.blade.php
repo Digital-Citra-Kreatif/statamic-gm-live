@@ -79,7 +79,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"rel="stylesheet" />
 
-    {{-- SEO Pro meta tags --}}
+    {{-- SEO Pro meta --}}
     @seo_pro('meta')
 
     {{-- Main CSS/JS assets --}}
@@ -121,7 +121,7 @@
             @endif
 
             @if ($scrollTopSharesSideWithWhatsapp)
-                /* Geser naik > tidak tumpuk floating WhatsApp */
+                /* Offset floating WhatsApp */
                 #scroll-to-top {
                     bottom: 96px;
                 }

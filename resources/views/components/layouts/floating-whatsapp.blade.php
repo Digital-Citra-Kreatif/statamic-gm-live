@@ -24,7 +24,7 @@
                 return null;
             }
 
-            // Nomor lokal > kode 62
+            // Format nomor WhatsApp
             $digits = str_starts_with($digits, '62') ? $digits : '62' . ltrim($digits, '0');
 
             $message = $contact['message'] ?? null;

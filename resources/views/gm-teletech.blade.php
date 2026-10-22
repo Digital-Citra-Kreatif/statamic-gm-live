@@ -35,7 +35,7 @@
     $iconBenefitPlaceholder = $iconPlaceholderBenefit['section_images'] ?? null;
     $iconCtaDefault = $iconPlaceholderCta['section_images'] ?? null;
 
-    // Jumlah kolom feature grid
+    // Kolom feature grid
     $columnClassMap = [
         '1' => 'lg:grid-cols-1',
         '2' => 'md:grid-cols-2 lg:grid-cols-2',
@@ -92,7 +92,7 @@
                     <div class="flex flex-col items-center my-18 lg:my-30">
                         <img src="{{ $teletechImage['section_images'] ?? '' }}"
                             alt="{{ $teletechImage['section_images']?->alt ?? $page->title }}"
-                            class="rounded-2xl w-full max-w-[1000px] h-auto">
+                            class="rounded-2xl w-full max-w-[1000px] h-auto" loading="lazy" decoding="async">
                     </div>
                 </div>
             </section>
@@ -106,13 +106,13 @@
 
                         <h2 id="title-fitur-benefit">{{ $fiturBenefit['heading'] ?? '' }}</h2>
 
-                        {{-- Grid Fitur & Benefit --}}
+                        {{-- Grid Fitur Benefit --}}
                         <div id="fitur-benefit-content" data-equal-height class="grid gap-5 {{ $featureColumns }}">
                             @foreach ($fiturBenefit['features'] as $item)
                                 <div
                                     class="flex flex-col gap-10 p-4 bg-(--color-surface) rounded-xl lg:rounded-3xl md:p-4 md:gap-10 lg:p-6 lg:gap-20">
                                     <img src="{{ $item['icon'] ?: $iconBenefitPlaceholder }}"
-                                        alt="{{ $item['icon']?->alt ?? 'Icon' }}" class="w-8 h-8 lg:w-10 lg:h-10">
+                                        alt="{{ $item['icon']?->alt ?? 'Icon' }}" class="w-8 h-8 lg:w-10 lg:h-10" loading="lazy" decoding="async">
                                     <div class="flex flex-col gap-2">
                                         <p
                                             class="text-(--color-heading) title-display text-xl tracking-tight lg:text-2xl">
@@ -135,7 +135,7 @@
                     <div class="flex flex-col items-center gap-6 my-18 md:flex-row md:my-18 lg:flex-row lg:my-30">
                         <img src="{{ $ctaGrid['image_call_to_action'] ?? '' }}"
                             alt="{{ $ctaGrid['image_call_to_action']?->alt ?? ($ctaGrid['heading'] ?? '') }}"
-                            class="md:w-[40%] lg:w-[40%] object-cover">
+                            class="md:w-[40%] lg:w-[40%] object-cover" loading="lazy" decoding="async">
 
                         {{-- Konten CTA --}}
                         <div class="flex flex-col gap-4">
@@ -169,7 +169,7 @@
                                         class="bg-(--color-primary) group-hover:bg-black flex items-center justify-center rounded-full transition-colors w-12 h-12 md:w-12 md:h-12 lg:w-12 lg:h-12">
                                         <img src="{{ $contactIcon }}"
                                             alt="{{ $contactIcon?->alt ?? ($contact['label'] ?? '') }}"
-                                            class="w-5 h-5">
+                                            class="w-5 h-5" loading="lazy" decoding="async">
                                     </div>
                                 </a>
                             @endforeach
@@ -178,6 +178,9 @@
                 </div>
             </section>
         @endif
+
+        {{-- Section tambahan --}}
+        <x-layouts.content-rows :rows="$page->content_rows ?? null" />
 
     </main>
 

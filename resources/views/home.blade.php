@@ -63,7 +63,7 @@
     $aboutBtn = $resolveUrl($about['button']['link'] ?? null);
     $productCategoryUrl = $resolveUrl($productCategory['link'] ?? null);
 
-    //  Blog kategori media sosial
+    //  Blog media sosial
     $sosmedPosts = \Statamic\Facades\Entry::query()
         ->where('collection', 'posts')
         ->whereStatus('published')
@@ -93,7 +93,7 @@
         ->map(function ($dealer) use ($parseMapsCoords) {
             $cat = $dealer->dealer_categories?->first();
 
-            // Koordinat dari URL maps > fallback lat/lng manual
+            // Koordinat dealer
             [$urlLat, $urlLng] = $parseMapsCoords($dealer->google_maps_url);
             $lat = $urlLat ?? ($dealer->location['latitude'] ?? null);
             $lng = $urlLng ?? ($dealer->location['longitude'] ?? null);
@@ -126,13 +126,13 @@
         )
         ->values();
 
-    // Highlight: 1 post terbaru
+    // Highlight post terbaru
     $blogHighlight = $blogLatest->take(1);
 
     // List: 3 post
     $blogList = $blogLatest->slice(1, 3)->values();
 
-    // Jumlah dealer per kategori
+    // Jumlah dealer kategori
     $dealerCounts = collect($dealers ?? [])
         ->groupBy('dealer-category')
         ->map(fn($group) => $group->count());
@@ -180,7 +180,7 @@
                     <div id="background-about"
                         class="overlay-section-about rounded-t-3xl lg:rounded-t-[60px] overflow-hidden">
                         <img src="{{ $about['section_images'] ?? '' }}" alt="{{ $about['section_images']?->alt }}"
-                            class="w-full h-265 md:h-250 lg:h-224 object-cover pointer-events-none">
+                            class="w-full h-265 md:h-250 lg:h-224 object-cover pointer-events-none" loading="lazy" decoding="async">
                     </div>
 
                     {{-- Konten --}}
@@ -248,7 +248,7 @@
                                                     <p>{{ $img->caption }}</p>
                                                 @endif
                                                 <img src="{{ $img->url() }}" alt="{{ $img->alt }}"
-                                                    class="w-full object-contain">
+                                                    class="w-full object-contain" loading="lazy" decoding="async">
                                             </div>
                                         @endforeach
                                     </div>
@@ -259,7 +259,7 @@
                                     <div class="md:w-full lg:w-[145%]">
                                         <img src="{{ $about['image']->url() }}"
                                             alt="{{ $about['image']->alt ?? ($about['heading'] ?? '') }}"
-                                            class="w-full object-cover lg:-ml-50" />
+                                            class="w-full object-cover lg:-ml-50" loading="lazy" decoding="async" />
                                     </div>
                                 @endif
                             </div>
@@ -352,7 +352,7 @@
                         class="overlay-section-services rounded-t-3xl lg:rounded-t-[60px] overflow-hidden">
                         <img src="{{ $services['background_image'] ?? '' }}"
                             alt="{{ $services['background_image']?->alt }}"
-                            class="w-full h-325 md:h-220 lg:h-190 object-cover pointer-events-none">
+                            class="w-full h-325 md:h-220 lg:h-190 object-cover pointer-events-none" loading="lazy" decoding="async">
                     </div>
 
                     {{-- Konten --}}
@@ -420,14 +420,14 @@
                                                 class="transition-opacity hover:opacity-70 border border-(--color-surface) md:border-0 lg:border-0 rounded-xl p-4">
                                                 <img src="{{ $item['marketplace_logo']?->url() }}"
                                                     alt="{{ $item['marketplace_logo']?->alt ?? '' }}"
-                                                    class="h-10 lg:h-14 object-contain mx-auto">
+                                                    class="h-10 lg:h-14 object-contain mx-auto" loading="lazy" decoding="async">
                                             </a>
                                         @else
                                             <div
                                                 class="border border-(--color-surface) md:border-0 lg:border-0 rounded-xl p-4">
                                                 <img src="{{ $item['marketplace_logo']?->url() }}"
                                                     alt="{{ $item['marketplace_logo']?->alt ?? '' }}"
-                                                    class="h-10 lg:h-14 object-contain mx-auto">
+                                                    class="h-10 lg:h-14 object-contain mx-auto" loading="lazy" decoding="async">
                                             </div>
                                         @endif
                                     @endif
@@ -512,7 +512,7 @@
                                             @if (!empty($item['images']))
                                                 <img src="{{ $item['images']?->url() }}"
                                                     alt="{{ $item['label'] ?? '' }}"
-                                                    class="w-full h-20 md:h-20 lg:h-25 object-contain">
+                                                    class="w-full h-20 md:h-20 lg:h-25 object-contain" loading="lazy" decoding="async">
                                             @endif
                                             @if (!empty($item['label']))
                                                 <p
@@ -526,7 +526,7 @@
                                             @if (!empty($item['images']))
                                                 <img src="{{ $item['images']?->url() }}"
                                                     alt="{{ $item['label'] ?? '' }}"
-                                                    class="w-full h-20 md:h-20 lg:h-25 object-contain">
+                                                    class="w-full h-20 md:h-20 lg:h-25 object-contain" loading="lazy" decoding="async">
                                             @endif
                                             @if (!empty($item['label']))
                                                 <p
@@ -604,7 +604,7 @@
             </section>
         @endif
 
-        {{-- Blog Katagori Media Sosial --}}
+        {{-- Blog Media Sosial --}}
         @if ($blogSosmed && ($blogSosmed['show'] ?? false))
             <section id="{{ $blogSosmed['anchor'] ?? 'social-media-blog' }}">
                 <div class="container">
@@ -636,6 +636,9 @@
                 </div>
             </section>
         @endif
+
+        {{-- Section tambahan --}}
+        <x-layouts.content-rows :rows="$page->content_rows ?? null" />
 
     </main>
     @if ($hasFooter)

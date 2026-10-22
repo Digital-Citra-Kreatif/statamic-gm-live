@@ -71,7 +71,7 @@
                                 <a data-fslightbox="certificates" href="{{ $img }}">
                                     <img src="{{ $img }}"
                                         alt="{{ $certificate->featured_image?->alt ?? $certificate->title }}"
-                                        class="w-full h-auto object-cover rounded-md mb-3 lg:mb-4">
+                                        class="w-full h-auto object-cover rounded-md mb-3 lg:mb-4" loading="lazy" decoding="async">
                                 </a>
                                 <p class="text-(--color-heading) title-display text-base tracking-tight lg:text-2xl">
                                     {{ $certificate->title }}</p>
@@ -98,6 +98,9 @@
                 </div>
             </section>
         @endif
+
+        {{-- Section tambahan --}}
+        <x-layouts.content-rows :rows="$page->content_rows ?? null" />
 
     </main>
 

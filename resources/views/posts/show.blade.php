@@ -45,7 +45,7 @@
         $relatedQuery->whereTaxonomyIn(collect($currentCategorySlugs)->map(fn($s) => 'categories::' . $s)->all());
     }
 
-    // Exclude post sosial-media (berita terkait)
+    // Exclude post sosial-media
     $posts = $relatedQuery
         ->get()
         ->reject(
@@ -54,7 +54,7 @@
         ->take(3)
         ->values();
 
-    // Sidebar 3 post terbaru
+    // Sidebar post terbaru
     $latestPosts = \Statamic\Facades\Entry::query()
         ->where('collection', 'posts')
         ->whereStatus('published')
@@ -108,7 +108,7 @@
             <div class="container mt-14 mb-18 md:mt-10 md:mb-18 lg:mt-20 lg:mb-30">
                 <article class="flex flex-col gap-8 lg:gap-10">
 
-                    {{-- Heading + Meta data --}}
+                    {{-- Heading dan meta --}}
                     <div id="header-article" class="flex flex-col gap-4">
                         @php
                             $postCats = collect($page->categories ?? []);
@@ -149,7 +149,7 @@
                         {{-- Kolom konten utama --}}
                         <div class="w-full md:w-[60%] lg:w-[70%] flex flex-col gap-10">
 
-                            {{-- Gallery / Featured Image --}}
+                            {{-- Gallery featured image --}}
                             @if ($hasGallery)
                                 <div class="gallery-wrapper flex flex-col gap-4">
 
@@ -160,7 +160,7 @@
                                                 <figure>
                                                     <img src="{{ $image->url() }}"
                                                         alt="{{ $image->alt ?? $page->title }}"
-                                                        class="w-full aspect-video object-cover" />
+                                                        class="w-full aspect-video object-cover" loading="{{ $loop->first ? 'eager' : 'lazy' }}" decoding="async" />
                                                     @if ($image->caption)
                                                         <figcaption
                                                             class="px-4 py-3 text-sm text-(--color-body)">
@@ -172,7 +172,7 @@
                                         @endforeach
                                     </div>
 
-                                    {{-- Thumbnail slider + arrow --}}
+                                    {{-- Thumbnail slider arrow --}}
                                     <div class="flex items-center gap-1 md:gap-1 lg:gap-0">
 
                                         {{-- Prev --}}
@@ -184,7 +184,7 @@
                                             </svg>
                                         </button>
 
-                                        {{-- Track thumbnail (4 tampil) --}}
+                                        {{-- Track thumbnail --}}
                                         <div
                                             class="gallery-thumbs-track flex overflow-x-auto scroll-smooth flex-1 scrollbar-none [&::-webkit-scrollbar]:hidden">
                                             @foreach ($galleryImages as $image)
@@ -192,7 +192,7 @@
                                                     class="gallery-thumb shrink-0 mr-3 last:mr-0 w-[calc((100%-3*0.75rem)/4)] rounded-xl overflow-hidden transition-opacity {{ $loop->first ? 'opacity-100' : 'opacity-50' }}">
                                                     <img src="{{ $image->url() }}"
                                                         alt="{{ $image->alt ?? $page->title }}"
-                                                        class="w-full h-15 md:h-15 lg:h-30 object-cover" />
+                                                        class="w-full h-15 md:h-15 lg:h-30 object-cover" loading="lazy" decoding="async" />
                                                 </button>
                                             @endforeach
                                         </div>
@@ -212,7 +212,7 @@
                             @elseif ($page->featured_image)
                                 <x-asset-figure :asset="$page->featured_image"
                                     :alt="$page->featured_image->alt ?? $page->title"
-                                    class="w-full h-auto rounded-2xl" />
+                                    class="w-full h-auto rounded-2xl" loading="eager" />
                             @endif
 
                             {{-- Content --}}
@@ -285,7 +285,7 @@
                                                         class="share-link shrink-0 relative transition-opacity hover:opacity-70">
                                                         <img src="{{ $iconUrl }}"
                                                             alt="{{ $share['icon']?->alt ?? '' }}"
-                                                            class="w-4 h-4 lg:w-5 lg:h-5" />
+                                                            class="w-4 h-4 lg:w-5 lg:h-5" loading="lazy" decoding="async" />
                                                     </a>
                                                 @else
                                                     <a href="{{ $link }}" target="_blank"
@@ -293,7 +293,7 @@
                                                         class="shrink-0 transition-opacity hover:opacity-70">
                                                         <img src="{{ $iconUrl }}"
                                                             alt="{{ $share['icon']?->alt ?? '' }}"
-                                                            class="w-4 h-4 lg:w-5 lg:h-5" />
+                                                            class="w-4 h-4 lg:w-5 lg:h-5" loading="lazy" decoding="async" />
                                                     </a>
                                                 @endif
                                             @endif
@@ -328,7 +328,7 @@
     </main>
 
     @if ($hasFooter)
-        {{-- Jarak footer berita terkait --}}
+        {{-- Jarak berita terkait --}}
         <div @class(['lg:-mt-50' => $hasBlogSkin && $posts->isNotEmpty()])>
             <x-layouts.footer.footer />
         </div>

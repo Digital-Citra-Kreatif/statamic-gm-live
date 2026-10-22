@@ -1,4 +1,4 @@
-// Flyout (Mobile dan Tablet)
+// Flyout menu mobile
 
 const setupFlyoutMenu = () => {
     const toggleButton = document.getElementById('menu-toggle');

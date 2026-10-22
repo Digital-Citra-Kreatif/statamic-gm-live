@@ -41,47 +41,47 @@ section, .section {
   margin-block-start: var(--flow-space);
 }
 
-/* Flow: make plain links accept vertical margin spacing */
+/* Flow: link inline-block */
 .flow > a:not(.button) {
   display: inline-block;
 }
 
-/* Flow: tighter spacing from eyebrow/subheading to heading */
+/* Flow: label-heading */
 .flow > :is(.subheading, .eyebrow) + :is(h1, h2, h3, h4, h5, h6) {
   margin-block-start: var(--flow-space-label-to-heading);
 }
 
-/* Flow: spacing from heading to paragraph */
+/* Flow: heading-paragraf */
 .flow > :is(h1, h2, h3, h4, h5, h6) + p {
   margin-block-start: var(--flow-space-heading-to-p);
 }
 
-/* Flow: spacing from paragraph to link/button action */
+/* Flow: paragraf-action */
 .flow > p + :is(a, .button, button) {
   margin-block-start: var(--flow-space-p-to-action);
 }
 
-/* Flow: spacing from heading directly to link/button action */
+/* Flow: heading-action */
 .flow > :is(h1, h2, h3, h4, h5, h6) + :is(a, .button, button) {
   margin-block-start: var(--flow-space-heading-to-action);
 }
 
-/* Flow: spacing from image to paragraph */
+/* Flow: image-paragraf */
 .flow > img + p {
   margin-block-start: var(--flow-space-img-to-p);
 }
 
-/* Flow: spacing from paragraph to image */
+/* Flow: paragraf-image */
 .flow > p + img {
   margin-block-start: var(--flow-space-p-to-img);
 }
 
-/* Flow: spacing from icon to paragraph */
+/* Flow: icon-paragraf */
 .flow > .icon + p {
   margin-block-start: var(--flow-space-icon-to-p);
 }
 
-/* Flow: spacing from paragraph to icon */
+/* Flow: paragraf-icon */
 .flow > p + .icon {
   margin-block-start: var(--flow-space-p-to-icon);
 }
@@ -93,7 +93,7 @@ section, .section {
   gap: var(--gap-stack);
 }
 
-/* Cluster: horizontal group that wraps */
+/* Cluster: horizontal wrap */
 .cluster {
   display: flex;
   flex-wrap: wrap;
@@ -101,7 +101,7 @@ section, .section {
   align-items: center;
 }
 
-/* Grid: simple grid layout */
+/* Grid: dasar */
 .grid {
   display: grid;
   gap: var(--gap-grid);
@@ -122,7 +122,7 @@ section, .section {
   grid-template-columns: repeat(4, 1fr);
 }
 
-/* Grid: auto-fit with min-width */
+/* Grid: auto-fit */
 .grid--auto {
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
 }
@@ -132,7 +132,7 @@ section, .section {
   max-width: var(--width-default);
 }
 
-/* Flexbox alignment - cross axis */
+/* Flex cross axis */
 .align-center {
   align-items: center;
 }
@@ -149,7 +149,7 @@ section, .section {
   align-items: stretch;
 }
 
-/* Flexbox alignment - main axis */
+/* Flex main axis */
 .justify-center {
   justify-content: center;
 }
@@ -170,7 +170,7 @@ section, .section {
   justify-content: space-around;
 }
 
-/* Margin auto for centering */
+/* Margin auto */
 .mx-auto {
   margin-inline: auto;
 }
@@ -183,10 +183,7 @@ section, .section {
   margin: auto;
 }
 
-/*
-  Prose: long-form article layout — measure, rhythm, and overflow only
-  Wrap article content in <article class="prose"> or <div class="prose">
-*/
+/* Prose: artikel */
 .prose {
   max-width: var(--measure-prose);
   margin-inline: auto;

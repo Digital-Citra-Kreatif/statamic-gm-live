@@ -15,7 +15,7 @@
     <div>
         <img src="{{ $term->images?->url() ?? ($product['image_placeholders'] ?? '') }}"
             alt="{{ $term->images?->alt ?? $term->title }}"
-            class="w-full md:w-[80%] lg:w-[70%] aspect-square object-contain mx-auto transition-transform duration-500" />
+            class="w-full md:w-[80%] lg:w-[70%] aspect-square object-contain mx-auto transition-transform duration-500" loading="lazy" decoding="async" />
     </div>
 
     {{-- Title --}}

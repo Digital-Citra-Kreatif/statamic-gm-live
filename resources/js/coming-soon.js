@@ -1,4 +1,4 @@
-// Countdown halaman coming soon
+// Countdown coming soon
 
 const setupCountdown = () => {
     const el = document.getElementById('countdown');
@@ -19,7 +19,7 @@ const setupCountdown = () => {
         if (diff <= 0) {
             units.forEach((u) => set(u, 0));
             clearInterval(timer);
-            // Muat ulang > mode sudah nonaktif
+            // Muat ulang
             window.location.reload();
             return;
         }

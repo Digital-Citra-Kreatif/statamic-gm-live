@@ -21,7 +21,7 @@
         @if (!empty($flip['image']))
             <div class="h-80 overflow-hidden">
                 <img src="{{ $flip['image']?->url() }}" alt="{{ $flip['image']?->alt ?? ($flip['heading_flip'] ?? '') }}"
-                    class="w-full h-full object-cover">
+                    class="w-full h-full object-cover" loading="lazy" decoding="async">
             </div>
         @endif
         <p class="p-4 text-(--color-heading) title-display text-xl tracking-tight lg:text-2xl text-center">

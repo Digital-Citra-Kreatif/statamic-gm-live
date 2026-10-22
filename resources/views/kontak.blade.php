@@ -27,7 +27,7 @@
         ->values()
         ->all();
 
-    // Alamat & link maps
+    // Alamat dan maps
     $address = $globals['address'] ?? null;
     $addressUrl = $globals['google_map_link'] ?? null;
 
@@ -238,6 +238,9 @@
                     </div>
                 </div>
             </section>
+            {{-- Section tambahan --}}
+            <x-layouts.content-rows :rows="$page->content_rows ?? null" />
+
         </main>
 
         @if ($hasFooter)

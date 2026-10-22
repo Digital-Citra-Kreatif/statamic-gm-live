@@ -1,4 +1,4 @@
-// Slider Fitur & benefit (Single produk)
+// Slider fitur produk
 
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';

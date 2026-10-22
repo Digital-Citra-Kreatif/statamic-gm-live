@@ -1,4 +1,4 @@
-// Slider kategori produk halaman Beranda
+// Slider kategori produk
 
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';

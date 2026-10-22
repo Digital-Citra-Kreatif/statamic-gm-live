@@ -1,7 +1,7 @@
 @props(['term'])
 
 @php
-    // Ikon dari taxonomy social_media, dirender solid hijau via CSS mask
+    // Ikon sosial media
     $iconUrl = $term->icon?->url();
 @endphp
 

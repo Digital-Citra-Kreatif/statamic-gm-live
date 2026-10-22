@@ -34,6 +34,8 @@
                                         src="{{ $photo->url }}"
                                         alt="{{ $item->author }}"
                                         class="size-10 rounded-full object-cover"
+                                        loading="lazy"
+                                        decoding="async"
                                     >
                                 @endforeach
                             @endif

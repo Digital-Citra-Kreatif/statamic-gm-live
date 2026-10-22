@@ -10,7 +10,7 @@ use Statamic\Facades\Term;
 use Statamic\Http\Controllers\CP\Collections\CollectionTreeController;
 
 /**
- * Appends "| badge" to tree labels; cp-collection-tree.js turns it into a badge.
+ * Badge label tree
  */
 class CollectionTreeLabelController extends CollectionTreeController
 {
@@ -49,8 +49,7 @@ class CollectionTreeLabelController extends CollectionTreeController
 
     private function dealerLabeler(): callable
     {
-        // Dealer name = leading ALL-CAPS lines of the address (may wrap over 2 lines);
-        // street lines are mixed case, so an address without a name yields none.
+        // Nama dealer
         return function (EntryContract $entry, string $label) {
             $city = $entry->get('city') ?: $label;
             $name = collect(preg_split('/\R/', (string) $entry->get('address')))

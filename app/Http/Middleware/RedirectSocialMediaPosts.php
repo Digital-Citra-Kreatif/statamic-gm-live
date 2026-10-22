@@ -16,7 +16,7 @@ class RedirectSocialMediaPosts
             return $next($request);
         }
 
-        // Resolve entry dari URI yang diakses
+        // Resolve entry
         $uri = '/' . ltrim($request->getPathInfo(), '/');
         $entry = Entry::findByUri($uri, Site::current()->handle());
 
@@ -32,7 +32,7 @@ class RedirectSocialMediaPosts
             return $next($request);
         }
 
-        // External URL dari field Social Media Links
+        // URL eksternal
         $rawLink = $entry->value('social_media_links');
 
         if (is_string($rawLink) && str_starts_with($rawLink, 'entry::')) {
@@ -43,7 +43,7 @@ class RedirectSocialMediaPosts
 
         $target = is_string($target) ? trim($target) : '';
 
-        // URL kosong -> 404, ada -> redirect permanen (301)
+        // Redirect atau 404
         if ($target === '') {
             abort(404);
         }

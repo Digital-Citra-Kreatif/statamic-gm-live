@@ -12,7 +12,7 @@
         ?->in(\Statamic\Facades\Site::current()->handle())
         ?->toAugmentedArray();
 
-    // Global label product (untuk pilihan urutan produk)
+    // Global label product
     $productGlobal = \Statamic\Facades\GlobalSet::findByHandle('product_label_information')
         ?->in(\Statamic\Facades\Site::current()->handle())
         ?->toAugmentedArray();
@@ -101,12 +101,12 @@
 
                                 @if (!empty($iconAccordion))
                                     <img src="{{ $iconAccordion }}" alt="{{ $iconAccordionAlt }}"
-                                        class="w-5 h-5 lg:w-8 lg:h-8 shrink-0 group-open:hidden" />
+                                        class="w-5 h-5 lg:w-8 lg:h-8 shrink-0 group-open:hidden" loading="lazy" decoding="async" />
                                 @endif
 
                                 @if (!empty($iconAccordionActive))
                                     <img src="{{ $iconAccordionActive }}" alt="{{ $iconAccordionActiveAlt }}"
-                                        class="w-5 h-5 lg:w-8 lg:h-8 shrink-0 hidden group-open:block" />
+                                        class="w-5 h-5 lg:w-8 lg:h-8 shrink-0 hidden group-open:block" loading="lazy" decoding="async" />
                                 @endif
                             </summary>
 
@@ -120,7 +120,7 @@
                                         <div class="w-full">
                                             <img src="{{ $item['featured_image_url'] }}"
                                                 alt="{{ $item['featured_image_alt'] }}"
-                                                class="w-full rounded-xl lg:rounded-3xl" />
+                                                class="w-full rounded-xl lg:rounded-3xl" loading="lazy" decoding="async" />
                                         </div>
                                     @endif
 
@@ -170,6 +170,9 @@
                 </div>
             </div>
         </section>
+
+        {{-- Section tambahan --}}
+        <x-layouts.content-rows :rows="$page->content_rows ?? null" />
 
     </main>
 

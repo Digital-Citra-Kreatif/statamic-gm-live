@@ -34,7 +34,7 @@
     }
 @endphp
 
-{{-- Filter Kategori & Search --}}
+{{-- Filter dan Search --}}
 <div id="dealer-content" class="scroll-mt-24 lg:scroll-mt-28">
     <div
         class="relative z-1000 flex flex-col gap-4 md:items-center md:flex-row-reverse md:justify-between lg:items-center lg:flex-row-reverse lg:justify-between mb-6">
@@ -95,7 +95,7 @@
     <div id="dealer-map" style="height: 350px; width: 100%; border-radius: 24px;" class="md:h-120!"></div>
 </div>
 
-{{-- Share data lokasi > dealer-map.js --}}
+{{-- Data lokasi dealer --}}
 <script>
     window.dealerLocations = @json($dealers);
     window.dealerCategoryLabels = @json($categories);

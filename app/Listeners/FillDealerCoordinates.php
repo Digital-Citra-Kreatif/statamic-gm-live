@@ -9,7 +9,7 @@ use Throwable;
 class FillDealerCoordinates
 {
     /**
-     * Isi Map Coordinates dealer dari Google Maps URL.
+     * Isi koordinat dealer
      */
     public function handle(EntrySaving $event): void
     {

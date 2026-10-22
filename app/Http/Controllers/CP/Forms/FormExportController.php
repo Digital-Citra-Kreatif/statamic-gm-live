@@ -24,7 +24,7 @@ class FormExportController extends StatamicFormExportController
             return $exporter->response();
         }
 
-        // Stream unduhan untuk LiteSpeed dan Cloudflare.
+        // Stream unduhan
         while (ob_get_level() > 0) {
             ob_end_clean();
         }

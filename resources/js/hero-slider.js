@@ -1,4 +1,4 @@
-// Slider hero banner (Beranda)
+// Slider hero banner
 
 const setupHeroSlider = () => {
     const SLIDE_TRANSITION_MS = 500;
@@ -82,7 +82,7 @@ const setupHeroSlider = () => {
         setTrackPosition(currentTranslate, false);
     };
 
-    // Pindah ke slide: geser, klik dot
+    // Pindah slide
     const renderTrackIndex = (nextTrackIndex, { animate = true } = {}) => {
         currentIndex = nextTrackIndex;
 
@@ -237,7 +237,7 @@ const setupHeroSlider = () => {
         event.preventDefault();
     });
 
-    // Animasi selesai > slide kloning
+    // Reset slide kloning
     track.addEventListener('transitionend', (event) => {
         if (event.target !== track || event.propertyName !== 'transform' || !isAnimating) return;
 
