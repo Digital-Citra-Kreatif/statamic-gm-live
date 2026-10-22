@@ -79,7 +79,8 @@
             <section id="{{ $opening['anchor'] ?? 'gm-teletech-desc' }}">
                 <div class="container">
                     <div class="flex flex-col items-center my-18 lg:my-30">
-                        <div class="content-custom richtext text-left md:text-center lg:text-center lg:w-280">{!! $opening['description'] ?? '' !!}</div>
+                        <div class="content-custom richtext text-left md:text-center lg:text-center lg:w-280">
+                            {!! $opening['description'] ?? '' !!}</div>
                     </div>
                 </div>
             </section>
@@ -92,7 +93,7 @@
                     <div class="flex flex-col items-center my-18 lg:my-30">
                         <img src="{{ \App\Support\Img::url($teletechImage['section_images'] ?? '', 1200) }}"
                             alt="{{ $teletechImage['section_images']?->alt ?? $page->title }}"
-                            class="rounded-2xl w-full max-w-[1000px] h-auto" loading="lazy" decoding="async">
+                            class="rounded-2xl w-full max-w-250 h-auto" loading="lazy" decoding="async">
                     </div>
                 </div>
             </section>
@@ -112,7 +113,8 @@
                                 <div
                                     class="flex flex-col gap-10 p-4 bg-(--color-surface) rounded-xl lg:rounded-3xl md:p-4 md:gap-10 lg:p-6 lg:gap-20">
                                     <img src="{{ \App\Support\Img::url($item['icon'] ?: $iconBenefitPlaceholder, 200) }}"
-                                        alt="{{ $item['icon']?->alt ?? 'Icon' }}" class="w-8 h-8 lg:w-10 lg:h-10" loading="lazy" decoding="async">
+                                        alt="{{ $item['icon']?->alt ?? 'Icon' }}" class="w-8 h-8 lg:w-10 lg:h-10"
+                                        loading="lazy" decoding="async">
                                     <div class="flex flex-col gap-2">
                                         <p
                                             class="text-(--color-heading) title-display text-xl tracking-tight lg:text-2xl">
@@ -168,8 +170,8 @@
                                     <div
                                         class="bg-(--color-primary) group-hover:bg-black flex items-center justify-center rounded-full transition-colors w-12 h-12 md:w-12 md:h-12 lg:w-12 lg:h-12">
                                         <img src="{{ \App\Support\Img::url($contactIcon, 200) }}"
-                                            alt="{{ $contactIcon?->alt ?? ($contact['label'] ?? '') }}"
-                                            class="w-5 h-5" loading="lazy" decoding="async">
+                                            alt="{{ $contactIcon?->alt ?? ($contact['label'] ?? '') }}" class="w-5 h-5"
+                                            loading="lazy" decoding="async">
                                     </div>
                                 </a>
                             @endforeach
