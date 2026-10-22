@@ -1,11 +1,18 @@
 // Peta dealer.
 
+import L from 'leaflet';
 import landGeoJson from './data/land.json';
 import markerIcon from 'leaflet/dist/images/marker-icon.png';
 import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
 import markerShadow from 'leaflet/dist/images/marker-shadow.png';
 
-document.addEventListener('DOMContentLoaded', function () {
+window.L = L;
+
+// Dimuat dinamis, jadi DOMContentLoaded bisa saja sudah lewat.
+const onReady = (fn) =>
+    document.readyState === 'loading' ? document.addEventListener('DOMContentLoaded', fn) : fn();
+
+onReady(function () {
     const mapEl = document.getElementById('dealer-map');
     if (!mapEl) return;
 

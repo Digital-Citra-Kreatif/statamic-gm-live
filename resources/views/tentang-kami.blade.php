@@ -77,7 +77,7 @@
             <section id="{{ $visionMission['anchor'] ?? 'visi-misi' }}">
                 <div class="container">
                     <div id="background-visi-misi" class="overlay-visimisi relative my-18 md:my-18 lg:my-30 rounded-3xl">
-                        <img src="{{ $visionMission['photo_background'] ?? '' }}"
+                        <img src="{{ \App\Support\Img::url($visionMission['photo_background'] ?? '', 1920) }}"
                             alt="{{ $visionMission['photo_background']?->alt ?? 'Visi Misi Background' }}"
                             class="rounded-xl md:rounded-xl lg:rounded-3xl w-full h-245 md:h-260 lg:h-200 object-cover pointer-events-none" loading="lazy" decoding="async">
 
@@ -86,7 +86,7 @@
 
                             {{-- Image truk --}}
                             <div class="w-full -mb-10 lg:-mb-30 lg:w-[70%] lg:-mr-70">
-                                <img src="{{ $visionMission['photo'] ?? '' }}"
+                                <img src="{{ \App\Support\Img::url($visionMission['photo'] ?? '', 1200) }}"
                                     alt="{{ $visionMission['photo']?->alt ?? 'Visi Misi' }}" class="lg:-ml-25" loading="lazy" decoding="async">
                             </div>
 
@@ -132,7 +132,7 @@
                                         @if (!empty($cert['label']))
                                             <p>{{ $cert['label'] }}</p>
                                         @endif
-                                        <img src="{{ $cert['assets_field'] ?? '' }}"
+                                        <img src="{{ \App\Support\Img::url($cert['assets_field'] ?? '', 400) }}"
                                             alt="{{ $cert['assets_field']?->alt ?? ($cert['label'] ?? '') }}" loading="lazy" decoding="async">
                                     </div>
                                 @endforeach
@@ -166,7 +166,7 @@
                             @foreach ($fawValue['features'] as $item)
                                 <div
                                     class="flex flex-col gap-8 p-4 bg-white rounded-xl lg:rounded-3xl md:p-4 md:gap-8 lg:p-6 lg:gap-12">
-                                    <img src="{{ $item['icon'] ?: $iconPlaceholder }}"
+                                    <img src="{{ \App\Support\Img::url($item['icon'] ?: $iconPlaceholder, 200) }}"
                                         alt="{{ $item['icon']?->alt ?? 'Icon' }}" class="w-8 h-8 lg:w-10 lg:h-10" loading="lazy" decoding="async">
                                     <div class="flex flex-col gap-2 lg:gap-4">
                                         <p

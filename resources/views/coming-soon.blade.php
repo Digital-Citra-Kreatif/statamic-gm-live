@@ -104,7 +104,7 @@
 
     {{-- Background --}}
     @if ($bgUrl)
-        <img src="{{ $bgUrl }}" alt="{{ $heading }}"
+        <img src="{{ \App\Support\Img::url($bgUrl, 1920) }}" alt="{{ $heading }}"
             class="absolute inset-0 z-0 h-full w-full object-cover">
     @endif
     <div

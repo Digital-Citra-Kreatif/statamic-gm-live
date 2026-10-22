@@ -100,12 +100,12 @@
                                 </div>
 
                                 @if (!empty($iconAccordion))
-                                    <img src="{{ $iconAccordion }}" alt="{{ $iconAccordionAlt }}"
+                                    <img src="{{ \App\Support\Img::url($iconAccordion, 200) }}" alt="{{ $iconAccordionAlt }}"
                                         class="w-5 h-5 lg:w-8 lg:h-8 shrink-0 group-open:hidden" loading="lazy" decoding="async" />
                                 @endif
 
                                 @if (!empty($iconAccordionActive))
-                                    <img src="{{ $iconAccordionActive }}" alt="{{ $iconAccordionActiveAlt }}"
+                                    <img src="{{ \App\Support\Img::url($iconAccordionActive, 200) }}" alt="{{ $iconAccordionActiveAlt }}"
                                         class="w-5 h-5 lg:w-8 lg:h-8 shrink-0 hidden group-open:block" loading="lazy" decoding="async" />
                                 @endif
                             </summary>
@@ -118,7 +118,7 @@
                                 <div class="flex flex-col lg:flex-row lg:items-end gap-6">
                                     @if ($item['featured_image_url'])
                                         <div class="w-full">
-                                            <img src="{{ $item['featured_image_url'] }}"
+                                            <img src="{{ \App\Support\Img::url($item['featured_image_url'], 800) }}"
                                                 alt="{{ $item['featured_image_alt'] }}"
                                                 class="w-full rounded-xl lg:rounded-3xl" loading="lazy" decoding="async" />
                                         </div>

@@ -25,8 +25,9 @@
 <section id="hero-page" class="overflow-hidden">
     <div class="relative {{ $height }}">
         @if ($imageUrl)
-            <img src="{{ $imageUrl }}" alt="{{ $imageAlt }}"
-                class="absolute inset-0 h-full w-full pointer-events-none object-cover" />
+            <img src="{{ \App\Support\Img::url($imageUrl, 1920) }}" alt="{{ $imageAlt }}"
+                class="absolute inset-0 h-full w-full pointer-events-none object-cover" fetchpriority="high"
+                decoding="async" />
         @endif
 
         <div class="heropage-overlay absolute inset-0"></div>

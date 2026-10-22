@@ -21,7 +21,7 @@
             <div class="flex flex-wrap items-center justify-center gap-8 sm:gap-12">
                 @foreach ($block->logos as $logo)
                     <img
-                        src="{{ $logo->url }}"
+                        src="{{ \App\Support\Img::url($logo->url, 400) }}"
                         alt="{{ $logo->alt ?? $logo->title ?? '' }}"
                         class="h-10 w-auto max-w-[140px] object-contain opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0 sm:h-12"
                         loading="lazy"

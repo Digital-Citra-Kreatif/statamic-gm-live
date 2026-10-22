@@ -50,7 +50,7 @@
 
         {{-- Featured Image --}}
         <div class="img-high overflow-hidden">
-            <img src="{{ $entry->featured_image?->url() ?? ($blog['image_placeholders'] ?? '') }}"
+            <img src="{{ \App\Support\Img::url($entry->featured_image?->url() ?? ($blog['image_placeholders'] ?? ''), 800) }}"
                 alt="{{ $entry->featured_image?->alt ?? $entry->title }}"
                 class="w-full h-60 object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" decoding="async" />
         </div>

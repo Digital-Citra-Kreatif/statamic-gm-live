@@ -20,7 +20,7 @@
     <div class="absolute inset-0 flex flex-col">
         @if (!empty($flip['image']))
             <div class="h-80 overflow-hidden">
-                <img src="{{ $flip['image']?->url() }}" alt="{{ $flip['image']?->alt ?? ($flip['heading_flip'] ?? '') }}"
+                <img src="{{ \App\Support\Img::url($flip['image']?->url(), 800) }}" alt="{{ $flip['image']?->alt ?? ($flip['heading_flip'] ?? '') }}"
                     class="w-full h-full object-cover" loading="lazy" decoding="async">
             </div>
         @endif

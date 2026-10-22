@@ -24,7 +24,7 @@
             @if ($block->partner_logos)
                 <div class="mt-6 flex flex-wrap items-center gap-6">
                     @foreach ($block->partner_logos as $logo)
-                        <img src="{{ $logo->url }}" alt="{{ $logo->alt ?? '' }}" class="h-12 w-auto object-contain" loading="lazy" decoding="async">
+                        <img src="{{ \App\Support\Img::url($logo->url, 400) }}" alt="{{ $logo->alt ?? '' }}" class="h-12 w-auto object-contain" loading="lazy" decoding="async">
                     @endforeach
                 </div>
             @endif

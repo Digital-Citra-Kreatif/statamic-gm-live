@@ -12,19 +12,19 @@
 >
     @if ($block->background_image)
         @foreach ($block->background_image as $image)
-            <img src="{{ $image->url }}" alt="" class="absolute inset-0 size-full object-cover opacity-30" loading="lazy" decoding="async">
+            <img src="{{ \App\Support\Img::url($image->url, 1200) }}" alt="" class="absolute inset-0 size-full object-cover opacity-30" loading="lazy" decoding="async">
         @endforeach
     @endif
     <div class="relative mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-2">
         <div class="flex items-end gap-6">
             @if ($block->side_image)
                 @foreach ($block->side_image as $image)
-                    <img src="{{ $image->url }}" alt="{{ $image->alt ?? '' }}" class="max-h-48 w-auto object-contain" loading="lazy" decoding="async">
+                    <img src="{{ \App\Support\Img::url($image->url, 1200) }}" alt="{{ $image->alt ?? '' }}" class="max-h-48 w-auto object-contain" loading="lazy" decoding="async">
                 @endforeach
             @endif
             @if ($block->visual_image)
                 @foreach ($block->visual_image as $image)
-                    <img src="{{ $image->url }}" alt="{{ $image->alt ?? '' }}" class="max-h-64 w-auto object-contain" loading="lazy" decoding="async">
+                    <img src="{{ \App\Support\Img::url($image->url, 1200) }}" alt="{{ $image->alt ?? '' }}" class="max-h-64 w-auto object-contain" loading="lazy" decoding="async">
                 @endforeach
             @endif
         </div>

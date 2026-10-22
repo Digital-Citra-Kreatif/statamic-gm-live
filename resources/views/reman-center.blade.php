@@ -89,7 +89,7 @@
                                         @endphp
                                         <div class="flex flex-col gap-4 md:gap-4 lg:gap-6 lg:flex-row lg:items-stretch">
                                             @if ($hasImage)
-                                                <img src="{{ $item['image'] }}"
+                                                <img src="{{ \App\Support\Img::url($item['image'], 800) }}"
                                                     alt="{{ $item['image']?->alt ?? ($item['title'] ?? '') }}"
                                                     class="w-full object-cover rounded-xl lg:rounded-3xl h-50 md:h-60 lg:h-auto lg:min-h-100 lg:basis-1/2 lg:min-w-0"
                                                     loading="lazy" decoding="async">
@@ -97,7 +97,7 @@
                                             <div
                                                 class="flex flex-col justify-center gap-6 lg:gap-8 bg-(--color-surface) rounded-xl lg:rounded-3xl p-4 md:p-5 lg:p-8 lg:min-w-0 {{ $hasImage ? 'lg:basis-1/2' : 'w-full' }}">
                                                 @if (!empty($item['icon']))
-                                                    <img src="{{ $item['icon'] }}" alt="{{ $item['icon']?->alt ?? 'Icon' }}"
+                                                    <img src="{{ \App\Support\Img::url($item['icon'], 200) }}" alt="{{ $item['icon']?->alt ?? 'Icon' }}"
                                                         class="w-8 h-8 lg:w-10 lg:h-10" loading="lazy" decoding="async">
                                                 @endif
                                                 <h3 class="text-2xl lg:text-3xl normal-case">{{ $item['title'] ?? '' }}</h3>
@@ -131,7 +131,7 @@
 
                     @if ($imgRemanSection && ($imgRemanSection['show'] ?? false))
                         <img id="{{ $imgRemanSection['anchor'] ?? 'image-reman-center' }}"
-                            src="{{ $imgRemanSection['section_images'] ?? '' }}" alt=""
+                            src="{{ \App\Support\Img::url($imgRemanSection['section_images'] ?? '', 1200) }}" alt=""
                             class="rounded-2xl w-full lg:h-150 object-cover" loading="lazy" decoding="async">
                     @endif
                 </div>

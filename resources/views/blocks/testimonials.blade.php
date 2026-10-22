@@ -31,7 +31,7 @@
                             @if ($item->image)
                                 @foreach ($item->image as $photo)
                                     <img
-                                        src="{{ $photo->url }}"
+                                        src="{{ \App\Support\Img::url($photo->url, 400) }}"
                                         alt="{{ $item->author }}"
                                         class="size-10 rounded-full object-cover"
                                         loading="lazy"

@@ -16,7 +16,7 @@
         <div class="relative">
             @foreach ($block->background_image as $image)
                 <img
-                    src="{{ $image->url }}"
+                    src="{{ \App\Support\Img::url($image->url, 1920) }}"
                     alt=""
                     class="aspect-[21/9] w-full object-cover"
                 >

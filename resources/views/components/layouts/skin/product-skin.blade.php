@@ -13,7 +13,7 @@
 
         {{-- Featured Image --}}
         <div class="overflow-hidden p-6 bg-white rounded-xl lg:rounded-3xl">
-            <img src="{{ $entry->featured_image?->url() ?? ($product['image_placeholders'] ?? '') }}"
+            <img src="{{ \App\Support\Img::url($entry->featured_image?->url() ?? ($product['image_placeholders'] ?? ''), 800) }}"
                 alt="{{ $entry->featured_image?->alt ?? $entry->title }}"
                 class="w-full aspect-square object-contain transition-transform duration-500" loading="lazy" decoding="async" />
         </div>

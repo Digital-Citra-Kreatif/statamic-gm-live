@@ -52,9 +52,11 @@
                                     allowfullscreen></iframe>
                             {{-- Background image --}}
                             @elseif (!empty($slide['backgound_image']))
-                                <img src="{{ $slide['backgound_image']?->url() ?? $slide['backgound_image'] }}"
+                                <img src="{{ \App\Support\Img::url($slide['backgound_image']?->url() ?? $slide['backgound_image'], 1920) }}"
                                     alt="{{ $slide['backgound_image']?->alt ?? $slide['heading'] ?? '' }}"
-                                    class="pointer-events-none absolute inset-0 h-full w-full object-cover" />
+                                    class="pointer-events-none absolute inset-0 h-full w-full object-cover"
+                                    @if ($loop->first) fetchpriority="high" @else loading="lazy" @endif
+                                    decoding="async" />
                             @endif
 
                             {{-- Overlay --}}

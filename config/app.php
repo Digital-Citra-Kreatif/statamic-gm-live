@@ -15,6 +15,9 @@ return [
 
     'name' => env('APP_NAME', 'Statamic'),
 
+    // Optimasi gambar via Glide (App\Support\Img). Set false untuk kembali ke gambar asli.
+    'image_optimization' => env('IMAGE_OPTIMIZATION', true),
+
     /*
     |--------------------------------------------------------------------------
     | Application Environment

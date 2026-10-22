@@ -143,7 +143,7 @@
             {{-- Hero banner placeholder --}}
             @if ($heroBackground)
                 <div class="absolute inset-0 overflow-hidden pointer-events-none select-none" aria-hidden="true">
-                    <img src="{{ $heroBackground->url() }}" alt=""
+                    <img src="{{ \App\Support\Img::url($heroBackground->url(), 1920) }}" alt=""
                         class="h-full w-full object-cover object-center">
                     <div class="heropage-product-overlay absolute inset-0"></div>
                 </div>
@@ -197,7 +197,7 @@
                     @if ($page->featured_image)
                         <div
                             class="relative z-20 mt-8 flex w-full self-end justify-center lg:mt-0 lg:w-auto lg:flex-1 lg:justify-end">
-                            <img src="{{ $page->featured_image->url() }}"
+                            <img src="{{ \App\Support\Img::url($page->featured_image->url(), 1200) }}"
                                 alt="{{ $page->featured_image->alt ?? $page->title }}"
                                 class="w-full h-100 md:h-120 lg:h-150 object-contain object-bottom -mb-50 md:-mb-40 lg:-mb-50" />
                         </div>
@@ -259,7 +259,7 @@
                                             <div class="features-card flex flex-col h-full">
                                                 @if (!empty($feature['image']))
                                                     <div class="features-card-image">
-                                                        <img src="{{ $feature['image']->url() }}"
+                                                        <img src="{{ \App\Support\Img::url($feature['image']->url(), 1200) }}"
                                                             alt="{{ $feature['image']->alt ?? ($feature['heading'] ?? '') }}"
                                                             class="w-full aspect-square object-cover" loading="lazy" decoding="async" />
                                                     </div>
@@ -289,7 +289,7 @@
                                         class="bg-(--color-surface) overflow-hidden rounded-xl features-card flex flex-col h-full">
                                         @if (!empty($feature['image']))
                                             <div class="features-card-image">
-                                                <img src="{{ $feature['image']->url() }}"
+                                                <img src="{{ \App\Support\Img::url($feature['image']->url(), 1200) }}"
                                                     alt="{{ $feature['image']->alt ?? ($feature['heading'] ?? '') }}"
                                                     class="w-full aspect-square object-cover" loading="lazy" decoding="async" />
                                             </div>
@@ -336,7 +336,7 @@
                             <div class="gallery-main rounded-2xl overflow-hidden">
                                 @foreach ($gallery as $image)
                                     <div class="gallery-slide {{ $loop->first ? '' : 'hidden' }}">
-                                        <img src="{{ $image->url() }}" alt="{{ $image->alt ?? $page->title }}"
+                                        <img src="{{ \App\Support\Img::url($image->url(), 1200) }}" alt="{{ $image->alt ?? $page->title }}"
                                             class="w-full h-auto md:h-90 lg:h-90 object-contain" loading="lazy" decoding="async" />
                                     </div>
                                 @endforeach
@@ -361,7 +361,7 @@
                                         @foreach ($gallery as $image)
                                             <button type="button"
                                                 class="gallery-thumb shrink-0 mr-3 first:ml-auto last:mr-auto w-[calc((100%-3*0.75rem)/4)] rounded-xl overflow-hidden transition-opacity {{ $loop->first ? 'opacity-100' : 'opacity-50' }}">
-                                                <img src="{{ $image->url() }}" alt="{{ $image->alt ?? $page->title }}"
+                                                <img src="{{ \App\Support\Img::url($image->url(), 1200) }}" alt="{{ $image->alt ?? $page->title }}"
                                                     class="w-full h-15 md:h-15 lg:h-30 object-contain" loading="lazy" decoding="async" />
                                             </button>
                                         @endforeach
@@ -412,7 +412,7 @@
 
             @if ($backgroundPattern)
                 <div class="absolute inset-0 z-0 pointer-events-none select-none">
-                    <img src="{{ $backgroundPattern->url() }}" alt="{{ $backgroundPattern->alt ?? $page->title }}"
+                    <img src="{{ \App\Support\Img::url($backgroundPattern->url(), 1920) }}" alt="{{ $backgroundPattern->alt ?? $page->title }}"
                         oncontextmenu="return false" draggable="false"
                         class="h-full w-[40%] md:w-[50%] lg:w-100 opacity-10 object-cover" loading="lazy" decoding="async">
                 </div>

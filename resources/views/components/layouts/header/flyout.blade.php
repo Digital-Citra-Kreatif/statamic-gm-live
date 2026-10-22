@@ -41,7 +41,7 @@
             <div id="logo-flyout" class="flex items-start {{ $logo_url ? 'justify-between' : 'justify-end' }}">
                 @if ($logo_url)
                     <a href="/" class="inline-flex items-center">
-                        <img src="{{ $logo_url }}" alt="{{ $site_title }} Logo" class="h-auto w-28" />
+                        <img src="{{ \App\Support\Img::url($logo_url, 400) }}" alt="{{ $site_title }} Logo" class="h-auto w-28" />
                     </a>
                 @endif
                 <button type="button" id="mobile-menu-close" aria-label="Close menu"

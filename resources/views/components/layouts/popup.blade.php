@@ -69,7 +69,7 @@
             @endif
 
             @if ($imageUrl)
-                <img src="{{ $imageUrl }}" alt="{{ (is_object($image) && method_exists($image, 'alt') ? $image->alt : null) ?? $popUp->value('title') ?? '' }}"
+                <img src="{{ \App\Support\Img::url($imageUrl, 1200) }}" alt="{{ (is_object($image) && method_exists($image, 'alt') ? $image->alt : null) ?? $popUp->value('title') ?? '' }}"
                     class="w-full h-full object-cover pointer-events-none block">
             @else
                 <div class="p-8 text-center">

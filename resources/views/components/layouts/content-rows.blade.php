@@ -36,12 +36,12 @@
                         class="flex gap-4 md:gap-4 lg:gap-6 {{ $rowClass }}">
                         {{-- Gambar row --}}
                         @if ($hasImage && $stacked)
-                            <img src="{{ $image }}" alt="{{ $image?->alt ?? $heading }}"
+                            <img src="{{ \App\Support\Img::url($image, 1200) }}" alt="{{ $image?->alt ?? $heading }}"
                                 @if ($image?->width() && $image?->height()) width="{{ $image->width() }}" height="{{ $image->height() }}" @endif
                                 class="self-center w-auto max-w-full h-auto rounded-xl lg:rounded-3xl"
                                 loading="lazy" decoding="async">
                         @elseif ($hasImage)
-                            <img src="{{ $image }}" alt="{{ $image?->alt ?? $heading }}"
+                            <img src="{{ \App\Support\Img::url($image, 1200) }}" alt="{{ $image?->alt ?? $heading }}"
                                 class="w-full object-cover rounded-xl lg:rounded-3xl h-50 md:h-80 lg:h-auto lg:min-h-100 lg:basis-1/2 lg:min-w-0"
                                 loading="lazy" decoding="async">
                         @endif

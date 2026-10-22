@@ -40,7 +40,7 @@
 
             {{-- Background Footer --}}
             <div id="footer-background" class="overlay-footer">
-                <img src="{{ $footer->augmentedValue('backgound_image')->value()?->url() }}"
+                <img src="{{ \App\Support\Img::url($footer->augmentedValue('backgound_image')->value()?->url(), 1920) }}"
                     alt="{{ $footer->augmentedValue('backgound_image')->value()?->alt ?? 'Footer Background' }}"
                     class="block w-full h-200 md:h-110 lg:h-120 object-cover pointer-events-none rounded-t-3xl lg:rounded-t-[60px]" loading="lazy" decoding="async">
             </div>
@@ -53,7 +53,7 @@
 
                         {{-- Image Footer --}}
                         <div id="image-footer" class="flex items-end justify-center mb-0 md:w-[60%] lg:w-[50%]">
-                            <img src="{{ $footer->augmentedValue('image')->value()?->url() }}"
+                            <img src="{{ \App\Support\Img::url($footer->augmentedValue('image')->value()?->url(), 1920) }}"
                                 alt="{{ $footer->augmentedValue('image')->value()?->alt ?? $footer->get('heading') }}"
                                 class="w-auto max-w-full h-auto max-h-104 md:max-h-110 lg:max-h-148 object-contain object-bottom md:-mt-16 lg:-mt-28" loading="lazy" decoding="async">
                         </div>

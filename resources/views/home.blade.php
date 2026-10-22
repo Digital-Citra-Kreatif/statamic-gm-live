@@ -115,15 +115,14 @@
         ->filter(fn($d) => $d['lat'] && $d['lng'])
         ->values();
 
-    // Blog terbaru
+    // Blog terbaru (4 post, tanpa sosial media)
     $blogLatest = \Statamic\Facades\Entry::query()
         ->where('collection', 'posts')
         ->whereStatus('published')
+        ->whereTaxonomyNotIn(['categories::sosial-media'])
         ->orderBy('date', 'desc')
+        ->limit(4)
         ->get()
-        ->reject(
-            fn($post) => collect($post->categories ?? [])->contains(fn($c) => (string) $c->slug() === 'sosial-media'),
-        )
         ->values();
 
     // Highlight post terbaru
@@ -179,7 +178,7 @@
                     {{-- Background --}}
                     <div id="background-about"
                         class="overlay-section-about rounded-t-3xl lg:rounded-t-[60px] overflow-hidden">
-                        <img src="{{ $about['section_images'] ?? '' }}" alt="{{ $about['section_images']?->alt }}"
+                        <img src="{{ \App\Support\Img::url($about['section_images'] ?? '', 1920) }}" alt="{{ $about['section_images']?->alt }}"
                             class="w-full h-265 md:h-250 lg:h-224 object-cover pointer-events-none" loading="lazy" decoding="async">
                     </div>
 
@@ -247,7 +246,7 @@
                                                 @if ($img->caption)
                                                     <p>{{ $img->caption }}</p>
                                                 @endif
-                                                <img src="{{ $img->url() }}" alt="{{ $img->alt }}"
+                                                <img src="{{ \App\Support\Img::url($img->url(), 400) }}" alt="{{ $img->alt }}"
                                                     class="w-full object-contain" loading="lazy" decoding="async">
                                             </div>
                                         @endforeach
@@ -257,7 +256,7 @@
                                 {{-- Truk --}}
                                 @if (!empty($about['image']))
                                     <div class="md:w-full lg:w-[145%]">
-                                        <img src="{{ $about['image']->url() }}"
+                                        <img src="{{ \App\Support\Img::url($about['image']->url(), 1200) }}"
                                             alt="{{ $about['image']->alt ?? ($about['heading'] ?? '') }}"
                                             class="w-full object-cover lg:-ml-50" loading="lazy" decoding="async" />
                                     </div>
@@ -350,7 +349,7 @@
                     {{-- Background --}}
                     <div id="background-services"
                         class="overlay-section-services rounded-t-3xl lg:rounded-t-[60px] overflow-hidden">
-                        <img src="{{ $services['background_image'] ?? '' }}"
+                        <img src="{{ \App\Support\Img::url($services['background_image'] ?? '', 1920) }}"
                             alt="{{ $services['background_image']?->alt }}"
                             class="w-full h-325 md:h-220 lg:h-190 object-cover pointer-events-none" loading="lazy" decoding="async">
                     </div>
@@ -418,14 +417,14 @@
                                         @if ($mpValid)
                                             <a href="{{ $mpUrl }}" target="_blank" rel="noopener noreferrer"
                                                 class="transition-opacity hover:opacity-70 border border-(--color-surface) md:border-0 lg:border-0 rounded-xl p-4">
-                                                <img src="{{ $item['marketplace_logo']?->url() }}"
+                                                <img src="{{ \App\Support\Img::url($item['marketplace_logo']?->url(), 400) }}"
                                                     alt="{{ $item['marketplace_logo']?->alt ?? '' }}"
                                                     class="h-10 lg:h-14 object-contain mx-auto" loading="lazy" decoding="async">
                                             </a>
                                         @else
                                             <div
                                                 class="border border-(--color-surface) md:border-0 lg:border-0 rounded-xl p-4">
-                                                <img src="{{ $item['marketplace_logo']?->url() }}"
+                                                <img src="{{ \App\Support\Img::url($item['marketplace_logo']?->url(), 400) }}"
                                                     alt="{{ $item['marketplace_logo']?->alt ?? '' }}"
                                                     class="h-10 lg:h-14 object-contain mx-auto" loading="lazy" decoding="async">
                                             </div>
@@ -510,7 +509,7 @@
                                         <a href="{{ $itemUrl }}" target="_blank" rel="noopener noreferrer"
                                             class="flex flex-col gap-4 items-center lg:justify-center p-3.5 lg:py-5 lg:px-8 border border-(--color-line) rounded-xl">
                                             @if (!empty($item['images']))
-                                                <img src="{{ $item['images']?->url() }}"
+                                                <img src="{{ \App\Support\Img::url($item['images']?->url(), 400) }}"
                                                     alt="{{ $item['label'] ?? '' }}"
                                                     class="w-full h-20 md:h-20 lg:h-25 object-contain" loading="lazy" decoding="async">
                                             @endif
@@ -524,7 +523,7 @@
                                         <div
                                             class="flex flex-col gap-4 items-center lg:justify-center p-3.5 lg:py-5 lg:px-8 border border-(--color-line) rounded-xl">
                                             @if (!empty($item['images']))
-                                                <img src="{{ $item['images']?->url() }}"
+                                                <img src="{{ \App\Support\Img::url($item['images']?->url(), 400) }}"
                                                     alt="{{ $item['label'] ?? '' }}"
                                                     class="w-full h-20 md:h-20 lg:h-25 object-contain" loading="lazy" decoding="async">
                                             @endif

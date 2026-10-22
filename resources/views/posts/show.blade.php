@@ -47,11 +47,9 @@
 
     // Exclude post sosial-media
     $posts = $relatedQuery
+        ->whereTaxonomyNotIn(['categories::sosial-media'])
+        ->limit(3)
         ->get()
-        ->reject(
-            fn($post) => collect($post->categories ?? [])->contains(fn($c) => (string) $c->slug() === 'sosial-media'),
-        )
-        ->take(3)
         ->values();
 
     // Sidebar post terbaru
@@ -158,7 +156,7 @@
                                         @foreach ($galleryImages as $image)
                                             <div class="gallery-slide {{ $loop->first ? '' : 'hidden' }}">
                                                 <figure>
-                                                    <img src="{{ $image->url() }}"
+                                                    <img src="{{ \App\Support\Img::url($image->url(), 1200) }}"
                                                         alt="{{ $image->alt ?? $page->title }}"
                                                         class="w-full aspect-video object-cover" loading="{{ $loop->first ? 'eager' : 'lazy' }}" decoding="async" />
                                                     @if ($image->caption)
@@ -190,7 +188,7 @@
                                             @foreach ($galleryImages as $image)
                                                 <button type="button"
                                                     class="gallery-thumb shrink-0 mr-3 last:mr-0 w-[calc((100%-3*0.75rem)/4)] rounded-xl overflow-hidden transition-opacity {{ $loop->first ? 'opacity-100' : 'opacity-50' }}">
-                                                    <img src="{{ $image->url() }}"
+                                                    <img src="{{ \App\Support\Img::url($image->url(), 1200) }}"
                                                         alt="{{ $image->alt ?? $page->title }}"
                                                         class="w-full h-15 md:h-15 lg:h-30 object-cover" loading="lazy" decoding="async" />
                                                 </button>
@@ -283,7 +281,7 @@
                                                 @if ($isCopy)
                                                     <a href="#"
                                                         class="share-link shrink-0 relative transition-opacity hover:opacity-70">
-                                                        <img src="{{ $iconUrl }}"
+                                                        <img src="{{ \App\Support\Img::url($iconUrl, 200) }}"
                                                             alt="{{ $share['icon']?->alt ?? '' }}"
                                                             class="w-4 h-4 lg:w-5 lg:h-5" loading="lazy" decoding="async" />
                                                     </a>
@@ -291,7 +289,7 @@
                                                     <a href="{{ $link }}" target="_blank"
                                                         rel="noopener noreferrer"
                                                         class="shrink-0 transition-opacity hover:opacity-70">
-                                                        <img src="{{ $iconUrl }}"
+                                                        <img src="{{ \App\Support\Img::url($iconUrl, 200) }}"
                                                             alt="{{ $share['icon']?->alt ?? '' }}"
                                                             class="w-4 h-4 lg:w-5 lg:h-5" loading="lazy" decoding="async" />
                                                     </a>

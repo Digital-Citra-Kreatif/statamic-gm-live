@@ -27,7 +27,7 @@
                         <div class="{{ $imageFirst ? 'lg:order-1' : 'lg:order-2' }}">
                             @if ($row->icon)
                                 @foreach ($row->icon as $icon)
-                                    <img src="{{ $icon->url }}" alt="{{ $icon->alt ?? '' }}" class="mb-4 h-12 w-12 object-contain" loading="lazy" decoding="async">
+                                    <img src="{{ \App\Support\Img::url($icon->url, 200) }}" alt="{{ $icon->alt ?? '' }}" class="mb-4 h-12 w-12 object-contain" loading="lazy" decoding="async">
                                 @endforeach
                             @endif
                             @if ($row->title)

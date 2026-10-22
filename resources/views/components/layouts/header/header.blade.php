@@ -18,7 +18,7 @@
             class="flex items-center {{ $logo_url ? 'justify-between' : 'justify-end' }} border-b border-(--color-line)/20 py-5 lg:gap-8">
             @if ($logo_url)
                 <a href="/" class="inline-flex items-center">
-                    <img src="{{ $logo_url }}" alt="{{ $site_title }} Logo" class="h-auto w-24 md:w-28 lg:w-32" />
+                    <img src="{{ \App\Support\Img::url($logo_url, 400) }}" alt="{{ $site_title }} Logo" class="h-auto w-24 md:w-28 lg:w-32" />
                 </a>
             @endif
 

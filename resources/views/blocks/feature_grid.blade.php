@@ -36,7 +36,7 @@
                         @if ($feature->icon)
                             @foreach ($feature->icon as $icon)
                                 <img
-                                    src="{{ $icon->url }}"
+                                    src="{{ \App\Support\Img::url($icon->url, 200) }}"
                                     alt=""
                                     class="mb-4 h-12 w-12 object-contain"
                                     loading="lazy"

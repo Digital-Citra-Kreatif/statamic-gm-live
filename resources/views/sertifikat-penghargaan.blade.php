@@ -69,7 +69,7 @@
                             @php $img = $certificate->featured_image?->url() ?? ($achievements['placeholder_image'] ?? ''); @endphp
                             <div class="certificate-item">
                                 <a data-fslightbox="certificates" href="{{ $img }}">
-                                    <img src="{{ $img }}"
+                                    <img src="{{ \App\Support\Img::url($img, 1200) }}"
                                         alt="{{ $certificate->featured_image?->alt ?? $certificate->title }}"
                                         class="w-full h-auto object-cover rounded-md mb-3 lg:mb-4" loading="lazy" decoding="async">
                                 </a>

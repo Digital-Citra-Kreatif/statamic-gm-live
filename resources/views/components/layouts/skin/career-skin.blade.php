@@ -42,7 +42,7 @@
                     <p
                         class="flex items-center gap-2 uppercase text-(--color-primary) font-medium group-hover:text-black">
                         @if (!empty($career['icon_employment_status']))
-                            <img src="{{ $career['icon_employment_status'] }}"
+                            <img src="{{ \App\Support\Img::url($career['icon_employment_status'], 200) }}"
                                 alt="{{ $career['icon_employment_status']?->alt }}"
                                 class="w-4 h-4 shrink-0 -mt-1 group-hover:brightness-0" loading="lazy" decoding="async" />
                         @endif
@@ -54,7 +54,7 @@
                     <p
                         class="flex items-center gap-2 uppercase text-(--color-primary) font-medium group-hover:text-black">
                         @if (!empty($career['icon_location']))
-                            <img src="{{ $career['icon_location'] }}" alt="{{ $career['icon_location']?->alt }}"
+                            <img src="{{ \App\Support\Img::url($career['icon_location'], 200) }}" alt="{{ $career['icon_location']?->alt }}"
                                 class="w-4 h-4 shrink-0 -mt-1 group-hover:brightness-0" loading="lazy" decoding="async" />
                         @endif
                         {{ $entryLocationTitle }}

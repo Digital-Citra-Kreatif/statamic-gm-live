@@ -67,7 +67,7 @@
                                 <a href="{{ $contact['url'] }}" target="_blank" rel="noopener noreferrer">
                                     <span class="floating-whatsapp-avatar">
                                         @if ($contact['avatar'])
-                                            <img src="{{ $contact['avatar'] }}" alt="{{ $contact['title'] }}">
+                                            <img src="{{ \App\Support\Img::url($contact['avatar'], 160) }}" alt="{{ $contact['title'] }}">
                                         @else
                                             <svg viewBox="0 0 84 84" width="26" height="26" fill="currentColor"
                                                 aria-hidden="true">
@@ -95,7 +95,7 @@
             <span class="floating-whatsapp-circle">
                 <span class="floating-whatsapp-icon">
                     @if ($iconUrl)
-                        <img src="{{ $iconUrl }}" alt="WhatsApp" width="30" height="30">
+                        <img src="{{ \App\Support\Img::url($iconUrl, 160) }}" alt="WhatsApp" width="30" height="30">
                     @else
                         <svg viewBox="0 0 84 84" width="30" height="30" fill="currentColor" aria-hidden="true">
                             <path
