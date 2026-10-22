@@ -45,7 +45,9 @@ class Img
                 $params['fm'] = 'webp';
             }
 
-            return (string) Image::manipulate($asset, $params);
+            // Pakai ID asset agar URL tanpa ekstensi file: nginx production
+            // membuang query string (signature) untuk URL berakhiran .jpg/.png.
+            return (string) Image::manipulate($asset->id(), $params);
         } catch (Throwable $e) {
             report($e);
 
