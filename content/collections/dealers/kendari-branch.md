@@ -1,11 +1,9 @@
 ---
 id: c852aabc-3b45-41b4-b6a9-6c393eaccea4
 blueprint: dealer
-title: Kendari
+title: 'GM Mobil Kendari'
 city: Kendari
-address: |-
-  PT GAYA MAKMUR MOBIL
-  Jl. Laode Hadi, Bonggoeya, Kec. Wua-Wua, Kota Kendari, Sulawesi Tenggara 93118
+address: 'Jl. Laode Hadi, Bonggoeya, Kec. Wua-Wua, Kota Kendari, Sulawesi Tenggara 93118'
 phone_number: '(041) 341 5621'
 whatsapp_number: '081190010880'
 whatsapp_link: 'https://wa.me/081190010880'
@@ -18,5 +16,5 @@ location:
   latitude: -4.0071071
   longitude: 122.5088979
 updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
-updated_at: 1792140458
+updated_at: 1792738465
 ---
