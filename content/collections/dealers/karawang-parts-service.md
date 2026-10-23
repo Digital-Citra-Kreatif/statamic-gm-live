@@ -1,7 +1,7 @@
 ---
 id: 0f93b34e-3314-4ae2-98d5-f87c4cb01ef2
 blueprint: dealer
-title: Karawang
+title: 'GM Mobil Service Center Karawang'
 city: Karawang
 address: |-
   PT SINAR SURYA MOTOR
@@ -15,7 +15,7 @@ location:
   latitude: -6.3295207
   longitude: 107.274233
 updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
-updated_at: 1792140435
+updated_at: 1792738441
 whatsapp_number: '081119292702'
 whatsapp_link: 'https://wa.me/6281119292702'
 ---
