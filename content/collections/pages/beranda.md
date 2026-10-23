@@ -164,13 +164,15 @@ sections:
     description:
       -
         type: paragraph
+        attrs:
+          textAlign: null
         content:
           -
             type: text
-            text: 'Ikuti perkembangan terbaru, dokumentasi serah terima unit, dan edukasi interaktif kami di seluruh kanal media sosial resmi PT Gaya Makmur Mobil.'
+            text: 'Ikuti perkembangan terbaru, dokumentasi serah terima unit, dan edukasi interaktif kami di seluruh kanal media sosial resmi GM Mobil'
     show: true
     type: heading_description
     enabled: true
 updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
-updated_at: 1792729392
+updated_at: 1792729435
 ---
