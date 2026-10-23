@@ -398,12 +398,16 @@ sections:
     id: dueZHo0L9WXlSGjH9GZpr
     identifier: Skema-Layanan-Reman
     heading: 'Skema Layanan Reman'
-    columns: 1
+    columns: 2
     features:
       -
         id: AiUs9PjjsLI73I8JQr-KD
         title: 'Core Swap / Exchange (COMEX)'
         text: 'Tukar komponen lama (core) dengan komponen Reman. Harga Reman dikurangi nilai refund core.'
+      -
+        id: i2MgqZB9DIvd5oQahKvwn
+        title: 'Outright Sale / Sell Off'
+        text: 'Beli komponen Reman tanpa menyerahkan core lama.'
     show: true
     type: feature_grid
     enabled: true
@@ -415,5 +419,5 @@ sections:
     show: true
     identifier: section-image-reman
 updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
-updated_at: 1792743492
+updated_at: 1792743615
 ---
