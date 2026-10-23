@@ -4,7 +4,6 @@ blueprint: dealer
 title: 'GM Mobil Balikpapan'
 city: Balikpapan
 address: |-
-  PT GAYA MAKMUR MOBIL
   Alamat 1: JL Mulawarman, RT. 041 No. 001, Manggar, Manggar Baru, Kec. Balikpapan Tim, Kota Balikpapan, Kalimantan Timur 76117
   Alamat 2 : Jl. Soekarno Hatta KM 2,5 Batu Ampar, Balikpapan, Kalimantan Timur
 phone_number: '(0542) 7570808'
@@ -19,5 +18,5 @@ location:
   latitude: -1.2229823
   longitude: 116.9642695
 updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
-updated_at: 1792738005
+updated_at: 1792738023
 ---
