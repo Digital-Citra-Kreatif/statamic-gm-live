@@ -1,10 +1,9 @@
 ---
 id: f73c371d-3160-4535-893c-92225612a7ce
 blueprint: dealer
-title: Makassar
+title: 'GM Mobil Makassar'
 city: Makassar
 address: |-
-  PT GAYA MAKMUR MOBIL
   Jalan Perintis Kemerdekaan KM 16, Pai, Kec. Biringkanaya, Kota Makassar, Sulawesi Selatan
   (Depan Dealer Kalla Toyota)
 phone_number: '(0411) 2022008'
@@ -19,5 +18,5 @@ location:
   latitude: -5.0988172
   longitude: 119.5121318
 updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
-updated_at: 1792140523
+updated_at: 1792738511
 ---
