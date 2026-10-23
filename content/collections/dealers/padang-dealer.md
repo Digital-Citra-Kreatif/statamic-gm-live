@@ -1,7 +1,7 @@
 ---
 id: 1930cab6-f69d-4321-b721-47dbbcb8e383
 blueprint: dealer
-title: Padang
+title: 'GM Mobil Padang'
 city: Padang
 address: |-
   PT GAYAMAKMUR FAW MOTORS
@@ -17,5 +17,5 @@ location:
   latitude: -0.947083
   longitude: 100.417181
 updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
-updated_at: 1792048482
+updated_at: 1792738599
 ---
