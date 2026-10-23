@@ -1,7 +1,7 @@
 ---
 id: b333d7c1-e64e-4a19-8b66-dadcd15d4bd4
 blueprint: dealer
-title: Pekanbaru
+title: 'GM Mobil Pekanbaru'
 city: Pekanbaru
 address: |-
   PT GAYAMAKMUR FAW MOTORS
@@ -17,6 +17,6 @@ location:
   latitude: 0.5666366
   longitude: 101.3971071
 updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
-updated_at: 1792140685
+updated_at: 1792738698
 phone_number: '0761 7877 089'
 ---
