@@ -1,7 +1,7 @@
 ---
 id: def2b94e-cd42-4efa-9eee-25dfc4058eb0
 blueprint: dealer
-title: Balikpapan
+title: 'GM Mobil Balikpapan'
 city: Balikpapan
 address: |-
   PT GAYA MAKMUR MOBIL
@@ -19,5 +19,5 @@ location:
   latitude: -1.2229823
   longitude: 116.9642695
 updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
-updated_at: 1792121580
+updated_at: 1792738005
 ---
