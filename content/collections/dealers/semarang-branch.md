@@ -1,7 +1,7 @@
 ---
 id: b7f637e2-d9ca-4964-a333-e75f38905916
 blueprint: dealer
-title: Semarang
+title: 'GM Mobil Semarang'
 city: Semarang
 address: |-
   PT GAYA MAKMUR MOBIL
@@ -18,5 +18,5 @@ location:
   latitude: -6.9543083
   longitude: 110.4120992
 updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
-updated_at: 1792140806
+updated_at: 1792737391
 ---
