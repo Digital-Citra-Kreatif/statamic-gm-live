@@ -16,5 +16,5 @@ location:
   latitude: -6.9543083
   longitude: 110.4120992
 updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
-updated_at: 1792737427
+updated_at: 1792737447
 ---
