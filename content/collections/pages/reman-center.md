@@ -75,6 +75,10 @@ sections:
           Layanan khusus injector melalui skema tukar (COMEX) maupun perbaikan.
 
           Keunggulan: Hemat 50–60% dari harga baru
+      -
+        id: x1mQuCo0vIWMhJofIGdbq
+        title: 'Ketersediaan Komponen di Setiap Cabang'
+        text: 'Unit Reman siap pakai (Ready for Use) didukung jaringan COMEX Support Point di cabang GM Mobil, sehingga proses penggantian komponen dapat berjalan lebih cepat.'
     show: true
     background: default
     type: feature_grid
@@ -86,7 +90,6 @@ sections:
     type: other_description
     enabled: true
     show: true
-    description: {  }
   -
     id: dueZHo0L9WXlSGjH9GZpr
     identifier: Skema-Layanan-Reman
@@ -112,5 +115,5 @@ sections:
     show: true
     identifier: section-image-reman
 updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
-updated_at: 1792743615
+updated_at: 1792745150
 ---
