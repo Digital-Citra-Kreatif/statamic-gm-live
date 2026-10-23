@@ -116,7 +116,7 @@ sections:
   -
     id: Ii6nqLfa4CrDPYWfx2-Ao
     identifier: section-dealer
-    heading: 'Rekan Jaringan<br>PT Gaya Makmur Mobil'
+    heading: 'Rekan Jaringan<br>GM Mobil'
     show: true
     type: heading_description
     enabled: true
@@ -171,6 +171,6 @@ sections:
     show: true
     type: heading_description
     enabled: true
-updated_by: 28d34247-1c17-42bf-8548-5b36f18adcbd
-updated_at: 1792639118
+updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
+updated_at: 1792729392
 ---
