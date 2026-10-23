@@ -1,7 +1,7 @@
 ---
 id: a22de973-631c-4a93-83b1-b5067a8d9afc
 blueprint: dealer
-title: Medan
+title: 'GM Mobil Medan'
 city: Medan
 address: |-
   PT GAYAMAKMUR FAW MOTORS
@@ -17,6 +17,6 @@ location:
   latitude: 3.5296144
   longitude: 98.7517497
 updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
-updated_at: 1792140573
+updated_at: 1792738553
 phone_number: '0617946888'
 ---
