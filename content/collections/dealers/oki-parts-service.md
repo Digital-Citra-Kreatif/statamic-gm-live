@@ -1,7 +1,7 @@
 ---
 id: 69ffad7e-99bc-493f-a3ec-42d7993d2225
 blueprint: dealer
-title: OKI
+title: 'GM Mobil Service Center OKI'
 city: OKI
 is_active: true
 display_grid_view: true
@@ -10,11 +10,9 @@ dealer_categories:
 location:
   latitude: -3.3947
   longitude: 104.8408
-address: |-
-  PART & SERVICE CENTER GAYA MAKMUR MOBIL
-  Pulp. Air Sugihan, Ogan Komering Ilir, Sumatera Selatan
+address: 'Pulp. Air Sugihan, Ogan Komering Ilir, Sumatera Selatan'
 updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
-updated_at: 1792121461
+updated_at: 1792737897
 whatsapp_number: '081112129380'
 whatsapp_link: 'http://wa.me//6281112129380'
 ---
