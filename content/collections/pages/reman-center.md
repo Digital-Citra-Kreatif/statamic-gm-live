@@ -114,6 +114,22 @@ sections:
     enabled: true
     show: true
     identifier: section-image-reman
+  -
+    id: G6LKJ58p7FKqBx_S1e5Ng
+    identifier: section-faw-trucks
+    heading: 'COMEX Support Point'
+    description:
+      -
+        type: paragraph
+        attrs:
+          textAlign: null
+        content:
+          -
+            type: text
+            text: 'Komponen Reman siap pakai tersedia melalui jaringan COMEX Support Point di cabang GM Mobil, membantu mempercepat proses penggantian komponen.'
+    show: true
+    type: text_gallery
+    enabled: true
 updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
-updated_at: 1792745150
+updated_at: 1792745288
 ---
