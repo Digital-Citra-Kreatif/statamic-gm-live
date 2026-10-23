@@ -131,5 +131,5 @@ sections:
     type: text_gallery
     enabled: true
 updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
-updated_at: 1792745288
+updated_at: 1792745314
 ---
