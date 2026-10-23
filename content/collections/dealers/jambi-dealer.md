@@ -1,7 +1,7 @@
 ---
 id: bd70ec10-43b6-48c5-9c60-898622d41cac
 blueprint: dealer
-title: Jambi
+title: 'GM Mobil Jambi'
 city: Jambi
 address: |-
   PT MITRA PERDANA MOBIL
@@ -17,5 +17,5 @@ location:
   latitude: -1.6263743
   longitude: 103.6495335
 updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
-updated_at: 1792140375
+updated_at: 1792738333
 ---
