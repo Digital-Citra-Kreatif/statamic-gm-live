@@ -395,6 +395,19 @@ sections:
                         type: text
                         text: 'Hemat 50–60% dari harga baru'
   -
+    id: dueZHo0L9WXlSGjH9GZpr
+    identifier: Skema-Layanan-Reman
+    heading: 'Skema Layanan Reman'
+    columns: 1
+    features:
+      -
+        id: AiUs9PjjsLI73I8JQr-KD
+        title: 'Core Swap / Exchange (COMEX)'
+        text: 'Tukar komponen lama (core) dengan komponen Reman. Harga Reman dikurangi nilai refund core.'
+    show: true
+    type: feature_grid
+    enabled: true
+  -
     id: 3ZeYHnSEno2p6LtaH92tl
     section_images: image-reman-center.jpg
     type: section_image
@@ -402,5 +415,5 @@ sections:
     show: true
     identifier: section-image-reman
 updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
-updated_at: 1792633435
+updated_at: 1792743492
 ---
