@@ -20,6 +20,20 @@
         fn($section) => (string) ($section['type'] ?? '') === 'alternating_rows',
     );
 
+    $remanFeatures = collect($page->sections)->first(
+        fn($section) => (string) ($section['type'] ?? '') === 'feature_grid',
+    );
+
+    // Jumlah kolom grid
+    $columnClassMap = [
+        '1' => 'lg:grid-cols-1',
+        '2' => 'md:grid-cols-2 lg:grid-cols-2',
+        '3' => 'md:grid-cols-2 lg:grid-cols-3',
+        '4' => 'md:grid-cols-2 lg:grid-cols-4',
+    ];
+
+    $featureColumns = $columnClassMap[(string) ($remanFeatures['columns'] ?? '3')] ?? 'md:grid-cols-2 lg:grid-cols-3';
+
     $otherDescription = collect($page->sections)->first(
         fn($section) => (string) ($section['type'] ?? '') === 'other_description',
     );
@@ -121,6 +135,44 @@
                             </div>
                         @endif
                     </div>
+
+                    {{-- Skema layanan (feature grid) --}}
+                    @if ($remanFeatures && ($remanFeatures['show'] ?? false) && !empty($remanFeatures['features']))
+                        <div id="{{ $remanFeatures['anchor'] ?? 'skema-layanan-reman' }}"
+                            class="flex flex-col gap-8 md:gap-8 lg:gap-10 w-full">
+                            @if (!empty($remanFeatures['heading']) || !empty($remanFeatures['subheading']))
+                                <div class="flow text-left md:text-left lg:text-center">
+                                    @if (!empty($remanFeatures['heading']))
+                                        <h2>{{ $remanFeatures['heading'] }}</h2>
+                                    @endif
+                                    @if (!empty($remanFeatures['subheading']))
+                                        <p>{{ $remanFeatures['subheading'] }}</p>
+                                    @endif
+                                </div>
+                            @endif
+
+                            <div data-equal-height class="grid gap-5 {{ $featureColumns }}">
+                                @foreach ($remanFeatures['features'] as $item)
+                                    <div
+                                        class="flex flex-col gap-8 p-4 bg-(--color-surface) rounded-xl lg:rounded-3xl md:p-4 md:gap-8 lg:p-6 lg:gap-12">
+                                        @if (!empty($item['icon']))
+                                            <img src="{{ \App\Support\Img::url($item['icon'], 200) }}"
+                                                alt="{{ $item['icon']?->alt ?? 'Icon' }}" class="w-8 h-8 lg:w-10 lg:h-10"
+                                                loading="lazy" decoding="async">
+                                        @endif
+                                        <div class="flex flex-col gap-2 lg:gap-4">
+                                            <p
+                                                class="w-full text-(--color-heading) title-display text-xl tracking-tight lg:text-2xl">
+                                                {{ $item['title'] ?? '' }}</p>
+                                            @foreach ($rowTextLines($item['text'] ?? '') as $line)
+                                                <p>{{ $line }}</p>
+                                            @endforeach
+                                        </div>
+                                    </div>
+                                @endforeach
+                            </div>
+                        </div>
+                    @endif
 
                     {{-- Other Description --}}
                     @if ($otherDescription && ($otherDescription['show'] ?? false) && filled((string) ($otherDescription['description'] ?? '')))

@@ -35,365 +35,58 @@ sections:
     enabled: true
     show: true
   -
+    id: Fq7Nc2Vh8LzRw4Tk1YsPa
+    identifier: section-features-reman
+    heading: 'Skema Layanan Reman'
+    columns: 3
+    features:
+      -
+        id: qhs5ei0ezhZuVHLL8fxlk
+        title: 'Core Swap / Exchange (COMEX)'
+        text: |-
+          Tukar komponen lama (core) dengan komponen Reman. Harga Reman dikurangi nilai refund core.
+
+          Keunggulan: Hemat hingga 70%
+      -
+        id: 4qzF6kOXs7opvytd0VLbN
+        title: 'Outright Sale / Sell Off'
+        text: |-
+          Beli komponen Reman tanpa menyerahkan core lama.
+
+          Keunggulan: Tanpa tukar core
+      -
+        id: XDOI6IUqg3mKtGxhfLnv5
+        title: 'Repair & Return'
+        text: |-
+          Komponen milik customer dikirim untuk di-reman. Biaya mencakup jasa dan parts reman yang digunakan.
+
+          Keunggulan: 10–15% lebih hemat dari exchange
+      -
+        id: WbK4fmOcfJ24BkVBr6L6T
+        title: 'Warranty Claim Principle'
+        text: |-
+          Layanan untuk komponen yang masih dalam masa garansi prinsipal, sesuai ketentuan klaim yang berlaku.
+
+          Keunggulan: Sesuai masa garansi unit
+      -
+        id: InmczNxbc562Vg2hUAMT2
+        title: 'Injector COMEX & Repair'
+        text: |-
+          Layanan khusus injector melalui skema tukar (COMEX) maupun perbaikan.
+
+          Keunggulan: Hemat 50–60% dari harga baru
+    show: true
+    background: default
+    type: feature_grid
+    enabled: true
+    subheading: 'Pilih skema yang sesuai dengan kondisi komponen dan kebutuhan unit Anda.'
+  -
     id: Od3fJs6Ub1ZqM5rKw0gTi
     identifier: other-description-reman
     type: other_description
     enabled: true
     show: true
-    description:
-      -
-        type: heading
-        attrs:
-          textAlign: null
-          level: 3
-        content:
-          -
-            type: text
-            text: 'Skema Layanan Reman'
-      -
-        type: paragraph
-        attrs:
-          textAlign: null
-        content:
-          -
-            type: text
-            text: 'Pilih skema yang sesuai dengan kondisi komponen dan kebutuhan unit Anda.'
-      -
-        type: table
-        content:
-          -
-            type: tableRow
-            content:
-              -
-                type: tableCell
-                attrs:
-                  colspan: 1
-                  rowspan: 1
-                  colwidth:
-                    - 235
-                  align: null
-                content:
-                  -
-                    type: paragraph
-                    attrs:
-                      textAlign: center
-                    content:
-                      -
-                        type: text
-                        marks:
-                          -
-                            type: bold
-                        text: Skema
-              -
-                type: tableCell
-                attrs:
-                  colspan: 1
-                  rowspan: 1
-                  colwidth:
-                    - 281
-                  align: null
-                content:
-                  -
-                    type: paragraph
-                    attrs:
-                      textAlign: center
-                    content:
-                      -
-                        type: text
-                        marks:
-                          -
-                            type: bold
-                        text: Deskripsi
-              -
-                type: tableCell
-                attrs:
-                  colspan: 1
-                  rowspan: 1
-                  colwidth:
-                    - 232
-                  align: null
-                content:
-                  -
-                    type: paragraph
-                    attrs:
-                      textAlign: center
-                    content:
-                      -
-                        type: text
-                        marks:
-                          -
-                            type: bold
-                        text: Keunggulan
-          -
-            type: tableRow
-            content:
-              -
-                type: tableCell
-                attrs:
-                  colspan: 1
-                  rowspan: 1
-                  colwidth:
-                    - 235
-                  align: null
-                content:
-                  -
-                    type: paragraph
-                    attrs:
-                      textAlign: null
-                    content:
-                      -
-                        type: text
-                        text: 'Core Swap / Exchange (COMEX)'
-              -
-                type: tableCell
-                attrs:
-                  colspan: 1
-                  rowspan: 1
-                  colwidth:
-                    - 281
-                  align: null
-                content:
-                  -
-                    type: paragraph
-                    attrs:
-                      textAlign: null
-                    content:
-                      -
-                        type: text
-                        text: 'Tukar komponen lama (core) dengan komponen Reman. Harga Reman dikurangi nilai refund core.'
-              -
-                type: tableCell
-                attrs:
-                  colspan: 1
-                  rowspan: 1
-                  colwidth:
-                    - 232
-                  align: null
-                content:
-                  -
-                    type: paragraph
-                    attrs:
-                      textAlign: null
-                    content:
-                      -
-                        type: text
-                        text: 'Hemat hingga 70%'
-          -
-            type: tableRow
-            content:
-              -
-                type: tableCell
-                attrs:
-                  colspan: 1
-                  rowspan: 1
-                  colwidth:
-                    - 235
-                  align: null
-                content:
-                  -
-                    type: paragraph
-                    attrs:
-                      textAlign: null
-                    content:
-                      -
-                        type: text
-                        text: 'Outright Sale / Sell Off'
-              -
-                type: tableCell
-                attrs:
-                  colspan: 1
-                  rowspan: 1
-                  colwidth:
-                    - 281
-                  align: null
-                content:
-                  -
-                    type: paragraph
-                    attrs:
-                      textAlign: null
-                    content:
-                      -
-                        type: text
-                        text: 'Beli komponen Reman tanpa menyerahkan core lama.'
-              -
-                type: tableCell
-                attrs:
-                  colspan: 1
-                  rowspan: 1
-                  colwidth:
-                    - 232
-                  align: null
-                content:
-                  -
-                    type: paragraph
-                    attrs:
-                      textAlign: null
-                    content:
-                      -
-                        type: text
-                        text: 'Tanpa tukar core'
-          -
-            type: tableRow
-            content:
-              -
-                type: tableCell
-                attrs:
-                  colspan: 1
-                  rowspan: 1
-                  colwidth:
-                    - 235
-                  align: null
-                content:
-                  -
-                    type: paragraph
-                    attrs:
-                      textAlign: null
-                    content:
-                      -
-                        type: text
-                        text: 'Repair & Return'
-              -
-                type: tableCell
-                attrs:
-                  colspan: 1
-                  rowspan: 1
-                  colwidth:
-                    - 281
-                  align: null
-                content:
-                  -
-                    type: paragraph
-                    attrs:
-                      textAlign: null
-                    content:
-                      -
-                        type: text
-                        text: 'Komponen milik customer dikirim untuk di-reman. Biaya mencakup jasa dan parts reman yang digunakan.'
-              -
-                type: tableCell
-                attrs:
-                  colspan: 1
-                  rowspan: 1
-                  colwidth:
-                    - 232
-                  align: null
-                content:
-                  -
-                    type: paragraph
-                    attrs:
-                      textAlign: null
-                    content:
-                      -
-                        type: text
-                        text: '10–15% lebih hemat dari exchange'
-          -
-            type: tableRow
-            content:
-              -
-                type: tableCell
-                attrs:
-                  colspan: 1
-                  rowspan: 1
-                  colwidth:
-                    - 235
-                  align: null
-                content:
-                  -
-                    type: paragraph
-                    attrs:
-                      textAlign: null
-                    content:
-                      -
-                        type: text
-                        text: 'Warranty Claim Principle'
-              -
-                type: tableCell
-                attrs:
-                  colspan: 1
-                  rowspan: 1
-                  colwidth:
-                    - 281
-                  align: null
-                content:
-                  -
-                    type: paragraph
-                    attrs:
-                      textAlign: null
-                    content:
-                      -
-                        type: text
-                        text: 'Layanan untuk komponen yang masih dalam masa garansi prinsipal, sesuai ketentuan klaim yang berlaku.'
-              -
-                type: tableCell
-                attrs:
-                  colspan: 1
-                  rowspan: 1
-                  colwidth:
-                    - 232
-                  align: null
-                content:
-                  -
-                    type: paragraph
-                    attrs:
-                      textAlign: null
-                    content:
-                      -
-                        type: text
-                        text: 'Sesuai masa garansi unit'
-          -
-            type: tableRow
-            content:
-              -
-                type: tableCell
-                attrs:
-                  colspan: 1
-                  rowspan: 1
-                  colwidth:
-                    - 235
-                  align: null
-                content:
-                  -
-                    type: paragraph
-                    attrs:
-                      textAlign: null
-                    content:
-                      -
-                        type: text
-                        text: 'Injector COMEX & Repair'
-              -
-                type: tableCell
-                attrs:
-                  colspan: 1
-                  rowspan: 1
-                  colwidth:
-                    - 281
-                  align: null
-                content:
-                  -
-                    type: paragraph
-                    attrs:
-                      textAlign: null
-                    content:
-                      -
-                        type: text
-                        text: 'Layanan khusus injector melalui skema tukar (COMEX) maupun perbaikan.'
-              -
-                type: tableCell
-                attrs:
-                  colspan: 1
-                  rowspan: 1
-                  colwidth:
-                    - 232
-                  align: null
-                content:
-                  -
-                    type: paragraph
-                    attrs:
-                      textAlign: null
-                    content:
-                      -
-                        type: text
-                        text: 'Hemat 50–60% dari harga baru'
+    description: {  }
   -
     id: dueZHo0L9WXlSGjH9GZpr
     identifier: Skema-Layanan-Reman
