@@ -1,7 +1,7 @@
 ---
 id: 6f7d33ad-2de1-4302-b687-66ef80ddfbcf
 blueprint: dealer
-title: 'GM Mobil Service Center Aceh'
+title: 'GM Mobil Aceh'
 city: Aceh
 address: |-
   PT GAYAMAKMUR FAW MOTORS
@@ -17,5 +17,5 @@ location:
   longitude: 95.3299905
 display_grid_view: true
 updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
-updated_at: 1792737947
+updated_at: 1792737975
 ---
