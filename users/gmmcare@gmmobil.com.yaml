@@ -14,7 +14,7 @@ preferences:
     careers:
       view: tree
     dealers:
-      view: list
+      view: tree
     products:
       view: list
   forms:
