@@ -1,8 +1,8 @@
 ---
 id: 5fdfda1d-4507-4b04-baf0-1c325936a9c5
 blueprint: dealer
-title: Surabaya
-city: 'GM Mobil Surabaya'
+title: 'GM Mobil Surabaya'
+city: Surabaya
 address: 'Jalan Raya Gilang No. 113 RT 014 RW 04, Gilang Selatan, Gilang, Sidoarjo, Jawa Timur 61257'
 whatsapp_number: '081119271117'
 whatsapp_link: 'https://wa.me/6281119271117'
@@ -15,5 +15,5 @@ location:
   latitude: -7.3810542
   longitude: 112.762623
 updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
-updated_at: 1792742762
+updated_at: 1792742813
 ---
