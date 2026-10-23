@@ -1,7 +1,7 @@
 ---
 id: 85d0fe8a-168e-49e7-9153-8791e8e81a28
 blueprint: dealer
-title: Bekasi
+title: 'GM Mobil Bekasi'
 city: Bekasi
 address: |-
   PT MITRA INTI TRADA
@@ -16,5 +16,5 @@ location:
   latitude: -6.23827
   longitude: 106.975571
 updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
-updated_at: 1792046743
+updated_at: 1792738246
 ---
