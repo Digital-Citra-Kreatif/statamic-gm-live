@@ -1,7 +1,7 @@
 ---
 id: abb17068-8485-4142-b64a-c53e4c1f4789
 blueprint: dealer
-title: Timika
+title: 'GM Mobil Service Center Timika'
 city: Timika
 address: |-
   PT PUTRA BINTANG MIMIKA
@@ -17,5 +17,5 @@ location:
   latitude: -4.5422786
   longitude: 136.886657
 updated_by: 5cb2267c-622e-41be-9f2f-5bde4538270e
-updated_at: 1792737262
+updated_at: 1792738779
 ---
