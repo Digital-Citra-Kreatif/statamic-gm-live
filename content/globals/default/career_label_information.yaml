@@ -53,4 +53,4 @@ message_failed:
       -
         type: text
         text: 'Terjadi kendala saat mengirimkan data lamaran Anda. Kemungkinan ada masalah teknis pada sistem kami saat ini.'
-sort_order_by: urutan_tree
+sort_order_by: tanggal_upload
