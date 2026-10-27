@@ -59,11 +59,24 @@
         fn($section) => (string) ($section['type'] ?? '') === 'grid_dealers_show',
     );
 
+    // Label informasi dealer
+    $dealerLabels =
+        \Statamic\Facades\GlobalSet::findByHandle('dealer_label_information')?->inCurrentSite()?->data() ?? collect();
+
+    // Urutan grid dealer
+    $sortOrderBy = (string) ($dealerLabels['dealer_sort_order_by'] ?? 'judul_az');
+
+    [$sortField, $sortDir] = match ($sortOrderBy) {
+        'urutan_tree' => ['order', 'asc'],
+        'judul_za' => ['title', 'desc'],
+        default => ['title', 'asc'],
+    };
+
     // Daftar dealer grid
     $dealerList = \Statamic\Facades\Entry::query()
         ->where('collection', 'dealers')
         ->where('is_active', true)
-        ->orderBy('title', 'asc')
+        ->orderBy($sortField, $sortDir)
         ->get()
         ->filter(fn($dealer) => $dealer->display_grid_view)
         ->map(
@@ -109,10 +122,6 @@
     // Kategori untuk counter
     $counterCategories = $dealerCategories->filter(fn($label, $slug) => ($dealerCounts[$slug] ?? 0) > 0);
     $counterCategoryCount = $counterCategories->count();
-
-    // Label informasi dealer
-    $dealerLabels =
-        \Statamic\Facades\GlobalSet::findByHandle('dealer_label_information')?->inCurrentSite()?->data() ?? collect();
 
     // Icon kontak dealer
     $resolveIconUrl = function ($icon) {

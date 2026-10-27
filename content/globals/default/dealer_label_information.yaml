@@ -5,3 +5,4 @@ empty_search_label: 'Dealer tidak ditemukan. Coba kata kunci atau filter lain.'
 icon_maps_dealer: peta-pins.png
 icon_phone_dealer: telepon-icon.svg
 icon_whatsapp_dealer: whatsapp-white.svg
+dealer_sort_order_by: judul_az

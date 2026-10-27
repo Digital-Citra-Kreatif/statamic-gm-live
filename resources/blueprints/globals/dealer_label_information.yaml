@@ -66,3 +66,25 @@ tabs:
               type: assets
               display: 'Icon WhatsApp Dealer'
               instructions: 'Ikon WhatsApp dealer. Icon 20x20px.'
+      -
+        display: 'Grid Dealer'
+        fields:
+          -
+            handle: dealer_sort_order_by
+            field:
+              options:
+                -
+                  key: urutan_tree
+                  value: 'Urutan Tree (Statamic)'
+                -
+                  key: judul_az
+                  value: 'Judul A-Z'
+                -
+                  key: judul_za
+                  value: 'Judul Z-A'
+              default: judul_az
+              type: select
+              display: 'Dealer Sort Order By'
+              instructions: 'Urutan tampil dealer pada grid.'
+              validate:
+                - required
