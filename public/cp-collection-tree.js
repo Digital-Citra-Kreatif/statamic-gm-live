@@ -7,27 +7,27 @@
 
         document.querySelectorAll('.page-tree-branch a[href*="/collections/products/entries/"], .page-tree-branch a[href*="/collections/dealers/entries/"]').forEach((link) => {
             const label = link.textContent || '';
-            const separatorIndex = label.lastIndexOf(separator);
 
-            if (separatorIndex === -1) {
+            if (!label.includes(separator)) {
                 return;
             }
 
-            const badgeText = label.slice(separatorIndex + separator.length).trim();
+            // Bagian pertama tetap link, sisanya badge masing-masing
+            const [title, ...badgeTexts] = label.split(separator).map((part) => part.trim());
 
-            if (!badgeText) {
-                return;
-            }
-
-            link.textContent = label.slice(0, separatorIndex);
-            if (link.nextElementSibling?.classList.contains('collection-tree-badge')) {
+            link.textContent = title;
+            while (link.nextElementSibling?.classList.contains('collection-tree-badge')) {
                 link.nextElementSibling.remove();
             }
 
-            const badge = document.createElement('span');
-            badge.className = 'collection-tree-badge';
-            badge.textContent = badgeText;
-            link.after(badge);
+            let previous = link;
+            badgeTexts.filter(Boolean).forEach((badgeText) => {
+                const badge = document.createElement('span');
+                badge.className = 'collection-tree-badge';
+                badge.textContent = badgeText;
+                previous.after(badge);
+                previous = badge;
+            });
         });
     }
 

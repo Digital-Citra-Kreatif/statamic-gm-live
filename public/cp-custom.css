@@ -23,6 +23,10 @@ body.outside .logo .white-label-logo {
     white-space: nowrap;
 }
 
+.page-tree .collection-tree-badge + .collection-tree-badge {
+    margin-inline-start: 4px;
+}
+
 .dark .page-tree .collection-tree-badge {
     border-color: #4338ca;
     background: #312e81;

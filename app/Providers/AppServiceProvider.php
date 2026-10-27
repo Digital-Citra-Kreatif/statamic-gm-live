@@ -39,7 +39,7 @@ class AppServiceProvider extends ServiceProvider
         ]));
 
         // CSS control panel.
-        Statamic::externalStyle(url('/cp-custom.css'));
-        Statamic::externalScript(url('/cp-collection-tree.js'));
+        Statamic::externalStyle(url('/cp-custom.css').'?v='.@filemtime(public_path('cp-custom.css')));
+        Statamic::externalScript(url('/cp-collection-tree.js').'?v='.@filemtime(public_path('cp-collection-tree.js')));
     }
 }
