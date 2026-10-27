@@ -58,7 +58,7 @@ class CollectionTreeLabelController extends CollectionTreeController
             $name = collect(preg_split('/\R/', (string) $entry->get('address')))
                 ->map(fn ($line) => trim($line))
                 ->takeWhile(fn ($line) => $line !== '' && mb_strtoupper($line) === $line)
-                ->implode(' ');
+                ->implode(' ') ?: $label;
             $category = collect($entry->get('dealer_categories') ?? [])
                 ->map(fn ($slug) => $categories->get($slug))
                 ->filter()
