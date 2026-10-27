@@ -49,15 +49,23 @@ class CollectionTreeLabelController extends CollectionTreeController
 
     private function dealerLabeler(): callable
     {
-        // Nama dealer
-        return function (EntryContract $entry, string $label) {
+        $categories = Term::whereTaxonomy('dealer_categories')
+            ->mapWithKeys(fn ($term) => [$term->slug() => $term->title()]);
+
+        // Nama dealer + kategori
+        return function (EntryContract $entry, string $label) use ($categories) {
             $city = $entry->get('city') ?: $label;
             $name = collect(preg_split('/\R/', (string) $entry->get('address')))
                 ->map(fn ($line) => trim($line))
                 ->takeWhile(fn ($line) => $line !== '' && mb_strtoupper($line) === $line)
                 ->implode(' ');
+            $category = collect($entry->get('dealer_categories') ?? [])
+                ->map(fn ($slug) => $categories->get($slug))
+                ->filter()
+                ->unique()
+                ->implode(', ');
 
-            return $name ? $city.' | '.$name : $city;
+            return collect([$city, $name, $category])->filter()->implode(' | ');
         };
     }
 
