@@ -52,20 +52,17 @@ class CollectionTreeLabelController extends CollectionTreeController
         $categories = Term::whereTaxonomy('dealer_categories')
             ->mapWithKeys(fn ($term) => [$term->slug() => $term->title()]);
 
-        // Nama dealer + kategori
+        // City | Dealer Name | Dealer Categories
         return function (EntryContract $entry, string $label) use ($categories) {
-            $city = $entry->get('city') ?: $label;
-            $name = collect(preg_split('/\R/', (string) $entry->get('address')))
-                ->map(fn ($line) => trim($line))
-                ->takeWhile(fn ($line) => $line !== '' && mb_strtoupper($line) === $line)
-                ->implode(' ') ?: $label;
-            $category = collect($entry->get('dealer_categories') ?? [])
+            $dealerCategories = collect($entry->get('dealer_categories') ?? [])
                 ->map(fn ($slug) => $categories->get($slug))
                 ->filter()
-                ->unique()
-                ->implode(', ');
+                ->unique();
 
-            return collect([$city, $name, $category])->filter()->implode(' | ');
+            return collect([$entry->get('city'), $label])
+                ->merge($dealerCategories)
+                ->filter()
+                ->implode(' | ');
         };
     }
 
